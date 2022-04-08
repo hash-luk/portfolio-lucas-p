@@ -11,4 +11,33 @@ export const Container = styled.div`
     position: absolute;
     z-index: 4;
     margin-top: 12px;
+
+    #icon {
+        cursor: pointer;
+        filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+        transition: all .2s ease-in-out;
+
+
+        :hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .github-icon {
+        :hover {
+            color: #333;
+        }
+    }
+
+    .instagram-icon {
+        :hover {
+            color: #e1306c;
+        }
+    }
+
+    .linkedin-icon {
+        :hover {
+            color: #00a0dc;
+        }
+    }
 `;
