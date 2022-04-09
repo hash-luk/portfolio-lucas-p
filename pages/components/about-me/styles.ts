@@ -12,12 +12,11 @@ export const Container = styled.div`
         width: 100%;
         height: 100%;
         background-color: purple;
-        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     }
 
     .profilePhoto {
         position: absolute;
-        top: 25rem;
+        top: 22rem;
         left: 45rem;
         width: 310px;
         height: 300px;
@@ -33,17 +32,17 @@ export const Container = styled.div`
     .content-text {
         position: absolute;
         z-index: 4;
-        width: 400px;
+        width: 500px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         right: 45rem;
-        top: 25rem;
+        top: 20rem;
 
         h2 {
             font-size:3rem;
             line-height: 3.5rem;
             color: #DDDDDD;
-            text-align: right;
+            text-align: center;
             margin-bottom: 1.875rem;
         }
 
