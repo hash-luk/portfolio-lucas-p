@@ -37,6 +37,8 @@ export const Container = styled.div`
         font-weight: 400;
         right: 45rem;
         top: 20rem;
+        user-select: none;
+        -webkit-user-select: none;
 
         h2 {
             font-size:3rem;

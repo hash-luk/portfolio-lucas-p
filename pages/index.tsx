@@ -3,6 +3,7 @@ import TopIcons from './components/banner/top-icons'
 import BannerContent from './components/banner/main-content'
 import AboutMe from './components/about-me'
 import TechStack from './components/tech-stack'
+import Projects from './components/projects'
 import GlobalStyle from '../styles/globalStyles'
 
 const Home: NextPage = () => {
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <BannerContent />
       <AboutMe />
       <TechStack />
+      <Projects />
       <GlobalStyle />
     </>
   )
