@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 16px;
         overflow-x: hidden;
+        background-color: #303030;
     }
 `
 

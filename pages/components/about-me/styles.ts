@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
-    position: absolute;
-    background-color: #303030;
+    position: relative;
 
     .shape {
         position: relative;
@@ -13,17 +12,18 @@ export const Container = styled.div`
         width: 100%;
         height: 100%;
         background-color: purple;
-        clip-path: polygon(0 15%, 100% 0, 77% 15%, 100% 22%, 100% 100%, 0 100%, 0% 80%, 0 35%);
+        clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
     }
 
     .profilePhoto {
         position: absolute;
         top: 25rem;
-        left: 40rem;
-        width: 400px;
-        height: 400px;
+        left: 45rem;
+        width: 310px;
+        height: 300px;
         z-index: 4;
         transition: all .2s ease;
+        border-radius: 50%;
 
         :hover {
             transform: scale(1.1);
@@ -36,7 +36,7 @@ export const Container = styled.div`
         width: 400px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        right: 40rem;
+        right: 45rem;
         top: 25rem;
 
         h2 {

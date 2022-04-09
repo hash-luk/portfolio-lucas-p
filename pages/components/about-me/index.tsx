@@ -1,7 +1,6 @@
 import * as S from './styles';
 import Image from 'next/image';
-import shape from '../../../../public/assets/shapes/aboutme-shape.svg';
-import profilePhoto from '../../../../public/assets/images/profile-photo.svg';
+import profilePhoto from '../../../public/assets/images/profile-photo.svg';
 
 const AboutMe = () => {
     return (
