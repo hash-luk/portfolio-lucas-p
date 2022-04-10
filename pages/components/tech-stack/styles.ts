@@ -5,6 +5,7 @@ export const Container = styled.div`
     height: 100vh;
     padding-top: 12rem;
     position: relative;
+    overflow: hidden;
 
     #icons-container {
         width: 25rem;

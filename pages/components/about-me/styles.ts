@@ -4,6 +4,7 @@ export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 
     .shape {
         position: relative;
@@ -54,6 +55,30 @@ export const Container = styled.div`
             color: #f2f2f2;
             font-size: 1.375rem;
             text-align: center;
+        }
+    }
+
+    .ball {
+        background-color: #303030;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 3;
+        overflow: hidden !important;
+        animation: scaleAnimation 3s infinite;
+
+
+        @keyframes scaleAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
         }
     }
 `;
