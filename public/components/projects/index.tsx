@@ -36,7 +36,7 @@ const Projects = () => {
         </div>
         <div className="row">
           <S.TextContainer>
-            <S.ProjectTitle>Spider-Man: Miles Morales</S.ProjectTitle>
+            <S.ProjectTitle>Madeireira Mogno</S.ProjectTitle>
             <S.ProjectDescription>
               Um site completo desenvolvido em um trabalho de freelancer.
               Utilizando React, TypeScript, NodeMailer, Styled-Components e
@@ -68,7 +68,7 @@ const Projects = () => {
             />
           </S.PreviewContainer>
           <S.TextContainer>
-            <S.ProjectTitle>Spider-Man: Miles Morales</S.ProjectTitle>
+            <S.ProjectTitle>Na Brasa - Churrascaria</S.ProjectTitle>
             <S.ProjectDescription>
               Um site desenvolvido durante um curso realizado na Udemy,
               utilizando HTML, SASS,Jquery, plugins Jquery, BootStrap e
@@ -78,7 +78,7 @@ const Projects = () => {
         </div>
         <div className="row">
           <S.TextContainer>
-            <S.ProjectTitle>Spider-Man: Miles Morales</S.ProjectTitle>
+            <S.ProjectTitle>Move.IT</S.ProjectTitle>
             <S.ProjectDescription>
               Uma aplicação desenvolvida durante um evento de programação.
               Utilizando ReactJS,Next,Styled-Components. Dei uma melhorada no
