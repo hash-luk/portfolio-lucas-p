@@ -36,7 +36,7 @@ const AboutMe = () => {
           Horizonte/MG. Desde criança sempre fui apaixonado por design e
           tecnologia então desde 2018 decidi investir na área. Iniciei os
           aprendizados em HTML e CSS, posteriormente aprendendo JavaScript. Atualmente cursando análise e desenvolvimento de sistemas, tenho maior experiência em desenvolvimento de aplicações utilizando React e Angular, mas estou iniciando os estudos em Vue.
-          Sou focado, disciplinado e adoro adquirir e passar experiências
+          Sou focado, disciplinado e adoro adquirir e passar experiências!
         </p>
       </div>
 

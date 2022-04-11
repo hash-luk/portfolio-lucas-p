@@ -54,11 +54,15 @@ export const Container = styled.div`
             margin-bottom: 1.875rem;
         }
 
+        span {
+            font-size: 1.8rem;
+        }
+
         p {
             width: 510px;
             height: 228px;
             color: #f2f2f2;
-            font-size: 1.375rem;
+            font-size: 1.3rem;
             text-align: right;
         }
     }

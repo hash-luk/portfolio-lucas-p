@@ -6,6 +6,7 @@ import TechStack from '../public/components/tech-stack'
 import Projects from '../public/components/projects'
 import GlobalStyle from '../styles/globalStyles'
 import Footer from '../public/components/footer'
+import BackToTopButton from '../public/components/back-to-top'
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <TechStack />
       <Projects />
       <Footer />
+      <BackToTopButton />
       <GlobalStyle />
     </>
   )
