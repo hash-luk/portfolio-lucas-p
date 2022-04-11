@@ -23,7 +23,7 @@ const AboutMe = () => {
   });
 
   return (
-    <S.Container>
+    <S.Container id="aboutme">
       <div className="shape"></div>
 
       <div className="profilePhoto">
@@ -32,13 +32,11 @@ const AboutMe = () => {
       <div className="content-text">
         <h2>Sobre</h2>
         <p>
-          Sou o Lucas Patrick, desenvolvedor front-end localizado em Belo
+          <span><b>Oi, sou o Lucas Patrick!</b></span><br /> Desenvolvedor front-end localizado em Belo
           Horizonte/MG. Desde criança sempre fui apaixonado por design e
           tecnologia então desde 2018 decidi investir na área. Iniciei os
-          aprendizados em HTML e CSS, posteriormente aprendendo o básico de
-          JavaScript. Atualmente cursando análise e desenvolvimento de sistemas
-          e atualmente focado em React, mas sou bastante flexivel quanto a
-          tecnologia e tenho rápido aprendizado
+          aprendizados em HTML e CSS, posteriormente aprendendo JavaScript. Atualmente cursando análise e desenvolvimento de sistemas, tenho maior experiência em desenvolvimento de aplicações utilizando React e Angular, mas estou iniciando os estudos em Vue.
+          Sou focado, disciplinado e adoro adquirir e passar experiências
         </p>
       </div>
 

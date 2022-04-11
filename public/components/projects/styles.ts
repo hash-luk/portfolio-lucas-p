@@ -3,6 +3,10 @@ import { motion } from "framer-motion";
 
 export const Container = styled.div`
     padding-top: 2.25rem;
+    
+    .link {
+        text-decoration: none;
+    }
 
     .row {
         width: 100%;
@@ -58,6 +62,8 @@ export const ProjectTitle = styled.h3`
     color: #F0F0F0;
     cursor: pointer;
     transition: all .2s ease;
+    text-decoration: none;
+
 
     :hover {
         transform: scale(1.1);

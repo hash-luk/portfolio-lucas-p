@@ -6,7 +6,6 @@ export const Container = styled.div`
     height: 100vh;
     position: relative;
     overflow: hidden;
-    
 
     .shape {
         position: relative;
@@ -19,7 +18,7 @@ export const Container = styled.div`
 
     .profilePhoto {
         position: absolute;
-        top: 22rem;
+        top: 21rem;
         left: 45rem;
         width: 310px;
         height: 300px;
@@ -35,19 +34,23 @@ export const Container = styled.div`
     .content-text {
         position: absolute;
         z-index: 4;
-        width: 500px;
+        width: 700px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        right: 45rem;
-        top: 20rem;
+        right: 30rem;
+        top: 18rem;
         user-select: none;
         -webkit-user-select: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
 
         h2 {
             font-size:3rem;
             line-height: 3.5rem;
+            text-align: right;
             color: #DDDDDD;
-            text-align: center;
             margin-bottom: 1.875rem;
         }
 
@@ -56,7 +59,7 @@ export const Container = styled.div`
             height: 228px;
             color: #f2f2f2;
             font-size: 1.375rem;
-            text-align: center;
+            text-align: right;
         }
     }
 

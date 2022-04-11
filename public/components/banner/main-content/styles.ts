@@ -8,6 +8,12 @@ export const Container = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    .a {
+         width:60px;
+         height: 60px;
+     }
+
+
     .nameDisplay {
         font-family: 'Inter',sans-serif;
         font-size: 2.5rem;
@@ -66,6 +72,7 @@ export const Container = styled.div`
             transform: scale(1.2);
         }
     }
+
 
     #icon {
         z-index: 6;

@@ -11,7 +11,9 @@ const BannerContent = () => {
             <S.Filter />
             <Image src={bgImage} alt="bgImage" className='bgImage' layout='fill' objectFit='cover'/>
             <p className='nameDisplay'>lucas<span>patrick</span></p>
-            <FontAwesomeIcon icon={faAngleDown} id="icon" size='2x' inverse/>
+            <a href="#aboutme" className='a'>
+                <FontAwesomeIcon icon={faAngleDown} id="icon" size='2x' inverse/>
+            </a>
         </S.Container>
     )
 }

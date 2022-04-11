@@ -15,18 +15,22 @@ const Projects = () => {
       <S.ProjectsContainer>
         <div className="row">
           <S.PreviewContainer>
-            <S.Filter />
-            <Image
-              src={spiderProjectImage}
-              alt=""
-              width={425}
-              height={322}
-              objectFit="cover"
-              className="img"
-            />
+            <a href="https://spider-man-home-page.vercel.app">
+              <S.Filter />
+              <Image
+                src={spiderProjectImage}
+                alt=""
+                width={425}
+                height={322}
+                objectFit="cover"
+                className="img"
+              />
+            </a>
           </S.PreviewContainer>
           <S.TextContainer>
-            <S.ProjectTitle>Spider-Man: Miles Morales</S.ProjectTitle>
+            <a href="https://spider-man-home-page.vercel.app" className="link">
+              <S.ProjectTitle>Spider-Man: Miles Morales</S.ProjectTitle>
+            </a>
             <S.ProjectDescription>
               Uma Landing page desenvolvida com
               HTML,CSS,JavaScript,Jquery,BootStrap e TiltJS. É uma página
@@ -36,7 +40,9 @@ const Projects = () => {
         </div>
         <div className="row">
           <S.TextContainer>
-            <S.ProjectTitle>Madeireira Mogno</S.ProjectTitle>
+            <a href="https://madeireira-mogno.vercel.app" className="link">
+              <S.ProjectTitle>Madeireira Mogno</S.ProjectTitle>
+            </a>
             <S.ProjectDescription>
               Um site completo desenvolvido em um trabalho de freelancer.
               Utilizando React, TypeScript, NodeMailer, Styled-Components e
@@ -44,31 +50,37 @@ const Projects = () => {
             </S.ProjectDescription>
           </S.TextContainer>
           <S.PreviewContainer>
-            <S.Filter />
-            <Image
-              src={madeireiraMognoProjectImage}
-              alt=""
-              width={425}
-              height={322}
-              objectFit="cover"
-              className="img"
-            />
+            <a href="https://madeireira-mogno.vercel.app">
+              <S.Filter />
+              <Image
+                src={madeireiraMognoProjectImage}
+                alt=""
+                width={425}
+                height={322}
+                objectFit="cover"
+                className="img"
+              />
+            </a>
           </S.PreviewContainer>
         </div>
         <div className="row">
           <S.PreviewContainer>
-            <S.Filter />
-            <Image
-              src={naBrasaProjectImage}
-              alt=""
-              width={425}
-              height={322}
-              objectFit="cover"
-              className="img"
-            />
+            <a href="https://na-brasa.vercel.app">
+              <S.Filter />
+              <Image
+                src={naBrasaProjectImage}
+                alt=""
+                width={425}
+                height={322}
+                objectFit="cover"
+                className="img"
+              />
+            </a>
           </S.PreviewContainer>
           <S.TextContainer>
-            <S.ProjectTitle>Na Brasa - Churrascaria</S.ProjectTitle>
+            <a href="https://na-brasa.vercel.app" className="link">
+              <S.ProjectTitle>Na Brasa - Churrascaria</S.ProjectTitle>
+            </a>
             <S.ProjectDescription>
               Um site desenvolvido durante um curso realizado na Udemy,
               utilizando HTML, SASS,Jquery, plugins Jquery, BootStrap e
@@ -78,7 +90,9 @@ const Projects = () => {
         </div>
         <div className="row">
           <S.TextContainer>
-            <S.ProjectTitle>Move.IT</S.ProjectTitle>
+            <a href="https://keep-in-action.vercel.app" className="link">
+              <S.ProjectTitle>Move.IT</S.ProjectTitle>
+            </a>
             <S.ProjectDescription>
               Uma aplicação desenvolvida durante um evento de programação.
               Utilizando ReactJS,Next,Styled-Components. Dei uma melhorada no
@@ -86,15 +100,17 @@ const Projects = () => {
             </S.ProjectDescription>
           </S.TextContainer>
           <S.PreviewContainer>
-            <S.Filter />
-            <Image
-              src={moveItProjectImage}
-              alt=""
-              width={425}
-              height={322}
-              objectFit="cover"
-              className="img"
-            />
+            <a href="https://keep-in-action.vercel.app">
+              <S.Filter />
+              <Image
+                src={moveItProjectImage}
+                alt=""
+                width={425}
+                height={322}
+                objectFit="cover"
+                className="img"
+              />
+            </a>
           </S.PreviewContainer>
         </div>
       </S.ProjectsContainer>
