@@ -11,6 +11,15 @@ const GlobalStyle = createGlobalStyle`
         font-size: 16px;
         overflow-x: hidden;
         background-color: #303030;
+
+        ::-webkit-scrollbar {
+            background: #303030;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #AF5CBC;
+        }
     }
 `
 

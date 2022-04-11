@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
     width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    
 
     .shape {
         position: relative;
@@ -12,7 +14,7 @@ export const Container = styled.div`
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-color: purple;
+        background-color: #AF5CBC;
     }
 
     .profilePhoto {
