@@ -93,6 +93,8 @@ export const Container = styled.div`
 
     .ball {
         background-color: #303030;
+        position: absolute;
+        z-index: 1;
         width: 100px;
         height: 100px;
         border-radius: 100%;

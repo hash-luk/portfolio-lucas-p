@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
     return(
-        <S.Container>
+        <S.Container id='contact'>
             <div className="content">
                 <div className="contact instagram">
                     <p>instagram</p>

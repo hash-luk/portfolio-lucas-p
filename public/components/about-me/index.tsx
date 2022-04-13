@@ -16,9 +16,9 @@ const AboutMe = () => {
   useEffect(() => {
     console.log("rodou");
     balls.forEach((ball) => {
-      ball.current.style.marginRight = `${Math.random() * 10}%`;
-      ball.current.style.marginLeft= `${Math.random() * 10}%`;
-      ball.current.style.marginTop = `${Math.random() * 10}%`;
+      ball.current.style.top = `${Math.random() * 100}%`;
+      ball.current.style.left= `${Math.random() * 10}%`;
+      ball.current.style.gap = `${Math.random() * 100}%`;
     });
   });
 

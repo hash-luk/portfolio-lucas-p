@@ -8,7 +8,7 @@ import madeireiraMognoProjectImage from "./projects/madeireira.png";
 
 const Projects = () => {
   return (
-    <S.Container>
+    <S.Container id="projects">
       <Title>
         PROJETO<span>S</span>
       </Title>
