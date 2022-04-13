@@ -6,22 +6,34 @@ export const Container = styled.div`
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: #AF5CBC;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    padding: 20px 0px;
 
-    .shape {
-        position: relative;
-        z-index: 3;
-        bottom: 0;
+    .content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         width: 100%;
         height: 100%;
-        background-color: #AF5CBC;
+        z-index: 4;
+
+        h2 {
+            font-size:3rem;
+            line-height: 3.5rem;
+            text-align: right;
+            color: #DDDDDD;
+            margin-bottom: 1.875rem;
+        }
     }
 
     .profilePhoto {
-        position: absolute;
-        top: 21rem;
-        left: 45rem;
-        width: 310px;
-        height: 300px;
+        width: 13.875rem;
+        height: 13.438rem;
         z-index: 4;
         transition: all .2s ease;
         border-radius: 50%;
@@ -32,38 +44,35 @@ export const Container = styled.div`
     }
 
     .content-text {
-        position: absolute;
-        z-index: 4;
-        width: 700px;
-        font-family: 'Roboto', sans-serif;
+        width: 55rem;
+        height: 14rem;
+
         font-weight: 400;
-        right: 30rem;
-        top: 18rem;
+        text-align: center;
         user-select: none;
         -webkit-user-select: none;
         display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
 
-        h2 {
-            font-size:3rem;
-            line-height: 3.5rem;
-            text-align: right;
-            color: #DDDDDD;
-            margin-bottom: 1.875rem;
-        }
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 0.5px solid #DADADADA;
+        border-radius: 15px;
+        transition: all .2s ease;
 
         span {
             font-size: 1.8rem;
         }
 
         p {
-            width: 510px;
-            height: 228px;
+            max-width: 53rem;
+            max-height: 13.188rem;
             color: #f2f2f2;
             font-size: 1.3rem;
-            text-align: right;
+        }
+
+        :hover {
+            background-color: rgba(0, 0, 0, 0.8);
         }
     }
 
@@ -72,8 +81,6 @@ export const Container = styled.div`
         width: 100px;
         height: 100px;
         border-radius: 100%;
-        position: absolute;
-        z-index: 3;
         overflow: hidden !important;
         animation: scaleAnimation 3s infinite;
 
