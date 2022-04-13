@@ -28,7 +28,7 @@ const BackToTopButton = () => {
   }, [scrollY]);
 
   return (
-    <B.BacktoTop href="#" ref={arrowUpElement}>
+    <B.BacktoTop href="#" ref={arrowUpElement} title="Voltar ao topo">
       <FontAwesomeIcon icon={faAngleUp} id="icon" size="4x" inverse />
     </B.BacktoTop>
   );

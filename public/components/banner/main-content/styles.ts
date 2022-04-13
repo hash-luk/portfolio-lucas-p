@@ -86,7 +86,7 @@ export const Container = styled.div`
         animation: jumpingIcon 2s infinite;
 
         :hover {
-            color: #AF5CBC;;
+            color: #AF5CBC;
         }
     }
 

@@ -5,6 +5,7 @@ import AboutMe from '../public/components/about-me'
 import TechStack from '../public/components/tech-stack'
 import Projects from '../public/components/projects'
 import GlobalStyle from '../styles/globalStyles'
+import Contact from '../public/components/contact'
 import Footer from '../public/components/footer'
 import BackToTopButton from '../public/components/back-to-top'
 
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
       <AboutMe />
       <TechStack />
       <Projects />
+      <Contact />
       <Footer />
       <BackToTopButton />
       <GlobalStyle />

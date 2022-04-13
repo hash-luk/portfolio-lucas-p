@@ -28,6 +28,23 @@ export const Container = styled.div`
             text-align: right;
             color: #DDDDDD;
             margin-bottom: 1.875rem;
+            transition: all .2s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+
+            span {
+                color: #303030;
+                transition: all .2s ease-in-out;
+            }
+
+            :hover {
+                transform: scale(1.1);
+                letter-spacing: .1rem;
+
+                span {
+                    color: #DDDDDD;
+                }
+            }
         }
     }
 
@@ -46,11 +63,8 @@ export const Container = styled.div`
     .content-text {
         width: 55rem;
         height: 14rem;
-
         font-weight: 400;
         text-align: center;
-        user-select: none;
-        -webkit-user-select: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -69,6 +83,7 @@ export const Container = styled.div`
             max-height: 13.188rem;
             color: #f2f2f2;
             font-size: 1.3rem;
+            line-height: 24px;
         }
 
         :hover {
