@@ -28,6 +28,7 @@ export const Container = styled.div`
         justify-content: space-evenly;
         padding-left: 2px;
         transition: all .3s ease;
+        transform: translateX(-300px);
 
         a {
             padding-left: 5px;

@@ -1,11 +1,12 @@
 import * as S from './styles'
-import { MutableRefObject, useRef, useState } from 'react';
+import { MutableRefObject, useRef, useState,useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState("closed");
+    const [width, setWidth] = useState(window.innerWidth);
     const hamburgerMenu = useRef() as MutableRefObject<HTMLDivElement>;
     const menuContainer = useRef() as MutableRefObject<HTMLDivElement>;
     
@@ -16,6 +17,16 @@ const Menu = () => {
             setIsOpen("closed");
         }
     }
+
+    useEffect(() => {
+        setWidth(window.innerWidth);
+
+        if(width <= 600) {
+            setIsOpen("closed");
+        } else {
+            setIsOpen("open");
+        }
+    },[width]);
 
     return(
         <S.Container>
