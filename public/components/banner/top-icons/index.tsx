@@ -5,7 +5,6 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TopIcons = () => {
-
     return(
         <S.Container>
             <a href="https://github.com/hash-luk">

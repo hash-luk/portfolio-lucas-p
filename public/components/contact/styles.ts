@@ -21,6 +21,7 @@ export const Container = styled.div`
         width: 10.563rem;
         height: 1.25rem;
         cursor: pointer;
+        text-decoration: none;
 
         p {
             color: #AFAFAF;

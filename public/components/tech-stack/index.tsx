@@ -25,10 +25,7 @@ const TechStack = () => {
 
     const balls = [ball1, ball2, ball3, ball4, ball5, ball6];
 
-    
-
     useEffect(() => {
-        console.log('rodou')
         balls.forEach(ball => {
             ball.current.style.left = `${Math.random() * 100}vw`;
             ball.current.style.top = `${Math.random() * 100}%`;

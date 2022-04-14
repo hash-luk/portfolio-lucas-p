@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 
 export const Container = styled.div`
@@ -12,7 +13,7 @@ export const Container = styled.div`
     position: absolute;
     z-index: 4;
     margin-top: 12px;
-
+    motion
     #icon {
         cursor: pointer;
         filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
@@ -47,3 +48,8 @@ export const Container = styled.div`
         padding-right: 15px;
     }
 `;
+
+export const Icon = styled(motion.div)`
+    width: 28px;
+    height: 28px;
+`
