@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState("closed");
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(0);
     const hamburgerMenu = useRef() as MutableRefObject<HTMLDivElement>;
     const menuContainer = useRef() as MutableRefObject<HTMLDivElement>;
     
