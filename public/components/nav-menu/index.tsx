@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Menu = () => {
     const [isOpen, setIsOpen] = useState("closed");
-    const [width, setWidth] = useState(0);
+    const [width, setWidth] = useState(1200);
     const hamburgerMenu = useRef() as MutableRefObject<HTMLDivElement>;
     const menuContainer = useRef() as MutableRefObject<HTMLDivElement>;
     
@@ -19,12 +19,18 @@ const Menu = () => {
     }
 
     useEffect(() => {
-        setWidth(window.innerWidth);
+        window.addEventListener('resize', () => {
+            setWidth(window.innerWidth);
+        })
 
         if(width <= 600) {
             setIsOpen("closed");
         } else {
             setIsOpen("open");
+        }
+
+        return () => {
+            removeEventListener('resize', () => {})
         }
     },[width]);
 
