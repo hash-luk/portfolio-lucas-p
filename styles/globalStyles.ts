@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
 
     html {
         font-size: 16px;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
         background-color: #303030;
         scroll-behavior: smooth;
 
@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
             background: #AF5CBC;
             border-radius: 15px;
         }
+    }
+
+    body { 
+        overflow: hidden;
     }
 
 `;

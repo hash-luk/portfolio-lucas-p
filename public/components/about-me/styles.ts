@@ -114,4 +114,54 @@ export const Container = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .profilePhoto {
+            width: 10rem;
+            height: 10.2rem;
+        }
+
+        .content-text {
+            width: 95%;
+            height: 20rem;
+            border: none;
+
+            p {
+                max-width: 90%;
+                font-size: 1rem;
+                text-align: left;
+            }
+        }
+
+        .ball {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .profilePhoto {
+            width: 10rem;
+            height: 10.2rem;
+        }
+
+        h2 {
+            font-size: 2rem !important;
+        }
+
+        .content-text {
+            width: 95%;
+            height: 20rem;
+            border: none;
+
+            p {
+                max-width: 90%;
+                font-size: 1rem;
+                text-align: left;
+            }
+        }
+
+        .ball {
+            display: none;
+        }
+    }
 `;

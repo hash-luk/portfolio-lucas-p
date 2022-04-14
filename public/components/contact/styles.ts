@@ -88,4 +88,19 @@ export const Container = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        height: 10rem;
+        width: 100vw;
+        margin-bottom: 10px;
+
+        .content {
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
 `

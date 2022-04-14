@@ -76,6 +76,12 @@ export const Container = styled.div`
             }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        .ball {
+            display: none;
+        }
+    }
 `
 
 export const Title = styled.h2`

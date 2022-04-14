@@ -41,4 +41,9 @@ export const Container = styled.div`
             color: #00a0dc;
         }
     }
+
+    @media screen and (max-width: 600px) {
+        justify-content: flex-end;
+        padding-right: 15px;
+    }
 `;

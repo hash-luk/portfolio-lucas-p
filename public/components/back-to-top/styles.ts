@@ -31,4 +31,11 @@ export const BacktoTop = styled.a`
             }
         }
     }
+
+    @media screen and (max-width: 600px) {
+        #icon {
+            width: 40px;
+            height: 40px;
+        }
+    }
 `

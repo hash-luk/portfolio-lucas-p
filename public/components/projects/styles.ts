@@ -13,15 +13,49 @@ export const Container = styled.div`
         height: 20.125rem;
         display: flex;
     }
+
+    @media screen and (max-width:768px) {
+        .row {
+            flex-direction: column;
+            width: 425px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .row {
+            flex-direction: column;
+            width: 425px;
+        }
+    }
 `
 
 export const ProjectsContainer = styled.div`
     width: 53.125rem;
     height: 80rem;
-    background-color: white;
     display: block;
     margin: 0 auto;
     margin-top: 2.25rem;
+
+    @media screen and (max-width: 768px) {
+        max-width: 100vw !important;
+        height: 90rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-width: 100vw !important;
+        height: 90rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
 `
 
 export const PreviewContainer = styled.div`
@@ -50,6 +84,18 @@ export const TextContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        background-color: transparent;
+        z-index: 4;
+    }
+
+    @media screen and (max-width: 600px) {
+        position: absolute;
+        background-color: transparent;
+        z-index: 4;
+    }
 `
 
 export const ProjectTitle = styled.h3`
@@ -85,4 +131,12 @@ export const Filter = styled.div`
     background-color: rgba(112, 111, 112, 0.4);
     position: absolute;
     z-index: 1;
+    
+    @media screen and (max-width: 768px) {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    @media screen and (max-width: 600px) {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 `

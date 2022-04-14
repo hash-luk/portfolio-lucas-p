@@ -1,10 +1,28 @@
 import * as S from './styles'
+import { MutableRefObject, useRef, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 
 const Menu = () => {
+    const [isOpen, setIsOpen] = useState("closed");
+    const hamburgerMenu = useRef() as MutableRefObject<HTMLDivElement>;
+    const menuContainer = useRef() as MutableRefObject<HTMLDivElement>;
+    
+    function handleClick() {
+        if(isOpen === "closed") {
+            setIsOpen("open");
+        } else {
+            setIsOpen("closed");
+        }
+    }
+
     return(
         <S.Container>
-            <div className='content'>
+            <div className='responsive-menu' ref={hamburgerMenu} onClick={handleClick}>
+                <FontAwesomeIcon icon={faBars} inverse id='icon'/>
+            </div>
+            <div className={`content ${isOpen}`} ref={menuContainer}>
                 <a href="#aboutme" >SOBRE</a>
                 <a href="#techstack" >TECH STACK</a>
                 <a href="#projects" >PROJETOS</a>
