@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from 'framer-motion';
 
 export const Container = styled.div`
     width: 9.875rem;
@@ -69,6 +70,22 @@ export const Container = styled.div`
     .open {
         transform: translateX(0px);
     }
+`
 
+export const a = styled(motion.a)`
+        padding-left: 5px;
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+        transition: all .2s ease;
+        border-left: 1px solid #fff;
 
+        :hover {
+            border-left: 3px solid #AF5CBC;
+            color: #AF5CBC;
+            transform: translateX(10px);
+            font-weight: 500;
+        }
 `

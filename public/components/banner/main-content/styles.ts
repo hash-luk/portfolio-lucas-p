@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
     width: 100vw;
@@ -7,12 +8,6 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    .a {
-         width:60px;
-         height: 60px;
-     }
-
 
     .nameDisplay {
         font-family: 'Inter',sans-serif;
@@ -83,6 +78,7 @@ export const Container = styled.div`
         height: 60px;
         filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.3));
         transition: all .2s ease-in-out;
+        
         animation: jumpingIcon 2s infinite;
 
         :hover {
@@ -92,13 +88,13 @@ export const Container = styled.div`
 
     @keyframes jumpingIcon {
         0% {
-            transform: translateY(0);
+            transform: translateY(0) ;
         }
         50% {
-            transform: translateY(-10px);
+            transform: translateY(-10px) ;
         }
         100% {
-            transform: translateY(0);
+            transform: translateY(0) ;
         }
     }
 `;
@@ -112,4 +108,10 @@ export const Filter = styled.div`
     z-index: 3;
     overflow-x: hidden !important;
     user-select: none;
+`
+
+export const linkIcon = styled(motion.a)`
+    width:60px;
+    height: 60px;
+
 `
