@@ -12,6 +12,7 @@ const GlobalStyle = createGlobalStyle`
         overflow-x: hidden !important;
         background-color: #303030;
         scroll-behavior: smooth;
+        max-width: 100vw;
 
         ::-webkit-scrollbar {
             background: #303030;
@@ -26,8 +27,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body { 
+        max-width: 100vw;
         overflow: hidden;
-        
     }
 
 `;

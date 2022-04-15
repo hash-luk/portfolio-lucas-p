@@ -26,12 +26,15 @@ const Menu = () => {
     }
   }
 
+
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWidth(window.innerWidth);
     });
 
-    if (width <= 600) {
+    setWidth(window.innerWidth);
+
+    if (width <= 613) {
       setIsOpen("closed");
     } else {
       setIsOpen("open");
