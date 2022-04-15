@@ -7,14 +7,49 @@ import naBrasaProjectImage from "./projects/na-brasa.png";
 import madeireiraMognoProjectImage from "./projects/madeireira.png";
 
 const Projects = () => {
+  const projectsRowAnimation = {
+    hidden: {
+      y: -100
+    },
+    visible: {
+      y: 0,
+    }
+  }
+
+  const projectsLeftAnimationPreview = {
+    hidden: {
+      x: -100,
+      opacity: 0
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 0.5
+      }
+    }
+  }
+
+  const projectsRightAnimationPreview = {
+    hidden: {
+      x: 100,
+      opacity: 0
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+  }
+}
+
   return (
     <S.Container id="projects">
       <Title>
         PROJETO<span>S</span>
       </Title>
-      <S.ProjectsContainer>
-        <div className="row">
-          <S.PreviewContainer>
+      <S.ProjectsContainer >
+        <S.Row variants={projectsRowAnimation} initial="hidden" whileInView="visible" viewport={{once:true}} >
+          <S.PreviewContainer variants={projectsLeftAnimationPreview} initial="hidden"
+            whileInView="visible" viewport={{once:true}}>
             <a href="https://spider-man-home-page.vercel.app">
               <S.Filter />
               <Image
@@ -27,7 +62,7 @@ const Projects = () => {
               />
             </a>
           </S.PreviewContainer>
-          <S.TextContainer>
+          <S.TextContainer variants={projectsRightAnimationPreview} initial="hidden" whileInView="visible" viewport={{once:true}}>
             <a href="https://spider-man-home-page.vercel.app" className="link">
               <S.ProjectTitle>Spider-Man: Miles Morales</S.ProjectTitle>
             </a>
@@ -37,19 +72,19 @@ const Projects = () => {
               fictícia porém com grandes aprendizados em relação a UX/UI
             </S.ProjectDescription>
           </S.TextContainer>
-        </div>
-        <div className="row">
-          <S.TextContainer>
+        </S.Row>
+        <S.Row>
+          <S.TextContainer variants={projectsLeftAnimationPreview} initial="hidden" whileInView="visible" viewport={{once:true}} transition={{delay: 0.2}}>
             <a href="https://madeireira-mogno.vercel.app" className="link">
               <S.ProjectTitle>Madeireira Mogno</S.ProjectTitle>
             </a>
-            <S.ProjectDescription>
+            <S.ProjectDescription >
               Um site completo desenvolvido em um trabalho de freelancer.
               Utilizando React, TypeScript, NodeMailer, Styled-Components e
               algumas bibliotecas React para estilização
             </S.ProjectDescription>
           </S.TextContainer>
-          <S.PreviewContainer>
+          <S.PreviewContainer variants={projectsRightAnimationPreview} initial="hidden" whileInView="visible" viewport={{once:true}} transition={{delay: 0.2}}>
             <a href="https://madeireira-mogno.vercel.app">
               <S.Filter />
               <Image
@@ -62,9 +97,10 @@ const Projects = () => {
               />
             </a>
           </S.PreviewContainer>
-        </div>
-        <div className="row">
-          <S.PreviewContainer>
+        </S.Row>
+        <S.Row>
+          <S.PreviewContainer variants={projectsLeftAnimationPreview} initial="hidden"
+            whileInView="visible" viewport={{once:true}} transition={{delay: 0.2}}>
             <a href="https://na-brasa.vercel.app">
               <S.Filter />
               <Image
@@ -77,7 +113,7 @@ const Projects = () => {
               />
             </a>
           </S.PreviewContainer>
-          <S.TextContainer>
+          <S.TextContainer variants={projectsRightAnimationPreview} initial="hidden" whileInView="visible" viewport={{once:true}} transition={{delay: 0.2}}>
             <a href="https://na-brasa.vercel.app" className="link">
               <S.ProjectTitle>Na Brasa - Churrascaria</S.ProjectTitle>
             </a>
@@ -87,9 +123,9 @@ const Projects = () => {
               Font-Awesome. Aprendizado gigantesco em prototipação
             </S.ProjectDescription>
           </S.TextContainer>
-        </div>
-        <div className="row">
-          <S.TextContainer>
+        </S.Row>
+        <S.Row>
+          <S.TextContainer variants={projectsLeftAnimationPreview} initial="hidden" whileInView="visible" viewport={{once:true}} transition={{delay: 0.2}}>
             <a href="https://keep-in-action.vercel.app" className="link">
               <S.ProjectTitle>Move.IT</S.ProjectTitle>
             </a>
@@ -99,7 +135,7 @@ const Projects = () => {
               projeto principal utilizando Firebase para autenticação
             </S.ProjectDescription>
           </S.TextContainer>
-          <S.PreviewContainer>
+          <S.PreviewContainer variants={projectsRightAnimationPreview} initial="hidden" whileInView="visible" viewport={{once:true}} transition={{delay: 0.2}}>
             <a href="https://keep-in-action.vercel.app">
               <S.Filter />
               <Image
@@ -112,7 +148,7 @@ const Projects = () => {
               />
             </a>
           </S.PreviewContainer>
-        </div>
+        </S.Row>
       </S.ProjectsContainer>
     </S.Container>
   );

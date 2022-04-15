@@ -7,26 +7,6 @@ export const Container = styled.div`
     .link {
         text-decoration: none;
     }
-
-    .row {
-        width: 100%;
-        height: 20.125rem;
-        display: flex;
-    }
-
-    @media screen and (max-width:768px) {
-        .row {
-            flex-direction: column;
-            width: 425px;
-        }
-    }
-
-    @media screen and (max-width: 600px) {
-        .row {
-            flex-direction: column;
-            width: 425px;
-        }
-    }
 `
 
 export const ProjectsContainer = styled.div`
@@ -57,8 +37,23 @@ export const ProjectsContainer = styled.div`
     }
 
 `
+export const Row = styled(motion.div)`
+    width: 100%;
+        height: 20.125rem;
+        display: flex;
 
-export const PreviewContainer = styled.div`
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+            width: 425px;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+            width: 425px;
+    }
+`
+
+export const PreviewContainer = styled(motion.div)`
     width: 26.563rem;
     height: 20.125rem;
     position: relative;
@@ -76,7 +71,7 @@ export const PreviewContainer = styled.div`
     }
 `
 
-export const TextContainer = styled.div`
+export const TextContainer = styled(motion.div)`
     width: 26.563rem;
     height: 20.125rem;
     background-color: #AB35AD;
