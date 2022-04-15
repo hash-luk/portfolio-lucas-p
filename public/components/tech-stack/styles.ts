@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.div`
     width: 100vw;
@@ -84,7 +85,7 @@ export const Container = styled.div`
     }
 `
 
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
     margin: 0 auto;
     max-width: 15rem;
     font-size: 2.25rem;
@@ -112,4 +113,11 @@ export const Title = styled.h2`
         color: #AB35AD;
         transition: color .3s ease-in-out;
     }
+`
+
+export const IconRow = styled(motion.div)`
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
 `
