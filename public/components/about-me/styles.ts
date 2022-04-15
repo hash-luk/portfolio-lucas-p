@@ -124,24 +124,20 @@ export const ContentText = styled(motion.div)`
   border-radius: 15px;
   transition: all 0.2s ease;
 
-  p {
-
-  }
-
   :hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   @media screen and (max-width: 768px) {
-    width: 95%;
-    height: 20rem;
-    border: none;
+    width: 95% !important;
+    height: 20rem !important;
+    border: none !important;
   }
 
   @media screen and (max-width: 600px) {
-    width: 95%;
-    height: 20rem;
-    border: none;
+    width: 95% !important;
+    height: 20rem !important;
+    border: none !important;
   }
 `;
 

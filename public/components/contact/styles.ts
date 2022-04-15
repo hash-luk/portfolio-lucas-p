@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -14,7 +15,7 @@ export const Container = styled.div`
         margin: 20px auto;
     }
 
-    .contact {
+    /* .contact {
         display:flex;
         align-items: center;
         justify-content: space-evenly;
@@ -34,7 +35,7 @@ export const Container = styled.div`
             transition: all .5s ease-in-out;
 
         }
-    }
+    } */
 
     .instagram {
 
@@ -104,4 +105,26 @@ export const Container = styled.div`
             margin: 0 auto;
         }
     }
+`
+
+export const Contact = styled(motion.div)`
+    display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 10.563rem;
+        height: 1.25rem;
+        cursor: pointer;
+        text-decoration: none;
+
+        p {
+            color: #AFAFAF;
+            transition: all .5s ease-in-out;
+
+        }
+
+        .icon {
+            opacity: 0;
+            transition: all .5s ease-in-out;
+
+        }
 `
