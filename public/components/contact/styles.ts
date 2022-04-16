@@ -5,6 +5,7 @@ export const Container = styled.div`
     width: 100vw;
     height: 5.125rem;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 
     .content {
         display:flex;
@@ -14,28 +15,6 @@ export const Container = styled.div`
         height: 90%;
         margin: 20px auto;
     }
-
-    /* .contact {
-        display:flex;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 10.563rem;
-        height: 1.25rem;
-        cursor: pointer;
-        text-decoration: none;
-
-        p {
-            color: #AFAFAF;
-            transition: all .5s ease-in-out;
-
-        }
-
-        .icon {
-            opacity: 0;
-            transition: all .5s ease-in-out;
-
-        }
-    } */
 
     .instagram {
 
@@ -128,3 +107,22 @@ export const Contact = styled(motion.div)`
 
         }
 `
+
+export const CopiedEmail = styled(motion.div)`
+    width: 150px;
+    height: 50px;
+    background-color: #88C425;
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius:15px;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+`   

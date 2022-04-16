@@ -1,4 +1,4 @@
-import * as S from './styles'
+import * as S from './styles';
 import { useRef, MutableRefObject } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagramSquare,faLinkedin,faGithubSquare } from '@fortawesome/free-brands-svg-icons';
@@ -9,6 +9,7 @@ const Contact = () => {
     const emailButton = useRef() as MutableRefObject<HTMLDivElement>
     const linkeinButton = useRef() as MutableRefObject<HTMLDivElement>
     const githubButton = useRef() as MutableRefObject<HTMLDivElement>
+    const copiedEmail = useRef() as MutableRefObject<HTMLDivElement>
 
     const linksAnimations = {
         hidden: {
@@ -27,7 +28,10 @@ const Contact = () => {
         } else if(destination === 'email'){ 
             let email = 'lucas.patrick2506@gmail.com'
             navigator.clipboard.writeText(email)
-            console.log('copiado')
+            copiedEmail.current.style.opacity = '1'
+            setTimeout(() => {
+                copiedEmail.current.style.opacity = '0'
+            } , 2000)
         } else if(destination === 'linkedin'){
             window.open('https://linkedin.com/in/lucas-patrick-p','_blank')
         } else if(destination === 'github'){
@@ -37,6 +41,9 @@ const Contact = () => {
  
     return(
         <S.Container id='contact'>
+            <S.CopiedEmail ref={copiedEmail}>
+                <p>Email copiado</p>
+            </S.CopiedEmail>
             <div className="content">
                 <S.Contact className="instagram" ref={instagramButton} onClick={()=> handleClick(instagramButton.current.title)} title='instagram'  variants={linksAnimations} initial="hidden" whileInView="visible" viewport={{once:true}} transition={{duration: 1}}>
                     <p>instagram</p>
