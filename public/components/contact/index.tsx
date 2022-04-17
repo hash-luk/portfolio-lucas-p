@@ -28,10 +28,13 @@ const Contact = () => {
         } else if(destination === 'email'){ 
             let email = 'lucas.patrick2506@gmail.com'
             navigator.clipboard.writeText(email)
-            copiedEmail.current.style.opacity = '1'
-            setTimeout(() => {
-                copiedEmail.current.style.opacity = '0'
-            } , 2000)
+
+            if(window.getComputedStyle(copiedEmail.current).opacity === '0'){
+                copiedEmail.current.style.opacity = '1'
+                setTimeout(() => {
+                    copiedEmail.current.style.opacity = '0'
+                } , 2000)
+            } 
         } else if(destination === 'linkedin'){
             window.open('https://linkedin.com/in/lucas-patrick-p','_blank')
         } else if(destination === 'github'){
