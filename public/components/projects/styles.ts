@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 
 export const ProjectsContainer = styled.div`
-    width: 53.125rem;
+    width: 52.125rem;
     height: 80rem;
     display: block;
     margin: 0 auto;
@@ -24,7 +24,7 @@ export const ProjectsContainer = styled.div`
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        padding: 0 20px;
+        padding: 0px 40px 0px 40px;
     }
 
     @media screen and (max-width: 600px) {
