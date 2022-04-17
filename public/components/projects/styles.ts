@@ -24,6 +24,7 @@ export const ProjectsContainer = styled.div`
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
+        padding: 0 20px;
     }
 
     @media screen and (max-width: 600px) {
