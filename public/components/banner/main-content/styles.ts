@@ -108,6 +108,10 @@ export const Filter = styled.div`
     z-index: 3;
     overflow-x: hidden !important;
     user-select: none;
+
+    @media screen and (max-width: 768px) {
+        height: 100vh;
+    }
 `
 
 export const linkIcon = styled(motion.a)`
