@@ -54,7 +54,7 @@
 
 ## Licença 📝
 
-[MIT]()
+[MIT](https://github.com/hash-luk/portfolio-lucas-p/blob/main/LICENSE)
 
 
 ## Final 🏁
