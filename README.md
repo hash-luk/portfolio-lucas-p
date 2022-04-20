@@ -1,6 +1,8 @@
 <h1 align="center">Portfólio - Lucas P</h1>
 <p align="center">Este é o projeto do meu portfólio pessoal</p>
 
+<img src="./public/assets/images/screenshot.png">
+
 <br/>
 
 ## O Projeto 👨🏼‍💻
