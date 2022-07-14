@@ -77,7 +77,7 @@ const AboutMe = () => {
       ball.current.style.left = `${Math.random() * 100}%`;
       ball.current.style.gap = `${Math.random() * 30}%`;
     });
-  },[]);
+  });
 
 
   return (
