@@ -9,6 +9,7 @@ import GlobalStyle from '../styles/globalStyles'
 import Contact from '../public/components/contact'
 import Footer from '../public/components/footer'
 import BackToTopButton from '../public/components/back-to-top'
+import Feedget from '../public/components/feedget'
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <Contact />
       <Footer />
       <BackToTopButton />
+      <Feedget />
       <GlobalStyle />
     </>
   )
