@@ -5,7 +5,7 @@ export const BacktoTop = styled.a`
     height: 4rem;
     position: fixed;
     z-index: 999;
-    right: 3.125rem;
+    left: 3.125rem;
     bottom: 3.125rem;
     text-align: center;
 
