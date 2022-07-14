@@ -11,6 +11,7 @@ import Footer from '../public/components/footer'
 import BackToTopButton from '../public/components/back-to-top'
 import Feedget from '../public/components/feedget'
 
+
 const Home: NextPage = () => {
   return (
     <>

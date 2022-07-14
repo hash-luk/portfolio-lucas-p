@@ -13,7 +13,7 @@ const FeedbackSuccessStep = ({
         <CloseButton />
       </header>
 
-      <div>
+      <div className="flex flex-col items-center py-10 w-[304px]">
         <svg
           width="37"
           height="36"
@@ -33,7 +33,11 @@ const FeedbackSuccessStep = ({
 
         <span>Agradeço o feedback!</span>
 
-        <button onClick={onFeedBackRestartRequested}>
+        <button
+          onClick={onFeedBackRestartRequested}
+          className="py-2 px-6 mt-6 bg-zinc-800 rounded-md border-transparent text-sm leading-6 hover:bg-zinc-700 transition-colors focus:border-brand-500
+         focus:ring-brand-500 focus:ring-1 resize-none focus:outline-none "
+        >
           Quero enviar outro feedback
         </button>
       </div>
