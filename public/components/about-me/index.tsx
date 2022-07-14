@@ -96,12 +96,12 @@ const AboutMe = () => {
           </S.Title>
         <S.ContentText className="content-text" variants={textBoxAnimation} initial="hidden" whileInView='visible' viewport={{once:true}}>
           <S.Text variants={textAnimation} initial="hidden" whileInView='visible'  viewport={{once:true}}>
-            Sou o Lucas Patrick, desenvolvedor front-end localizado em Belo
+            Sou o Lucas Patrick, desenvolvedor front-end morando em Belo
             Horizonte/MG. Desde criança sempre fui apaixonado por design e
             tecnologia então desde 2018 decidi investir na área. Iniciei os
             aprendizados em HTML e CSS, posteriormente aprendendo o básico de
             JavaScript. Atualmente cursando análise e desenvolvimento de
-            sistemas e como principal stack o React, mas sou bastante flexivel
+            sistemas e como principal tecnologia o React, mas sou bastante flexivel
             quanto a tecnologia e tenho rápido aprendizado. Sou focado,
             determinado, disciplinado e adoro aprender com as pessoas que
             possuem mais eperiência . Amo trabalhar em equipe pois acho que é
