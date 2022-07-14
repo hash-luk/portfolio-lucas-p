@@ -72,6 +72,10 @@ export const Container = styled.div`
       align-items: center;
       justify-content: space-between;
       margin-bottom: 10px;
+      background-color: #303030;
+      color: #fff;
+      border: none;
+      outline: none;
 
       .icon {
         width: 20px;

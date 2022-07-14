@@ -7,5 +7,8 @@ export const Container = styled(Popover)`
         display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #303030;
+        border: none;
+        outline: none;
     }
 `;

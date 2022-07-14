@@ -25,6 +25,9 @@ export const Container = styled(Popover)`
         justify-content: center;
         gap: 30px;
         font-weight: 400;
+        background-color: #303030;
+        border: none;
+        outline: none;
     }
 
     .chat-icon {

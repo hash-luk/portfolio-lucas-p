@@ -31,6 +31,7 @@ export function ScreenshotButton({
       <S.Container>
         <button
           type="button"
+          className="ss-button"
           onClick={() => onScreenShotTook(null)}
           style={{
             backgroundImage: `url(${screenShot})`,
