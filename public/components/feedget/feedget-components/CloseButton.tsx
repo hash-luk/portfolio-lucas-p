@@ -1,11 +1,12 @@
 import { Popover } from "@headlessui/react";
 import { X } from "phosphor-react";
+import * as S from "./styles";
 
 const CloseButton = () => {
     return(
-        <Popover.Button className="top-5 right-5 absolute text-zinc-400 hover:text-zinc-100" title="Fechar formulário de feedback">
+        <S.Container.Button className="close-button">
             <X className="w-4 h-4" weight="bold"/>
-        </Popover.Button>
+        </S.Container.Button>
     )
 }
 

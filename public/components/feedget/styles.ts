@@ -6,14 +6,15 @@ export const Container = styled(Popover)`
     right: 3.125rem;
     bottom: 3.125rem;
     width: fit-content;
-    background-color: red;
     z-index: 999;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    background-color: #af5cbc;
+    background-color: #303030;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out;
 
     .pop-button {
         color: #fff;
