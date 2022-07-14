@@ -119,14 +119,10 @@ export const ContentText = styled(motion.div)`
   justify-content: center;
   align-items: center;
 
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   border: 0.5px solid #dadadada;
   border-radius: 15px;
   transition: all 0.2s ease;
-
-  :hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
 
   @media screen and (max-width: 768px) {
     width: 95% !important;
