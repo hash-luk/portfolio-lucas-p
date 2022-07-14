@@ -45,7 +45,7 @@ export function FeedbackContentStep({
           onClick={onFeedBackRestartRequested}
           className="back-button"
         >
-          <ArrowLeft weight="bold" className="w-4 h-4" />
+          <ArrowLeft weight="bold" className="back-icon" />
         </button>
 
         <span className="text-xl relative leading-6 flex items-center gap-2">
@@ -61,9 +61,9 @@ export function FeedbackContentStep({
         <CloseButton />
       </header>
 
-      <form className="my-4 w-full" onSubmit={handleSubmitFeedback}>
+      <form onSubmit={handleSubmitFeedback}>
         <textarea
-        
+          rows={5}
           className="input-area"
           placeholder="Conte com detalhes o que está acontecendo..."
           onChange={(event) => setComment(event.target.value)}
@@ -73,10 +73,12 @@ export function FeedbackContentStep({
           <ScreenshotButton
             onScreenShotTook={setScreenShot}
             screenShot={screenShot}
+            className = "screenshot-button"
           />
 
           <button
             type="submit"
+            className="submit-button"
             disabled={comment.length === 0 || isSendingFeedback}
           >
             {isSendingFeedback ? <Loading /> : "Enviar feedback"}

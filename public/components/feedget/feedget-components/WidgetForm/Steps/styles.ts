@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  color: #fff !important;
+  font-family: "Roboto", sans-serif !important;
 
   header {
     width: 100%;
@@ -13,6 +13,20 @@ export const Container = styled.div`
     justify-content: center;
     gap: 50px;
     margin-bottom: 20px;
+
+    .back-button {
+      border: none;
+      outline: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    .back-icon {
+      background-color: #303030 !important;
+      border: none;
+      outline: none;
+      color: #fff;
+    }
 
     span {
       width: 100%;
@@ -29,31 +43,36 @@ export const Container = styled.div`
     resize: none;
     border-radius: 10px;
     color: #000;
-    padding: 5px;
+    padding: 10px 5px;
+    font-family: "Roboto", sans-serif !important;
   }
 
   .bottom-content {
-    width: 100%;
+    width: 100% !important;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px 0px;
 
-    button:first-child {
+    .screenshot-button {
       cursor: pointer;
-      width: 25%;
-      background-color: #af5cbc;
+      width: 25% !important;
+      background-color: transparent !important;
       height: 30px;
       border-radius: 8px;
+      border: 1px solid red
     }
 
-    button:last-child {
+    .submit-button {
       cursor: pointer;
-      width: 70%;
+      width: 70% !important;
       background-color: #af5cbc;
-      height: 30px;
+      height: 30px !important;
       border-radius: 8px;
+      color: #fff;
+      border: none;
+      outline: none;
     }
   }
 

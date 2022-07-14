@@ -28,6 +28,7 @@ export const Container = styled(Popover)`
         background-color: #303030;
         border: none;
         outline: none;
+        cursor: pointer;
     }
 
     .chat-icon {

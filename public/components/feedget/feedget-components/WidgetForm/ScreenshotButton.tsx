@@ -9,6 +9,7 @@ import * as S from "./styles";
 interface ScreenShotButtonProps {
   onScreenShotTook: (screenShot: string | null) => void;
   screenShot: string | null;
+  className?: string;
 }
 
 export function ScreenshotButton({
