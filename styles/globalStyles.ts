@@ -59,7 +59,6 @@ const GlobalStyle = createGlobalStyle`
         max-width: 100vw;
         overflow: hidden;
     }
-
 `;
 
 export default GlobalStyle;
