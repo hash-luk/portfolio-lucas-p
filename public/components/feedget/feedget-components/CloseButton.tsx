@@ -3,8 +3,8 @@ import * as S from "./styles";
 
 const CloseButton = () => {
     return(
-        <S.Container>
-            <X weight="bold" style={{cursor: "pointer"}}/>
+        <S.Container >
+            <X weight="bold"/>
         </S.Container>
     )
 }

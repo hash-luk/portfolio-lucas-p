@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { Popover } from "@headlessui/react";
 
-export const Container = styled(Popover)`
-  button {
-    width: 100%;
+export const Container = styled(Popover.Button)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,5 +9,5 @@ export const Container = styled(Popover)`
     border: none;
     outline: none;
     cursor: pointer;
-  }
+    color: #fff;
 `;
