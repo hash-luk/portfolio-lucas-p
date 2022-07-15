@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    .ss-button {
+    button {
         width: 100%;
         height: 100%;
         background-color: transparent !important;
+        border: none;
+        outline: none;
+        color: #fff;
+        cursor: pointer;
     }
 `;

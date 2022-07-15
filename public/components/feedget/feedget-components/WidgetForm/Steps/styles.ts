@@ -95,6 +95,7 @@ export const Container = styled.div`
       color: #fff;
       border: none;
       outline: none;
+      cursor: pointer;
 
       .icon {
         width: 20px;
