@@ -14,7 +14,7 @@ const Feedget = () => {
           <ChatTeardropDots className="chat-icon" />
           <span>
             <span></span>
-            Feedback
+            <span className="text">Feedback</span>
           </span>
         </S.Container.Button>
       </S.Container>

@@ -35,4 +35,19 @@ export const Container = styled(Popover)`
         width: 20px;
         height: 20px;
     }
+
+    @media screen and (max-width: 768px) {
+
+        .text {
+            display: none;
+        }
+
+        .pop-button {
+            width: 20px;
+            height: 20px;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 0;
+        }
+    }
 `;
