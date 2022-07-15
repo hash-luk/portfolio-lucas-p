@@ -43,7 +43,6 @@ const FeedbackSuccessStep = ({
           >
             Quero enviar outro feedback
           </button>
-
       </div>
     </S.Container>
   );

@@ -1,4 +1,5 @@
 import { FormEvent, useState } from "react";
+// import nodemailer from "nodemailer";
 import Image from "next/image";
 
 import { ArrowLeft } from "phosphor-react";
@@ -27,11 +28,11 @@ export function FeedbackContentStep({
 
   const feedBackTypesInfo = feedBackTypes[feedbackType];
 
-  async function handleSubmitFeedback(event: FormEvent) {
+  function handleSubmitFeedback(event: FormEvent) {
     event.preventDefault();
     setIsSendingFeedback(true);
 
-    console.log("Enviado");
+    console.log("Enviando feedback...");
 
     setIsSendingFeedback(false);
     onFeedbackSend();

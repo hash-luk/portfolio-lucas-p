@@ -131,7 +131,8 @@ export const Container = styled.div`
       background-color: #af5cbc;
       height: 70px;
       border-radius: 8px;
-      margin-top: 10px;
+      margin: 10px 0px;
+      color: #fff;
     }
   }
 `;
