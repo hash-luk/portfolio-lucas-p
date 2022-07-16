@@ -13,8 +13,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
-  },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "incremental": true,
+    "types": ["cypress", "node"]
+  },, "cypress/integration/home-page.spec.js"
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "cypress/integration/open-app.spec.js"],
   "exclude": ["node_modules"]
 }
