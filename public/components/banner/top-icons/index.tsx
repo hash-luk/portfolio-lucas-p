@@ -19,17 +19,17 @@ const TopIcons = () => {
     return(
         <S.Container>
             <S.Icon variants={variantscontainer} initial="hidden" animate="visible" transition={{duration: 1, bounce:0.2,type:"spring"}}>
-                <a href="https://github.com/hash-luk">
+                <a href="https://github.com/hash-luk" id='github-link'>
                     <FontAwesomeIcon icon={faGithub} id="icon" className='github-icon' size='2x' inverse/>
                 </a>
             </S.Icon>
             <S.Icon variants={variantscontainer} initial="hidden" animate="visible" transition={{duration: 1, bounce:0.2,type:"spring",delay:0.2}}>
-                <a href="https://instagram.com/lucasp_dev">
+                <a href="https://instagram.com/lucasp_dev" id='instagram-link'>
                     <FontAwesomeIcon icon={faInstagram} id="icon" className='instagram-icon' size='2x' inverse/>
                 </a>
             </S.Icon>
             <S.Icon variants={variantscontainer} initial="hidden" animate="visible" transition={{duration: 1, bounce:0.2,type:"spring",delay:0.4}}>
-                <a href="https://linkedin.com/in/lucas-patrick-p">
+                <a href="https://linkedin.com/in/lucas-patrick-p" id='linkedin-link'>
                     <FontAwesomeIcon icon={faLinkedin} id="icon" className='linkedin-icon' size='2x' inverse/>
                 </a>
             </S.Icon>
