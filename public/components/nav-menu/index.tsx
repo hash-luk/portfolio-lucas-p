@@ -26,7 +26,6 @@ const Menu = () => {
     }
   }
 
-
   useEffect(() => {
     window.addEventListener("resize", () => {
       setWidth(window.innerWidth);
@@ -55,10 +54,10 @@ const Menu = () => {
         <FontAwesomeIcon icon={faBars} inverse id="icon" />
       </div>
       <div className={`content ${isOpen}`} ref={menuContainer}>
-        <S.a href="#aboutme" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.2}}> SOBRE</S.a>
-        <S.a href="#techstack" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.4}}>TECH STACK</S.a>
-        <S.a href="#projects" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.6}}>PROJETOS</S.a>
-        <S.a href="#contact" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.8}}>CONTATO</S.a>
+        <S.a href="#aboutme" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.2}} id="about"> SOBRE</S.a>
+        <S.a href="#techstack" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.4}} id="tech-stack">TECH STACK</S.a>
+        <S.a href="#projects" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.6}} id="projects-link">PROJETOS</S.a>
+        <S.a href="#contact" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.8}} id="contact-link">CONTATO</S.a>
       </div>
     </S.Container>
   );
