@@ -15,7 +15,12 @@
     "jsx": "preserve",
     "incremental": true,
     "types": ["cypress", "node"]
-  },, "cypress/integration/home-page.spec.js"
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "cypress/integration/open-app.spec.js"],
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "cypress/integration/open-app.spec.js"
+  ],
   "exclude": ["node_modules"]
 }
