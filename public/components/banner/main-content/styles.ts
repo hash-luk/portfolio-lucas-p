@@ -21,50 +21,10 @@ export const Container = styled.div`
         span {
             color: #AF5CBC;
             font-weight: 500;
-            
-            :hover {
-                animation: colorSpinning 7s infinite;
-            }
-
-            @keyframes colorSpinning {
-                0% {
-                    color: #AF5CBC;
-                }
-                10% {
-                    color: #aa5573;
-                }
-                20% {
-                    color: #b18d4e;
-                }
-                30% {
-                    color: #a3bb44;
-                }
-                40% {
-                    color: #65c639;
-                }
-                50% {
-                    color: #35ca5a;
-                }
-                60% {
-                    color: #41bebc;
-                }
-                70% {
-                    color: #425cbd;
-                }
-                80% {
-                    color: #543fc0;
-                }
-                90% {
-                    color: #8e39c6;
-                }
-                100% {
-                    color: #AF5CBC;
-                }
-            }
         }
 
         :hover {
-            transform: scale(1.2);
+            transform: scale(1.05);
         }
     }
 
