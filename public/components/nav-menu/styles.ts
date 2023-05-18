@@ -42,8 +42,8 @@ export const Container = styled.div`
             border-left: 1px solid #fff;
 
             :hover {
-                border-left: 3px solid #AF5CBC;
-                color: #AF5CBC;
+                border-left: 3px solid #00DFFC;
+                color: #00DFFC;
                 transform: translateX(10px);
                 font-weight: 500;
             }

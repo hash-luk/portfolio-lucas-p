@@ -27,7 +27,7 @@ export const Container = styled.div`
 
     .github-icon {
         :hover {
-            color: #333;
+            color: #343838;
         }
     }
 
