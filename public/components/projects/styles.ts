@@ -11,10 +11,11 @@ export const Container = styled.div`
 
 export const ProjectsContainer = styled.div`
     width: 52.125rem;
-    height: 80rem;
+    height: fit-content;
     display: block;
     margin: 0 auto;
     margin-top: 2.25rem;
+    padding-bottom: 40px;
 
     @media screen and (max-width: 768px) {
         max-width: 100vw !important;

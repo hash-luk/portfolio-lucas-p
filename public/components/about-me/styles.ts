@@ -23,18 +23,6 @@ export const Container = styled.div`
     z-index: 4;
   }
 
-  .profilePhoto {
-    width: 13.875rem;
-    height: 13.438rem;
-    z-index: 4;
-    transition: all 0.2s ease;
-    border-radius: 50%;
-
-    :hover {
-      transform: scale(1.1);
-    }
-  }
-
   .ball {
     background-color: #303030;
     position: absolute;
@@ -82,7 +70,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled(motion.h2)`
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 3.5rem;
   text-align: center;
   color: #dddddd;
@@ -94,15 +82,6 @@ export const Title = styled(motion.h2)`
   span {
     color: #303030;
     transition: all 0.2s ease-in-out;
-  }
-
-  :hover {
-    transform: scale(1.1);
-    letter-spacing: 0.1rem;
-
-    span {
-      color: #dddddd;
-    }
   }
 
   @media screen and (max-width: 600px) {

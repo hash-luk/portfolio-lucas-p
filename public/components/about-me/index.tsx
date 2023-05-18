@@ -84,7 +84,7 @@ const AboutMe = () => {
     <S.Container id="aboutme">
       <div className="content">
           <S.Title variants={titleAnimation} initial="hidden" whileInView='visible' viewport={{once:true}}>
-            SOBR<span>E</span>
+            /SOBRE
           </S.Title>
         <S.ContentText className="content-text" variants={textBoxAnimation} initial="hidden" whileInView='visible' viewport={{once:true}}>
           <S.Text variants={textAnimation} initial="hidden" whileInView='visible'  viewport={{once:true}}>

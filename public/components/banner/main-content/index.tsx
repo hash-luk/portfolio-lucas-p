@@ -9,7 +9,6 @@ import { motion } from 'framer-motion';
 
 const BannerContent = () => {
     const options = {
-        string: ['Lucas', 'Patrick'],
         autoStart: true,
         loop: false,
         wrapperClassName: 'tyContainer'
@@ -34,7 +33,7 @@ const BannerContent = () => {
             <S.Filter />
             <Image src={bgImage} alt="Imagem de background" className='bgImage' layout='fill' objectFit='cover'/>
             <motion.div className='nameDisplay' variants={nameAnimation} initial="hidden" animate="visible" transition={{type:"spring"}}>
-                <Typewriter options={options} onInit={(typewritter) => {typewritter.typeString("Lucas Patrick").start().pauseFor(2500).typeString("<br /> Desenvolvedor <b>front-end</b>")}} />
+                <Typewriter options={options} onInit={(typewritter) => {typewritter.typeString("Oi, eu sou o <b>Lucas</b>").start().pauseFor(400).typeString('<br /> <span style="font-size: 1.9rem;">Desenvolvedor full-stack</span>').start()}} />
             </motion.div>
             <S.linkIcon href="#aboutme" className='linkicon'>
                 <FontAwesomeIcon icon={faAngleDown} id="icon" size='2x' inverse/>
