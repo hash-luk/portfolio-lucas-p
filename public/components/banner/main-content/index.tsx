@@ -1,5 +1,6 @@
 import * as S from './styles';
 import Image from 'next/image';
+import Typewriter from 'typewriter-effect';
 import bgImage from './assets/desk.jpg';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,8 +8,12 @@ import { motion } from 'framer-motion';
 
 
 const BannerContent = () => {
-    const lucas = 'l u c a s'
-    const patrick = 'p a t r i c k'
+    const options = {
+        string: ['Lucas', 'Patrick'],
+        autoStart: true,
+        loop: false,
+        wrapperClassName: 'tyContainer'
+    }
 
     const nameAnimation = {
         hidden: {
@@ -23,35 +28,14 @@ const BannerContent = () => {
         }
     }
 
-    const letter = {
-        hidden: {
-            opacity: 0,
-            y: -100
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-        }
-    }
-
 
     return(
         <S.Container>
             <S.Filter />
             <Image src={bgImage} alt="bgImage" className='bgImage' layout='fill' objectFit='cover'/>
             <motion.div className='nameDisplay' variants={nameAnimation} initial="hidden" animate="visible" transition={{type:"spring"}}>
-                {lucas.split("").map((char, index) => (
-                    <motion.p key={char + "-" + index} variants={letter} style={{display:'inline-block'}} >
-                        {char}
-                    </motion.p>
-                ))}
-                {patrick.split(" ").map((char, index) => (
-                    <motion.span key={char + "-" + index} variants={letter}>
-                        {char}
-                    </motion.span>
-                ))}
+                <Typewriter options={options} onInit={(typewritter) => {typewritter.typeString("Lucas Patrick").start().pauseFor(2500).typeString("<br /> Desenvolvedor <b>front-end</b>")}} />
             </motion.div>
-
             <S.linkIcon href="#aboutme" className='linkicon'>
                 <FontAwesomeIcon icon={faAngleDown} id="icon" size='2x' inverse/>
             </S.linkIcon>

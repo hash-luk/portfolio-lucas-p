@@ -83,14 +83,6 @@ const AboutMe = () => {
   return (
     <S.Container id="aboutme">
       <div className="content">
-        <div className="profilePhoto">
-          <Image
-            src={profilePhoto}
-            alt="profilePhoto"
-            width={310}
-            height={310}
-          />
-        </div>
           <S.Title variants={titleAnimation} initial="hidden" whileInView='visible' viewport={{once:true}}>
             SOBR<span>E</span>
           </S.Title>

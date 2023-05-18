@@ -17,14 +17,15 @@ export const Container = styled.div`
         color: #DDDDDD;
         user-select: none;
         transition: all .2s ease;
+        text-align: center;
         
         span {
-            color: #AF5CBC;
+            color: #fff;
             font-weight: 500;
         }
 
-        :hover {
-            transform: scale(1.05);
+        b {
+            color: #00DFFC;
         }
     }
 
