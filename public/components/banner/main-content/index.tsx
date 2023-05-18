@@ -32,7 +32,7 @@ const BannerContent = () => {
     return(
         <S.Container>
             <S.Filter />
-            <Image src={bgImage} alt="bgImage" className='bgImage' layout='fill' objectFit='cover'/>
+            <Image src={bgImage} alt="Imagem de background" className='bgImage' layout='fill' objectFit='cover'/>
             <motion.div className='nameDisplay' variants={nameAnimation} initial="hidden" animate="visible" transition={{type:"spring"}}>
                 <Typewriter options={options} onInit={(typewritter) => {typewritter.typeString("Lucas Patrick").start().pauseFor(2500).typeString("<br /> Desenvolvedor <b>front-end</b>")}} />
             </motion.div>
