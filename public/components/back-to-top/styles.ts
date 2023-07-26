@@ -13,22 +13,9 @@ export const BacktoTop = styled.a`
         filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.3));
         transition: all .2s ease;
         cursor: pointer;
-        animation: scalingIcon 3s ease-in-out infinite;
 
         :hover {
-            transform: scale(1.2);
-        }
-
-        @keyframes scalingIcon {
-            0% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1);
-            }
+            color: #00DFFC;
         }
     }
 
