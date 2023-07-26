@@ -34,7 +34,7 @@ export const Container = styled.div`
         a {
             padding-left: 5px;
             text-decoration: none;
-            color: #fff;
+            color: ${props => props.theme.colors.white};
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
@@ -43,7 +43,7 @@ export const Container = styled.div`
 
             :hover {
                 border-left: 3px solid #00DFFC;
-                color: #00DFFC;
+                color: ${props => props.theme.colors.white};
                 transform: translateX(10px);
                 font-weight: 500;
             }
