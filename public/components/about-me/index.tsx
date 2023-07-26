@@ -4,15 +4,6 @@ import { MutableRefObject, useEffect, useRef,useState } from "react";
 import profilePhoto from "../../../public/assets/images/profile-photo.svg";
 
 const AboutMe = () => {
-  const ball1 = useRef() as MutableRefObject<HTMLDivElement>;
-  const ball2 = useRef() as MutableRefObject<HTMLDivElement>;
-  const ball3 = useRef() as MutableRefObject<HTMLDivElement>;
-  const ball4 = useRef() as MutableRefObject<HTMLDivElement>;
-  const ball5 = useRef() as MutableRefObject<HTMLDivElement>;
-  const ball6 = useRef() as MutableRefObject<HTMLDivElement>;
-
-  const balls = [ball1, ball2, ball3, ball4, ball5, ball6];
-
   let titleAnimation = {}
   let textAnimation = {}
   let textBoxAnimation = {}
@@ -71,15 +62,6 @@ const AboutMe = () => {
   })
 
 
-  useEffect(() => {
-    balls.forEach((ball) => {
-      ball.current.style.top = `${Math.random() * 100}vw`;
-      ball.current.style.left = `${Math.random() * 100}%`;
-      ball.current.style.gap = `${Math.random() * 30}%`;
-    });
-  });
-
-
   return (
     <S.Container id="aboutme">
       <div className="content">
@@ -101,13 +83,6 @@ const AboutMe = () => {
           </S.Text>
         </S.ContentText>
       </div>
-
-      <div className="ball" ref={ball1}></div>
-      <div className="ball" ref={ball2}></div>
-      <div className="ball" ref={ball3}></div>
-      <div className="ball" ref={ball4}></div>
-      <div className="ball" ref={ball5}></div>
-      <div className="ball" ref={ball6}></div>
     </S.Container>
   );
 };

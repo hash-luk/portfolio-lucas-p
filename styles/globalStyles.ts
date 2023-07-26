@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     html {
         font-size: 16px;
         overflow-x: hidden !important;
-        background-color: #303030;
+        background-color: ${props => props.theme.colors.background};
         scroll-behavior: smooth;
         max-width: 100vw;
     }

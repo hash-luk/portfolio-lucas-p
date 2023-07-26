@@ -6,7 +6,6 @@ export const Container = styled.div`
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background-color: #af5cbc;
   display: flex;
   font-family: "Roboto", sans-serif;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
