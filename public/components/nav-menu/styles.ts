@@ -42,7 +42,7 @@ export const Container = styled.div`
             border-left: 1px solid #fff;
 
             :hover {
-                border-left: 3px solid #00DFFC;
+                border-left: 3px solid ${props => props.theme.colors.primaryBlue};
                 color: ${props => props.theme.colors.white};
                 transform: translateX(10px);
                 font-weight: 500;
