@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import Image from "next/image";
-import { MutableRefObject, useEffect, useRef,useState } from "react";
+import {useEffect} from "react";
 import profilePhoto from "../../../public/assets/images/profile-photo.svg";
 
 const AboutMe = () => {

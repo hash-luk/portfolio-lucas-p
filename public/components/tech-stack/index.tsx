@@ -1,6 +1,5 @@
 import * as S from "./styles";
 import Image from "next/image";
-import { MutableRefObject, useRef, useEffect } from "react";
 import ReactIcon from "../../../public/assets/icons/react.png";
 import SassIcon from "../../../public/assets/icons/sass.png";
 import JSIcon from "../../../public/assets/icons/js.png";
