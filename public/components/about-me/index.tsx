@@ -1,88 +1,55 @@
 import * as S from "./styles";
 import Image from "next/image";
-import {useEffect} from "react";
-import profilePhoto from "../../../public/assets/images/profile-photo.svg";
+import Link from 'next/link';
+import { Github } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import profilePhoto from "../../assets/images/profile-photo.jpg";
 
 const AboutMe = () => {
-  let titleAnimation = {}
-  let textAnimation = {}
-  let textBoxAnimation = {}
-
-  useEffect(() => {
-    let windowWidth = window.innerWidth < 768;
-
-    if (!windowWidth) {
-      titleAnimation = {
-        hidden: {
-          x: -20,
-          opacity: 0,
-        },
-        visible: {
-          x: 0,
-          opacity: 1,
-          transition: {
-            duration: 2,
-            type:'tween',
-          }
-        }
-      },
-      textAnimation = {
-        hidden: {
-          opacity: 0
-        },
-        visible: {
-          opacity: 1,
-          transition: {
-            duration: 1,
-            delay: 0.2,
-            stiffness: 100,
-          }
-        }
-      },
-      textBoxAnimation = {
-        hidden: {
-          width: 0,
-          backgroundColor: 'transparent',
-          border: 'none',
-        },
-        visible: {
-          width: '55rem',
-          backgroundColor: 'rgba(0, 0, 0, 0.5)',
-          border: '1px solid #fff',
-    
-          transition: {
-            duration: 1,
-            type:"tween",
-            stiffness: 100,
-            clamp: false,
-          }
-        }
-      }
-    }
-  })
-
-
   return (
     <S.Container id="aboutme">
-      <div className="content">
-          <S.Title variants={titleAnimation} initial="hidden" whileInView='visible' viewport={{once:true}}>
-            /SOBRE
-          </S.Title>
-        <S.ContentText className="content-text" variants={textBoxAnimation} initial="hidden" whileInView='visible' viewport={{once:true}}>
-          <S.Text variants={textAnimation} initial="hidden" whileInView='visible'  viewport={{once:true}}>
-            Sou o Lucas Patrick, desenvolvedor front-end morando em Belo
-            Horizonte/MG. Desde criança sempre fui apaixonado por design e
-            tecnologia então desde 2018 decidi investir na área. Iniciei os
-            aprendizados em HTML e CSS, posteriormente aprendendo o básico de
-            JavaScript. Atualmente cursando análise e desenvolvimento de
-            sistemas e como principal tecnologia o React, mas sou bastante flexivel
-            quanto a tecnologia e tenho rápido aprendizado. Sou focado,
-            determinado, disciplinado e adoro aprender com as pessoas que
-            possuem mais eperiência . Amo trabalhar em equipe pois acho que é
-            mais incentivante.
-          </S.Text>
+      <S.Card>
+        <Image
+          src={profilePhoto}
+          alt="Foto que ilustra o desenvolvedor Lucas, de terno azul marinho, em um fundo florido, durante um evento"
+          width={300}
+          height={400}
+          loading="lazy"
+          style={{ objectFit: "contain" }}
+        />
+        <S.ContentText>
+          <h4>Quem sou eu</h4>
+          <h3>Lucas Patrick</h3>
+          <p>Desenvolvedor Front-End e aspirante a UI/UX Designer</p>
+          <span>
+            Olá me chamo Lucas Patrick, sou desenvolvedor front-end a 5 anos
+            atualmente atuando pela SOMOS educação. Sou apaixonado por desenvolvimento
+            e design, mesmo não sendo tão experiente na área de design mas me aprofundando a cada dia.
+            Começando minha carreira com HTML, CSS e JavaScript, hoje tenho conhecimento e grande parte das
+            ferramentas utilizadas para o desenvolvimento front-end como: React, Next, CSS-IN-JS, TypeScript
+            dentre outras. Sempre estou em busca de aprofundar meus conhecimentos ou aprender algo novo.
+            Meu objetivo é colaborar em projetos desafiadores, contribuindo com soluções inovadoras, modernas,
+            performáticas e intuitivas ao usuário, tudo isso se preocupando com SEO, responsividade e acessibilidade.
+
+            <br />
+            <br />
+
+            Que tal construirmos algo incrível juntos?
+          </span>
         </S.ContentText>
-      </div>
+      </S.Card>
+      <S.Card width="80px" padding="0" flexDirection="column">
+        <Link href="https://www.github.com/hash-luk" className="redirect-link">
+          <Github size={32}  strokeWidth={1} className="link-icon"/>
+        </Link>
+        <Link href="https://www.linkedin.com/in/lucas-patrick-p" className="redirect-link">
+          <Linkedin size={32}  strokeWidth={1} className="link-icon"/>
+        </Link>
+        <Link href="https://www.instagram.com/lkc_lucasp/" className="redirect-link">
+          <Instagram size={32}  strokeWidth={1} className="link-icon"/>
+        </Link>
+      </S.Card>
     </S.Container>
   );
 };

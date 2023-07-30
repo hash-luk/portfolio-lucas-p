@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import Menu from "../public/components/nav-menu";
-import TopIcons from "../public/components/banner/top-icons";
 import BannerContent from "../public/components/banner/main-content";
 import AboutMe from "../public/components/about-me";
 import TechStack from "../public/components/tech-stack";
@@ -23,7 +22,6 @@ const Home: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <Menu />
-      <TopIcons />
       <BannerContent />
       <AboutMe />
       <TechStack />

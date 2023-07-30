@@ -1,58 +1,23 @@
-import { motion } from "framer-motion";
 import styled from "styled-components";
+
+interface styledProps {
+  width?: string,
+  padding?: string,
+  flexDirection?: string
+}
 
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
   display: flex;
-  font-family: "Roboto", sans-serif;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-  padding: 20px 0px;
-
-  .content {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 100%;
-    z-index: 4;
-  }
-
-  .ball {
-    background-color: #303030;
-    position: absolute;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    overflow: hidden !important;
-    animation: scaleAnimation 3s infinite;
-
-    @keyframes scaleAnimation {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-  }
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 
   @media screen and (max-width: 768px) {
     .profilePhoto {
       width: 10rem;
       height: 10.2rem;
-    }
-
-    .ball {
-      display: none;
     }
   }
 
@@ -61,14 +26,41 @@ export const Container = styled.div`
       width: 10rem;
       height: 10.2rem;
     }
+  }
+`;
 
-    .ball {
-      display: none;
+export const Card = styled.div<styledProps>`
+  width: ${props => props.width || '100%'};
+  max-width: 1140px;
+  height: 420px;
+  display: flex;
+  flex-direction: ${props => props.flexDirection || 'row'};
+  align-items: center;
+  justify-content: center;
+  border: 2px solid ${(props) => props.theme.colors.black100};
+  border-radius: 8px;
+  padding: ${props => props.padding || '8px 16px'};
+
+  .redirect-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 16px 0;
+
+    .link-icon {
+      color: ${(props) => props.theme.colors.baseTextColor};
+      transition: all .2s ease-in;
+
+      :hover {
+        color: ${(props) => props.theme.colors.primaryBlue};
+      }
     }
   }
 `;
 
-export const Title = styled(motion.h2)`
+export const Title = styled.h2`
   font-size: 2rem;
   line-height: 3.5rem;
   text-align: center;
@@ -88,54 +80,68 @@ export const Title = styled(motion.h2)`
   }
 `;
 
-export const ContentText = styled(motion.div)`
-  width: 55rem;
-  height: 14rem;
+export const ContentText = styled.div`
+  width: 100%;
+  height: 100%;
   font-weight: 400;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 16px;
 
-  background-color: rgba(0, 0, 0, 0.8);
-  border: 0.5px solid #dadadada;
-  border-radius: 15px;
-  transition: all 0.2s ease;
-
-  @media screen and (max-width: 768px) {
-    width: 95% !important;
-    height: 20rem !important;
-    border: none !important;
+  h4,p {
+    font-size: 20px;
+    line-height: 22px;
   }
 
-  @media screen and (max-width: 600px) {
-    width: 95% !important;
-    height: 20rem !important;
-    border: none !important;
+  h4 {
+    color: ${(props) => props.theme.colors.primaryBlue};
+  }
+
+  h4,h3 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
+
+  h3,p,span {
+    color: ${(props) => props.theme.colors.white};
+    font-weight: normal;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+
+  span {
+    font-size: 22px;
+    line-height: 24px;
+    color: ${(props) => props.theme.colors.baseGrayText};
   }
 `;
 
-export const Text = styled(motion.p)`
-    max-width: 53rem;
-    max-height: 13.188rem;
-    color: #f2f2f2;
-    font-size: 1.3rem;
-    line-height: 24px;
-    transition: all 4s ease;
-    animation: opacityTransition 10s ease forwards;
+export const Text = styled.p`
+  max-width: 53rem;
+  max-height: 13.188rem;
+  color: #f2f2f2;
+  font-size: 1.3rem;
+  line-height: 24px;
+  transition: all 4s ease;
+  animation: opacityTransition 10s ease forwards;
 
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+    font-size: 1rem;
+    text-align: left;
+  }
 
-
-    @media screen and (max-width: 768px) {
-      max-width: 90%;
-      font-size: 1rem;
-      text-align: left;
-    }
-
-
-    @media screen and (max-width: 600px) {
-      max-width: 90%;
-      font-size: 1rem;
-      text-align: left;
-    }
-`
+  @media screen and (max-width: 600px) {
+    max-width: 90%;
+    font-size: 1rem;
+    text-align: left;
+  }
+`;
