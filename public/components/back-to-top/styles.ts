@@ -5,8 +5,8 @@ export const BacktoTop = styled.div`
     height: 3.5rem;
     position: fixed;
     z-index: 999;
-    left: 3.125rem;
-    bottom: 3.125rem;
+    left: 4rem;
+    bottom: 4rem;
     text-align: center;
     background-color: ${props => props.theme.colors.white};
     border-radius: 8px;
