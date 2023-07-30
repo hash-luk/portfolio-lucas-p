@@ -4,33 +4,38 @@ import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const BackToTopButton = () => {
-  const [scrollY, setScrollY] = useState(0);
-  const arrowUpElement = useRef() as MutableRefObject<HTMLAnchorElement>;
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setIsVisible(scrollTop > 300);
+  }
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-
-      if (scrollY >= 300) {
-        arrowUpElement.current.style.display = "block";
-      } else {
-        arrowUpElement.current.style.display = "none";
-      }
-    };
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [scrollY]);
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
 
   return (
-    <B.BacktoTop href="#" ref={arrowUpElement} title="Voltar ao topo" id="back-to-top">
-      <FontAwesomeIcon icon={faAngleUp} id="icon" size="4x" inverse />
-    </B.BacktoTop>
+    <>
+      {
+        isVisible && (
+          <B.BacktoTop title="Voltar ao topo" id="back-to-top" onClick={scrollToTop}>
+            <FontAwesomeIcon icon={faAngleUp} id="icon" size="3x"/>
+          </B.BacktoTop>
+        )
+      }
+    </>
   );
 };
 
