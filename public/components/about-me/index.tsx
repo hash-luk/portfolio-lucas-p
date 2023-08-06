@@ -1,10 +1,8 @@
-import * as S from "./styles";
 import Image from "next/image";
 import Link from 'next/link';
-import { Github } from 'lucide-react';
-import { Linkedin } from 'lucide-react';
-import { Instagram } from 'lucide-react';
+import { Github,Instagram,Linkedin  } from 'lucide-react';
 import profilePhoto from "../../assets/images/profile-photo.jpg";
+import * as S from "./styles";
 
 const AboutMe = () => {
   return (
