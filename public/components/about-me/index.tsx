@@ -38,14 +38,14 @@ const AboutMe = () => {
         </S.ContentText>
       </S.Card>
       <S.Card width="80px" padding="0" flexDirection="column">
-        <Link href="https://www.github.com/hash-luk" className="redirect-link">
-          <Github size={32}  strokeWidth={1} className="link-icon"/>
+        <Link href="https://www.github.com/hash-luk" className="redirect-link" title="Github">
+          <Github size={32}  strokeWidth={1} className="link-icon" data-name="github"/>
         </Link>
-        <Link href="https://www.linkedin.com/in/lucas-patrick-p" className="redirect-link">
-          <Linkedin size={32}  strokeWidth={1} className="link-icon"/>
+        <Link href="https://www.linkedin.com/in/lucas-patrick-p" className="redirect-link" title="LinkedIN">
+          <Linkedin size={32}  strokeWidth={1} className="link-icon" data-name="linkedin"/>
         </Link>
-        <Link href="https://www.instagram.com/lkc_lucasp/" className="redirect-link">
-          <Instagram size={32}  strokeWidth={1} className="link-icon"/>
+        <Link href="https://www.instagram.com/lkc_lucasp/" className="redirect-link" title="Instagram">
+          <Instagram size={32}  strokeWidth={1} className="link-icon" data-name="instagram"/>
         </Link>
       </S.Card>
     </S.Container>

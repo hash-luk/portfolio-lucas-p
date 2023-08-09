@@ -53,8 +53,16 @@ export const Card = styled.div<styledProps>`
       color: ${(props) => props.theme.colors.baseTextColor};
       transition: all .2s ease-in;
 
-      :hover {
-        color: ${(props) => props.theme.colors.primaryBlue};
+      &[data-name='github']:hover {
+        color: ${(props) => props.theme.colors.lightGray};
+      }
+
+      &[data-name='linkedin']:hover {
+        color: ${(props) => props.theme.colors.darkCyan};
+      }
+
+      &[data-name='instagram']:hover {
+        color: ${(props) => props.theme.colors.darkPink};
       }
     }
   }

@@ -8,7 +8,10 @@ const theme: DefaultTheme = {
         primaryBlue: '#00DFFC',
         baseTextColor: '#a8a8b3',
         baseGrayText: '#9ca3af',
-        white: '#fff'
+        white: '#fff',
+        lightGray: '#f5f5f5',
+        darkPink: '#C13584',
+        darkCyan: '#0e76a8'
     }
 }
 
