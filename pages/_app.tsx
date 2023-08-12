@@ -1,20 +1,17 @@
 import type { AppProps } from "next/app";
-import { NTR, Neonderthaw } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import Head from "next/head";
 
-const ntr = NTR({
-  weight: '400',
+const inter = Inter({
+  weight: ["100", "200", "400", "600", "700"],
   subsets: ['latin']
 })
 
-const neotw = Neonderthaw({
-  weight: '400',
-  subsets: ['latin']
-})
+
 
 function MyApp({ Component }: AppProps) {
   return (
-    <main className={ntr.className + "," + neotw.className}>
+    <main className={inter.className}>
       <Head>
         <title>Lucas Patrick &bull; Dev</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

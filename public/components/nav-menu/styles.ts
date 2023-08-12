@@ -19,7 +19,7 @@ export const Nav = styled.nav`
 `;
 
 export const NeonTitle = styled.a`
-  font-size: 2.1rem;
+  font-size: 3rem;
   padding: 8px 16px;
   text-align: center;
   color: ${(props) => props.theme.colors.primaryBlue};

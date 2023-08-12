@@ -1,83 +1,81 @@
-import styled from "styled-components";
 import { motion } from "framer-motion";
+import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
+    gap: 32px;
+    position: relative;
 
     .nameDisplay {
-        font-family: 'Inter',sans-serif;
-        font-size: 2.5rem;
-        font-weight: 100;
-        z-index: 6;
-        color: #DDDDDD;
-        user-select: none;
         transition: all .2s ease;
-        text-align: center;
-        
-        span {
-            color: #fff;
-            font-weight: 500;
-            font-size: 2.8rem;
-        }
-
-        b {
-            color: #00DFFC;
-        }
-    }
-
-
-    #icon {
-        z-index: 6;
-        position: absolute;
-        bottom: 0.75rem;
-        cursor: pointer;
-        width: 60px;
-        height: 60px;
-        filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.3));
-        transition: all .2s ease-in-out;
-        
-        animation: jumpingIcon 2s infinite;
-
-        :hover {
-            color: #00DFFC;
-        }
-    }
-
-    @keyframes jumpingIcon {
-        0% {
-            transform: translateY(0) ;
-        }
-        50% {
-            transform: translateY(-10px) ;
-        }
-        100% {
-            transform: translateY(0) ;
-        }
+        width: 50%;
     }
 `;
 
 
-export const Filter = styled.div`
-    width: 100vw;
+export const OffDiv = styled.div`
+    width: 50%;
     height: 100%;
-    background-color: rgba(20,20,20,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     position: absolute;
-    z-index: 3;
-    overflow-x: hidden !important;
-    user-select: none;
+    right: 0;
+    top: 0;
+`
 
-    @media screen and (max-width: 768px) {
-        height: 100vh;
+export const H1 = styled(motion.h1)`
+    font-size: 5rem;
+    color: ${props => props.theme.colors.white};
+
+    b {
+        color: ${props => props.theme.colors.cyan100} !important;
     }
+`;
+
+export const p = styled(motion.p)`
+    font-size: 3rem;
+    color: ${props => props.theme.colors.white};
 `
 
-export const linkIcon = styled(motion.a)`
-    width:60px;
-    height: 60px;
+export const TypeWritterDiv = styled(motion.div)`
+    width: 100%;
+    height: fit-content;
+    padding-top: 16px;
 
-`
+    span {
+        font-size: 2.5rem;
+        color: ${props => props.theme.colors.baseGrayText};
+    }
+`;
+
+export const MoreAnchor = styled.a`
+    width: 170px;
+    height: 50px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: ${props => props.theme.colors.cyan100};
+    text-decoration: none;
+    color: ${props => props.theme.colors.white};
+    left: 0;
+    transition: all ease-in .2s;
+
+    :visited {
+        color: initial;
+    }
+
+    :hover {
+        width: 190px;
+    }
+`;
