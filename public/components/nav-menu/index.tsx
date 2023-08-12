@@ -1,7 +1,11 @@
 import * as S from "./styles";
 import { MutableRefObject, useRef, useState, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Tilt_Neon } from 'next/font/google';
+
+const titlneon = Tilt_Neon({
+  weight: '400',
+  subsets: ['latin']
+})
 
 const Menu = () => {
   const variantsContainer = {
@@ -45,21 +49,15 @@ const Menu = () => {
   }, [width]);
 
   return (
-    <S.Container>
-      <div
-        className="responsive-menu"
-        ref={hamburgerMenu}
-        onClick={handleClick}
-      >
-        <FontAwesomeIcon icon={faBars} inverse id="icon" />
-      </div>
-      <div className={`content ${isOpen}`} ref={menuContainer}>
-        <S.a href="#aboutme" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.2}} id="about"> Sobre</S.a>
-        <S.a href="#techstack" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.4}} id="tech-stack">Tech Stack</S.a>
-        <S.a href="#projects" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.6}} id="projects-link">Projetos</S.a>
-        <S.a href="#contact" variants={variantsContainer} initial="closed" animate="open" transition={{duration: 2,type: "spring", delay: 0.8}} id="contact-link">Contato</S.a>
-      </div>
-    </S.Container>
+    <S.Header>
+      <S.NeonTitle className={titlneon.className} href="#">Lucas.dev</S.NeonTitle>
+      <S.Nav>
+        <S.a href="#aboutme" id="about"> Sobre</S.a>
+        <S.a href="#techstack" id="tech-stack">Tech Stack</S.a>
+        <S.a href="#projects" id="projects-link">Projetos</S.a>
+        <S.a href="#contact" id="contact-link">Contato</S.a>
+      </S.Nav>
+    </S.Header>
   );
 };
 

@@ -12,7 +12,8 @@ declare module 'styled-components' {
             white: '#fff',
             lightGray: '#f5f5f5',
             darkPink: '#C13584',
-            darkCyan: '#0e76a8'
+            darkCyan: '#0e76a8',
+            cyan100: '#66D2D6'
         }
     }
 }
