@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
 import { ThemeProvider } from "styled-components";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import Menu from "../public/components/nav-menu";
 import BannerContent from "../public/components/banner/main-content";
 import AboutMe from "../public/components/about-me";
@@ -11,24 +9,12 @@ import GlobalStyle from "../styles/globalStyles";
 import Footer from "../public/components/footer";
 import BackToTopButton from "../public/components/back-to-top";
 import theme from "../styles/theme";
+import UnderContruction from "./under-construction";
 
 const Home: NextPage = () => {
-  const router = useRouter();
-
-  useEffect(() => {
-    router.push("/under-construction");
-  }, []);
-
   return (
     <ThemeProvider theme={theme}>
-      <Menu />
-      <BannerContent />
-      <AboutMe />
-      <TechStack />
-      <Projects />
-      <Footer />
-      <BackToTopButton />
-      <GlobalStyle />
+      <UnderContruction />
     </ThemeProvider>
   );
 };
