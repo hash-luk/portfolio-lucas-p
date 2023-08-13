@@ -7,26 +7,12 @@ interface styledProps {
 }
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-
-  @media screen and (max-width: 768px) {
-    .profilePhoto {
-      width: 10rem;
-      height: 10.2rem;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    .profilePhoto {
-      width: 10rem;
-      height: 10.2rem;
-    }
-  }
 `;
 
 export const Card = styled.div<styledProps>`
@@ -37,9 +23,10 @@ export const Card = styled.div<styledProps>`
   flex-direction: ${props => props.flexDirection || 'row'};
   align-items: center;
   justify-content: center;
-  border: 2px solid ${(props) => props.theme.colors.black100};
+  border: 1px solid ${(props) => props.theme.colors.baseGrayText};
   border-radius: 8px;
   padding: ${props => props.padding || '8px 16px'};
+  background-color: ${(props) => props.theme.colors.black100};
 
   .redirect-link {
     display: flex;
@@ -105,6 +92,7 @@ export const ContentText = styled.div`
 
   h4 {
     color: ${(props) => props.theme.colors.primaryBlue};
+    font-size: 1.6rem;
   }
 
   h4,h3 {
@@ -126,7 +114,7 @@ export const ContentText = styled.div`
   }
 
   span {
-    font-size: 22px;
+    font-size: 1.8rem;
     line-height: 24px;
     color: ${(props) => props.theme.colors.baseGrayText};
   }
