@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import { Title } from "../tech-stack/styles";
 import Image from "next/image";
 import spiderProjectImage from "./projects/spider.png";
 import moveItProjectImage from "./projects/move.png";
@@ -43,9 +42,9 @@ const Projects = () => {
 
   return (
     <S.Container id="projects">
-      <Title>
-        PROJETO<span>S</span>
-      </Title>
+      <S.Title>
+        Projetos
+      </S.Title>
       <S.ProjectsContainer>
         <S.Row
           variants={projectsRowAnimation}

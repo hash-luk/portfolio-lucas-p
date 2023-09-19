@@ -9,12 +9,18 @@ import GlobalStyle from "../styles/globalStyles";
 import Footer from "../public/components/footer";
 import BackToTopButton from "../public/components/back-to-top";
 import theme from "../styles/theme";
-import UnderContruction from "./under-construction";
 
 const Home: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>
-      <UnderContruction />
+      <Menu />
+      <BannerContent />
+      <AboutMe />
+      <TechStack />
+      <Projects />
+      <Footer />
+      <BackToTopButton />
+      <GlobalStyle />
     </ThemeProvider>
   );
 };

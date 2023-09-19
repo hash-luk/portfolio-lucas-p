@@ -53,7 +53,7 @@ const Menu = () => {
       <S.NeonTitle className={titlneon.className} href="#">Lucas.dev</S.NeonTitle>
       <S.Nav>
         <S.a href="#aboutme" id="about"> Sobre</S.a>
-        <S.a href="#techstack" id="tech-stack">Tech Stack</S.a>
+        <S.a href="#techstack" id="tech-stack">Conhecimentos</S.a>
         <S.a href="#projects" id="projects-link">Projetos</S.a>
         <S.a href="#contact" id="contact-link">Contato</S.a>
       </S.Nav>

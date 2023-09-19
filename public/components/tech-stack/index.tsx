@@ -1,66 +1,93 @@
 import * as S from "./styles";
-import Image from "next/image";
-import ReactIcon from "../../../public/assets/icons/react.png";
-import SassIcon from "../../../public/assets/icons/sass.png";
-import JSIcon from "../../../public/assets/icons/js.png";
-import TSIcon from "../../../public/assets/icons/ts.png";
-import NPMIcon from "../../../public/assets/icons/npm.png";
-import CSSIcon from "../../../public/assets/icons/css3.png";
-import HTMLIcon from "../../../public/assets/icons/html.png";
-import GitHubIcon from "../../../public/assets/icons/github.png";
-import GitIcon from "../../../public/assets/icons/git.png";
-import ApiIcon from "../../../public/assets/icons/api.png";
-import BootStrapIcon from "../../../public/assets/icons/bootstrap.png";
-import AngularIcon from "../../../public/assets/icons/angular.png";
+import {DiHtml5, DiCss3, DiJsBadge} from "react-icons/di";
+import {FiFigma} from "react-icons/fi";
+import {FaGitSquare, FaSass, FaReact, FaGithub, FaBootstrap} from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiStyledcomponents,SiCypress,SiTypescript,SiTailwindcss,SiStorybook } from "react-icons/si";
 
 const TechStack = () => {
-  const titleAnimation = {
+  const cardAnimations = {
     hidden: {
-      x: 20,
       opacity: 0,
+      y: -50
     },
     visible: {
-      x: 0,
       opacity: 1,
+      y: 0,
       transition: {
-        duration: 2,
+        duration: .3,
         type: "spring",
-      },
-    },
-  };
+      }
+    }
+  }
 
   return (
     <S.Container id="techstack">
-      <S.Title
-        variants={titleAnimation}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        TEC<span>H</span> STAC<span>K</span>
+      <S.Title>
+        Conhecimentos
       </S.Title>
-      <div id="icons-container">
-        <S.IconRow initial={{y: -100, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1,bouce:0.2,delay:0.2}} viewport={{once:true}}>
-          <Image src={HTMLIcon} alt="" className="icon left" />
-          <Image src={CSSIcon} alt="" className="icon  middle" />
-          <Image src={JSIcon} alt="" className="icon right" />
-        </S.IconRow>
-        <S.IconRow  initial={{y: -100, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1,bouce:0.2,delay:0.4}} viewport={{once:true}}>
-          <Image src={TSIcon} alt="" className="icon left" />
-          <Image src={ReactIcon} alt="" className="icon middle" />
-          <Image src={GitHubIcon} alt="" className="icon right" />
-        </S.IconRow>
-        <S.IconRow  initial={{y: -100, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1,bouce:0.2,delay:0.6}} viewport={{once:true}}>
-          <Image src={AngularIcon} alt="" className="icon left" />
-          <Image src={SassIcon} alt="" className="icon middle" />
-          <Image src={GitIcon} alt="" className="icon right" />
-        </S.IconRow>
-        <S.IconRow initial={{y: -100, opacity:0}} whileInView={{y:0, opacity:1}} transition={{duration:1,bouce:0.2,delay:0.8}} viewport={{once:true}}>
-          <Image src={NPMIcon} alt="" className="icon left" />
-          <Image src={BootStrapIcon} alt="" className="icon middle" />
-          <Image src={ApiIcon} alt="" className="icon right" />
-        </S.IconRow>
-      </div>
+      <S.CardsContainer>
+        <S.TechCard title="HTML5" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true, amount: 0.5}}>
+          <DiHtml5 size={64} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="CSS3" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <DiCss3 size={64} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="JavaScript" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <DiJsBadge size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="Figma" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <FiFigma size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="git" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <FaGitSquare size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Intermediário</span>
+        </S.TechCard>
+        <S.TechCard title="SASS" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <FaSass size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="ReactJS" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <FaReact size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="NextJS" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <TbBrandNextjs size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Intermediário</span>
+        </S.TechCard>
+        <S.TechCard title="Styled-components" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <SiStyledcomponents size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="Github" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <FaGithub size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+        <S.TechCard title="Cypress" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <SiCypress size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Básico</span>
+        </S.TechCard>
+        <S.TechCard title="Typescript" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <SiTypescript size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Intermediário</span>
+        </S.TechCard>
+        <S.TechCard title="Tailwind" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <SiTailwindcss size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Intermediário</span>
+        </S.TechCard>
+        <S.TechCard title="Tailwind" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <SiStorybook size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Básico</span>
+        </S.TechCard>
+        <S.TechCard title="Bootstrap" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
+          <FaBootstrap size={56} color="#00DFFC" className="tech-icon"/>
+          <span>Avançado</span>
+        </S.TechCard>
+      </S.CardsContainer>
     </S.Container>
   );
 };

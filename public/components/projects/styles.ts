@@ -9,6 +9,14 @@ export const Container = styled.div`
     }
 `
 
+export const Title = styled.h2`
+    width: 100%;
+    font-size: 3rem;
+    color: ${props => props.theme.colors.white};
+    font-weight: 700;
+    text-align: left;
+`
+
 export const ProjectsContainer = styled.div`
     width: 52.125rem;
     height: fit-content;
@@ -76,11 +84,12 @@ export const PreviewContainer = styled(motion.div)`
 export const TextContainer = styled(motion.div)`
     width: 26.563rem;
     height: 20.125rem;
-    background-color: #AB35AD;
+    background-color: ${props => props.theme.colors.darkCyan};
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 0 8px;
 
     @media screen and (max-width: 768px) {
         position: absolute;
@@ -97,8 +106,8 @@ export const TextContainer = styled(motion.div)`
 
 export const ProjectTitle = styled.h3`
     font-family: 'Inter', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    font-weight: 700;
     line-height: 1.5rem;
     text-align: center;
     width: 20.6rem;
@@ -116,7 +125,7 @@ export const ProjectTitle = styled.h3`
 export const ProjectDescription = styled.p`
     font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     line-height: 1.5rem;
     color: #F0F0F0;

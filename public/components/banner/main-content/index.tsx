@@ -19,7 +19,7 @@ const BannerContent = () => {
           initial={{ x: -100, opacity: 0 }}
           transition={{ type: "spring", duration: 3 }}
         >
-          Desenvolvedor <em>front-end</em>
+          Desenvolvedor <em>full-stack</em>
         </S.p>
         <S.TypeWritterDiv
           animate={{ opacity: 1 }}
@@ -30,7 +30,7 @@ const BannerContent = () => {
             onInit={(typewriter) =>
               typewriter
                 .typeString(
-                  "Ajudando você a construir soluções modernas e bonitas, para destacar seu produto no mercado!"
+                  "Ajudando você a construir soluções modernas e performáticas, para destacar seu produto no mercado!"
                 )
                 .pauseFor(4000)
                 .start()
