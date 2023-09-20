@@ -65,7 +65,6 @@ const Projects = () => {
                 alt=""
                 width={425}
                 height={322}
-                objectFit="cover"
                 className="img"
               />
             </a>
@@ -117,7 +116,6 @@ const Projects = () => {
                 alt=""
                 width={425}
                 height={322}
-                objectFit="cover"
                 className="img"
               />
             </a>
@@ -138,7 +136,6 @@ const Projects = () => {
                 alt=""
                 width={425}
                 height={322}
-                objectFit="cover"
                 className="img"
               />
             </a>
@@ -191,7 +188,6 @@ const Projects = () => {
                 alt=""
                 width={425}
                 height={322}
-                objectFit="cover"
                 className="img"
               />
             </a>

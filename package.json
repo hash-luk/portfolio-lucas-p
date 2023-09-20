@@ -20,7 +20,7 @@
     "framer-motion": "^10.12.12",
     "html2canvas": "^1.4.1",
     "lucide-react": "^0.263.1",
-    "next": "13.4.2",
+    "next": "^13.5.1",
     "nextjs-redirect": "^6.0.1",
     "phosphor-react": "^1.4.1",
     "popover": "^2.4.1",

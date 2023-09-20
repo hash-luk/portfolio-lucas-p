@@ -137,6 +137,10 @@ export const Filter = styled.div`
     background-color: rgba(112, 111, 112, 0.4);
     position: absolute;
     z-index: 1;
+
+    img {
+        object-fit: cover;
+    }
     
     @media screen and (max-width: 768px) {
         background-color: rgba(0, 0, 0, 0.7);
