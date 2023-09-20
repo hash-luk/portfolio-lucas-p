@@ -19,7 +19,7 @@ const BannerContent = () => {
           initial={{ x: -100, opacity: 0 }}
           transition={{ type: "spring", duration: 3 }}
         >
-          Desenvolvedor <em>full-stack</em>
+          Desenvolvedor <em>front-end</em>
         </S.p>
         <S.TypeWritterDiv
           animate={{ opacity: 1 }}

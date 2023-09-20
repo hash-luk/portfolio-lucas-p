@@ -66,6 +66,7 @@ const Projects = () => {
                 width={425}
                 height={322}
                 className="img"
+                loading="lazy"
               />
             </a>
           </S.PreviewContainer>
@@ -117,6 +118,7 @@ const Projects = () => {
                 width={425}
                 height={322}
                 className="img"
+                loading="lazy"
               />
             </a>
           </S.PreviewContainer>
@@ -137,6 +139,7 @@ const Projects = () => {
                 width={425}
                 height={322}
                 className="img"
+                loading="lazy"
               />
             </a>
           </S.PreviewContainer>
@@ -189,6 +192,7 @@ const Projects = () => {
                 width={425}
                 height={322}
                 className="img"
+                loading="lazy"
               />
             </a>
           </S.PreviewContainer>

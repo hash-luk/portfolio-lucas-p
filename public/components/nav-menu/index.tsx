@@ -1,56 +1,18 @@
 import * as S from "./styles";
-import { MutableRefObject, useRef, useState, useEffect } from "react";
-import { Tilt_Neon } from 'next/font/google';
+import logo from "../../assets/icons/logo.svg";
+import Image from "next/image";
+import { Mooli } from 'next/font/google'
 
-const titlneon = Tilt_Neon({
-  weight: '400',
-  subsets: ['latin']
-})
 
-const Menu = () => {
-  const variantsContainer = {
-    open: {
-      opacity: 1,
-    },
-    closed: {
-      opacity: 0,
-    },
-  };
+const mooli = Mooli({ weight: "400",style: "normal", subsets: ["latin"] })
 
-  const [isOpen, setIsOpen] = useState("open");
-  const [width, setWidth] = useState(1200);
-  const hamburgerMenu = useRef() as MutableRefObject<HTMLDivElement>;
-  const menuContainer = useRef() as MutableRefObject<HTMLDivElement>;
-
-  function handleClick() {
-    if (isOpen === "closed") {
-      setIsOpen("open");
-    } else {
-      setIsOpen("closed");
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
-
-    setWidth(window.innerWidth);
-
-    if (width <= 613) {
-      setIsOpen("closed");
-    } else {
-      setIsOpen("open");
-    }
-
-    return () => {
-      removeEventListener("resize", () => {});
-    };
-  }, [width]);
-
+export default function Menu() {
   return (
     <S.Header>
-      <S.NeonTitle className={titlneon.className} href="#">Lucas.dev</S.NeonTitle>
+      <S.Title className={mooli.className} href="#">
+        <Image src={logo} alt="Imagem de logo em fundo preto com a escrita LP em azul claro" width={56}/>
+        <h4>lucas p dev</h4>
+      </S.Title>
       <S.Nav>
         <S.a href="#aboutme" id="about"> Sobre</S.a>
         <S.a href="#techstack" id="tech-stack">Conhecimentos</S.a>
@@ -60,5 +22,3 @@ const Menu = () => {
     </S.Header>
   );
 };
-
-export default Menu;
