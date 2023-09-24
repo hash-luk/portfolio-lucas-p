@@ -7,7 +7,7 @@ const Footer = () => {
     <Flex
       w={"100vw"}
       height={"80px"}
-      backgroundColor={useColorModeValue("customGray.600", "customGray.500")}
+      backgroundColor={useColorModeValue("customGray.600", "customGray.600")}
     >
       <HStack
         maxW={"1220px"}
