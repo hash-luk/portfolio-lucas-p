@@ -45,7 +45,7 @@ const BannerContent = () => {
           py={8} px={4} 
           w={"170px"} 
           _hover={{
-            backgroundColor:useColorModeValue('customBlue.500', 'customGray.500'), 
+            backgroundColor:useColorModeValue('customBlue.500', 'customBlue.500'), 
             width: "190px",
           }}
           transition={"all ease .2s"}
