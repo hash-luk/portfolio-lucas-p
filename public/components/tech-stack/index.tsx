@@ -1,94 +1,125 @@
-import * as S from "./styles";
-import {DiHtml5, DiCss3, DiJsBadge} from "react-icons/di";
-import {FiFigma} from "react-icons/fi";
-import {FaGitSquare, FaSass, FaReact, FaGithub, FaBootstrap} from "react-icons/fa";
+import { VStack, Heading,Text,useColorModeValue, Flex } from '@chakra-ui/react'
+import { AiFillHtml5 } from "react-icons/ai";
+import { BiLogoCss3, BiLogoJavascript, BiLogoTypescript, BiLogoNodejs, BiLogoPhp, BiLogoDocker,BiLogoGit } from "react-icons/bi";
+import { GrReactjs, GrMysql } from "react-icons/gr";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiStyledcomponents,SiCypress,SiTypescript,SiTailwindcss,SiStorybook } from "react-icons/si";
+import { SiLaravel } from "react-icons/si";
 
 const TechStack = () => {
-  const cardAnimations = {
-    hidden: {
-      opacity: 0,
-      y: -50
+  const techs = [
+    {
+      name: "HTML5",
+      nível: "Avançado"
     },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: .3,
-        type: "spring",
-      }
-    }
+    {
+      name: "CSS3",
+      nível: "Avançado"
+    },
+    {
+      name: "JavaScript",
+      nível: "Avançado"
+    },
+    {
+      name: "TypeScript",
+      nível: "Intermediário"
+    },
+    {
+      name: "NodeJS",
+      nível: "Intermediário"
+    },
+    {
+      name: "ReactJS",
+      nível: "Avançado"
+    },
+    {
+      name: "NextJS",
+      nível: "Intermediário"
+    },
+    {
+      name: "PHP",
+      nível: "Intermediário"
+    },
+    {
+      name: "MySQL",
+      nível: "Intermediário"
+    },
+    {
+      name: "Laravel",
+      nível: "Iniciante"
+    },
+    {
+      name: "Docker",
+      nível: "Intermediário"
+    },
+    {
+      name: "Git",
+      nível: "Avançado"
+    },
+  ]
+
+  const styleOptions = {
+    height: "80vh",
+    py: "32px",
+    box: {
+      height: "200px",
+      width: "200px",
+      borderColor: useColorModeValue("customBlue.500","customBlue.500"),
+      backgGroundColor: useColorModeValue("customBgColors.gray100","customBgColors.gray100"),
+      color: useColorModeValue("grayChateau.200","grayChateau.200"),
+      defaultPixels: "8px",
+      fontSize: {
+        name: "lg",
+        level: "md"
+      },
+      boxShadow: "13px 4px 21px 2px rgba(0,0,0,0.16)",
+      hover: {
+        '&>.icon': {
+          color: useColorModeValue("customBlue.400","customBlue.400"),
+        },
+        transform: "scale(1.1)"
+      },
+      transition: "all ease-in-out .2s"
+    },
+
   }
 
   return (
-    <S.Container id="techstack">
-      <S.Title>
-        Conhecimentos
-      </S.Title>
-      <S.CardsContainer>
-        <S.TechCard title="HTML5" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true, amount: 0.5}}>
-          <DiHtml5 size={64} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="CSS3" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <DiCss3 size={64} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="JavaScript" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <DiJsBadge size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="Figma" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <FiFigma size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="git" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <FaGitSquare size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Intermediário</span>
-        </S.TechCard>
-        <S.TechCard title="SASS" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <FaSass size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="ReactJS" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <FaReact size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="NextJS" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <TbBrandNextjs size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Intermediário</span>
-        </S.TechCard>
-        <S.TechCard title="Styled-components" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <SiStyledcomponents size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="Github" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <FaGithub size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-        <S.TechCard title="Cypress" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <SiCypress size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Básico</span>
-        </S.TechCard>
-        <S.TechCard title="Typescript" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <SiTypescript size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Intermediário</span>
-        </S.TechCard>
-        <S.TechCard title="Tailwind" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <SiTailwindcss size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Intermediário</span>
-        </S.TechCard>
-        <S.TechCard title="Tailwind" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <SiStorybook size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Básico</span>
-        </S.TechCard>
-        <S.TechCard title="Bootstrap" initial="hidden" variants={cardAnimations} whileInView="visible" viewport={{once: true}}>
-          <FaBootstrap size={56} color="#00DFFC" className="tech-icon"/>
-          <span>Avançado</span>
-        </S.TechCard>
-      </S.CardsContainer>
-    </S.Container>
+    <VStack alignItems={"flex-start"} gap={8} id='techstack'>
+      <Heading as={"h3"}>Conhecimentos</Heading>
+      <Flex height={styleOptions.height} wrap={"wrap"} gap={8} justify={"center"} w={"100%"} py={styleOptions.py}>
+        {
+          techs.map((tech, index) => (
+            <VStack key={index} 
+              w={styleOptions.box.width} 
+              h={styleOptions.box.height}
+              backgroundColor={styleOptions.box.backgGroundColor}
+              borderRadius={styleOptions.box.defaultPixels}
+              justifyContent={"center"}
+              gap={styleOptions.box.defaultPixels}
+              color={styleOptions.box.color}
+              _hover={styleOptions.box.hover}
+              transition={styleOptions.box.transition}
+              boxShadow={styleOptions.box.boxShadow}
+            >
+              <Text as={"span"} fontSize={styleOptions.box.fontSize.name} >{tech.name}</Text>
+              {tech.name === "HTML5" && <AiFillHtml5 size={64} className='icon'/>}
+              {tech.name === "CSS3" && <BiLogoCss3 size={64}  className='icon'/>}
+              {tech.name === "JavaScript" && <BiLogoJavascript size={64}  className='icon'/>}
+              {tech.name === "TypeScript" && <BiLogoTypescript size={64}  className='icon'/>}
+              {tech.name === "NodeJS" && <BiLogoNodejs size={64}  className='icon'/>}
+              {tech.name === "ReactJS" && <GrReactjs size={64}  className='icon'/>}
+              {tech.name === "NextJS" && <TbBrandNextjs size={64}  className='icon'/>}
+              {tech.name === "PHP" && <BiLogoPhp size={64}  className='icon'/>}
+              {tech.name === "MySQL" && <GrMysql size={64}  className='icon'/>}
+              {tech.name === "Laravel" && <SiLaravel size={64}  className='icon'/>}
+              {tech.name === "Docker" && <BiLogoDocker size={64}  className='icon'/>}
+              {tech.name === "Git" && <BiLogoGit size={64}  className='icon'/>}
+              <Text as={"span"} fontSize={styleOptions.box.fontSize.level}>{tech.nível}</Text>
+            </VStack>
+          ))
+        }
+      </Flex>
+    </VStack>
   );
 };
 

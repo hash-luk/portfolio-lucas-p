@@ -1,204 +1,243 @@
-import * as S from "./styles";
+import { VStack, Heading,Text,useColorModeValue, Flex, Stack,HStack, Box, Link } from '@chakra-ui/react'
+import { GoDotFill } from "react-icons/go";
 import Image from "next/image";
 import spiderProjectImage from "./projects/spider.png";
-import moveItProjectImage from "./projects/move.png";
-import naBrasaProjectImage from "./projects/na-brasa.png";
+import devfinance from "./projects/devfinance.png";
+import bmw from "./projects/bmw.png";
+import netflix from "./projects/netflix.png";
+import moveit from "./projects/moveit.png";
 import madeireiraMognoProjectImage from "./projects/madeireira.png";
 
+const hoverEffect = {
+  "&>img": {
+    transform: "scale(1.1)"
+  },
+  "&>.text-wrapper": {
+    transform: "translatey(325px)",
+  }
+}
+
+
 const Projects = () => {
-  const projectsRowAnimation = {
-    hidden: {
-      y: -100,
-    },
-    visible: {
-      y: 0,
-    },
-  };
-
-  const projectsLeftAnimationPreview = {
-    hidden: {
-      x: -100,
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        delay: 0.5,
-      },
-    },
-  };
-
-  const projectsRightAnimationPreview = {
-    hidden: {
-      x: 100,
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-    },
-  };
 
   return (
-    <S.Container id="projects">
-      <S.Title>
-        Projetos
-      </S.Title>
-      <S.ProjectsContainer>
-        <S.Row
-          variants={projectsRowAnimation}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-        >
-          <S.PreviewContainer
-            variants={projectsLeftAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <a href="https://spider-man-home-page.vercel.app">
-              <S.Filter />
-              <Image
-                src={spiderProjectImage}
-                alt=""
-                width={425}
-                height={322}
-                className="img"
-                loading="lazy"
-              />
-            </a>
-          </S.PreviewContainer>
-          <S.TextContainer
-            variants={projectsRightAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <a href="https://spider-man-home-page.vercel.app" className="link">
-              <S.ProjectTitle>Spider-Man: Miles Morales</S.ProjectTitle>
-            </a>
-            <S.ProjectDescription>
-              Uma Landing page desenvolvida com
-              HTML,CSS,JavaScript,Jquery,BootStrap e TiltJS. É uma página
-              fictícia porém com grandes aprendizados em relação a UX/UI
-            </S.ProjectDescription>
-          </S.TextContainer>
-        </S.Row>
-        <S.Row>
-          <S.TextContainer
-            variants={projectsLeftAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <a href="https://madeireira-mogno.vercel.app" className="link">
-              <S.ProjectTitle>Madeireira Mogno</S.ProjectTitle>
-            </a>
-            <S.ProjectDescription>
-              Um site completo desenvolvido em um trabalho de freelancer.
-              Utilizando React, TypeScript, NodeMailer, Styled-Components e
-              algumas bibliotecas React para estilização
-            </S.ProjectDescription>
-          </S.TextContainer>
-          <S.PreviewContainer
-            variants={projectsRightAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <a href="https://madeireira-mogno.vercel.app">
-              <S.Filter />
-              <Image
-                src={madeireiraMognoProjectImage}
-                alt=""
-                width={425}
-                height={322}
-                className="img"
-                loading="lazy"
-              />
-            </a>
-          </S.PreviewContainer>
-        </S.Row>
-        <S.Row>
-          <S.PreviewContainer
-            variants={projectsLeftAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <a href="https://na-brasa.vercel.app">
-              <S.Filter />
-              <Image
-                src={naBrasaProjectImage}
-                alt=""
-                width={425}
-                height={322}
-                className="img"
-                loading="lazy"
-              />
-            </a>
-          </S.PreviewContainer>
-          <S.TextContainer
-            variants={projectsRightAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <a href="https://na-brasa.vercel.app" className="link">
-              <S.ProjectTitle>Na Brasa - Churrascaria</S.ProjectTitle>
-            </a>
-            <S.ProjectDescription>
-              Um site desenvolvido durante um curso realizado na Udemy,
-              utilizando HTML, SASS,Jquery, plugins Jquery, BootStrap e
-              Font-Awesome. Aprendizado gigantesco em prototipação
-            </S.ProjectDescription>
-          </S.TextContainer>
-        </S.Row>
-        <S.Row>
-          <S.TextContainer
-            variants={projectsLeftAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <a href="https://keep-in-action.vercel.app" className="link">
-              <S.ProjectTitle>Move.IT</S.ProjectTitle>
-            </a>
-            <S.ProjectDescription>
-              Uma aplicação desenvolvida durante um evento de programação.
-              Utilizando ReactJS,Next,Styled-Components. Dei uma melhorada no
-              projeto principal utilizando Firebase para autenticação
-            </S.ProjectDescription>
-          </S.TextContainer>
-          <S.PreviewContainer
-            variants={projectsRightAnimationPreview}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-          >
-            <a href="https://keep-in-action.vercel.app">
-              <S.Filter />
-              <Image
-                src={moveItProjectImage}
-                alt=""
-                width={425}
-                height={322}
-                className="img"
-                loading="lazy"
-              />
-            </a>
-          </S.PreviewContainer>
-        </S.Row>
-      </S.ProjectsContainer>
-    </S.Container>
+    <Stack h={"auto"} minH={"100vh"} id="projects" gap={8} paddingBottom={16}>
+      <Heading as={"h3"}>Projetos pessoais</Heading>
+      <Flex flexWrap={"wrap"} w={"full"} height={"auto"} gap={8} justify={"center"}>
+        <Flex>
+          <Link isExternal href="https://github.com/hash-luk/SpiderMan-Home-Page">
+            <HStack w={"500px"} height={"325px"} position={"relative"} overflow={"hidden"} _hover={hoverEffect} transition={"all ease-in .2s"} borderLeft={"2px"} borderColor={useColorModeValue("customBlue.500", "customBlue.500")}>
+              <Image src={spiderProjectImage} alt="Imagem de projeto Spiderman lading page" loading="lazy" style={{transition: "all ease-in .2s"}}/>
+              <VStack
+                className="text-wrapper"
+                position={"absolute"}
+                zIndex={"2"}
+                w={"full"}
+                h={"full"}
+                justifyContent={"center"}
+                bg="customBackdrop.70" 
+                backdropFilter="auto" 
+                backdropBlur="1px"
+                transition={"all ease-in-out .4s"}
+              >
+                <Heading as={"h6"}>
+                  Spider-Man Miles Morales - Landing Page
+                </Heading>
+                <Box>
+                  <HStack color={useColorModeValue("grayChateau.100", "grayChateau.100")} fontSize={"md"} gap={4}>
+                    <Text>JavaScript</Text> 
+                    <GoDotFill color="#e77f1f"/> 
+                    <Text>HTML5</Text> 
+                    <GoDotFill color="#e77f1f"/> 
+                    <Text>SASS</Text> 
+                    <GoDotFill color="#e77f1f"/> 
+                    <Text>JQuery</Text> 
+                    <GoDotFill color="#e77f1f"/> 
+                    <Text>Tilt.js</Text>
+                  </HStack>
+                </Box>
+              </VStack>
+            </HStack>
+          </Link>
+        </Flex>
+        <Flex>
+          <Link isExternal href="https://github.com/hash-luk/Move.it">
+            <HStack w={"500px"} height={"325px"} position={"relative"} overflow={"hidden"} _hover={hoverEffect} transition={"all ease-in .2s"} borderLeft={"2px"} borderColor={useColorModeValue("customBlue.500", "customBlue.500")}>
+              <Image src={moveit} alt="Imagem de projeto MoveIT" loading="lazy" style={{transition: "all ease-in .2s"}}/>
+              <VStack
+                className="text-wrapper"
+                position={"absolute"}
+                zIndex={"2"}
+                w={"full"}
+                h={"full"}
+                justifyContent={"center"}
+                bg="customBackdrop.70" 
+                backdropFilter="auto" 
+                backdropBlur="1px"
+                transition={"all ease-in-out .4s"}
+              >
+                <Heading as={"h6"}>
+                  MoveIT
+                </Heading>
+                <Box>
+                  <HStack color={useColorModeValue("grayChateau.100", "grayChateau.100")} fontSize={"md"} gap={4}>
+                    <Text>NextJS</Text> 
+                    <GoDotFill color="#5965e0"/> 
+                    <Text>TypeScript</Text> 
+                    <GoDotFill color="#5965e0"/> 
+                    <Text>Firebase</Text> 
+                    <GoDotFill color="#5965e0"/> 
+                    <Text>CSS Modular</Text> 
+                  </HStack>
+                </Box>
+              </VStack>
+            </HStack>
+          </Link>
+        </Flex>
+        <Flex>
+          <Link isExternal href="https://github.com/hash-luk/Dev-Finance">
+            <HStack w={"500px"} height={"325px"} position={"relative"} overflow={"hidden"} _hover={hoverEffect} transition={"all ease-in .2s"} borderLeft={"2px"} borderColor={useColorModeValue("customBlue.500", "customBlue.500")}>
+              <Image src={devfinance} alt="Imagem de projeto MoveIT" loading="lazy" style={{transition: "all ease-in .2s"}}/>
+              <VStack
+                className="text-wrapper"
+                position={"absolute"}
+                zIndex={"2"}
+                w={"full"}
+                h={"full"}
+                justifyContent={"center"}
+                bg="customBackdrop.70" 
+                backdropFilter="auto" 
+                backdropBlur="1px"
+                transition={"all ease-in-out .4s"}
+              >
+                <Heading as={"h6"}>
+                  DevFinance
+                </Heading>
+                <Box>
+                  <HStack color={useColorModeValue("grayChateau.100", "grayChateau.100")} fontSize={"md"} gap={4}>
+                    <Text>JavaScript</Text> 
+                    <GoDotFill color="#49aa26"/> 
+                    <Text>HTML</Text> 
+                    <GoDotFill color="#49aa26"/> 
+                    <Text>SASS</Text> 
+                    <GoDotFill color="#49aa26"/> 
+                    <Text>JQuery</Text> 
+                  </HStack>
+                </Box>
+              </VStack>
+            </HStack>
+          </Link>
+        </Flex>
+        <Flex>
+          <Link isExternal href="https://github.com/hash-luk/BMW-Project">
+            <HStack w={"500px"} height={"325px"} position={"relative"} overflow={"hidden"} _hover={hoverEffect} transition={"all ease-in .2s"} borderLeft={"2px"} borderColor={useColorModeValue("customBlue.500", "customBlue.500")}>
+              <Image src={bmw} alt="Imagem de projeto Bmw home page" loading="lazy" style={{transition: "all ease-in .2s"}}/>
+              <VStack
+                className="text-wrapper"
+                position={"absolute"}
+                zIndex={"2"}
+                w={"full"}
+                h={"full"}
+                justifyContent={"center"}
+                bg="customBackdrop.70" 
+                backdropFilter="auto" 
+                backdropBlur="1px"
+                transition={"all ease-in-out .4s"}
+              >
+                <Heading as={"h6"}>
+                  BMW - Home Page
+                </Heading>
+                <Box>
+                  <HStack color={useColorModeValue("grayChateau.100", "grayChateau.100")} fontSize={"md"} gap={4}>
+                    <Text>HTML</Text> 
+                    <GoDotFill color="#1c69d4"/> 
+                    <Text>CSS</Text> 
+                    <GoDotFill color="#1c69d4"/> 
+                    <Text>JavaScript</Text> 
+                    <GoDotFill color="#1c69d4"/> 
+                    <Text>SASS</Text> 
+                    <GoDotFill color="#1c69d4"/> 
+                    <Text>NodeJS</Text> 
+                  </HStack>
+                </Box>
+              </VStack>
+            </HStack>
+          </Link>
+        </Flex>
+        <Flex>
+          <Link isExternal href="https://github.com/hash-luk/Netflix-UI-Clone">
+            <HStack w={"500px"} height={"325px"} position={"relative"} overflow={"hidden"} _hover={hoverEffect} transition={"all ease-in .2s"} borderLeft={"2px"} borderColor={useColorModeValue("customBlue.500", "customBlue.500")}>
+              <Image src={netflix} alt="Imagem de projeto Netflix UI Clone" loading="lazy" style={{transition: "all ease-in .2s"}}/>
+              <VStack
+                className="text-wrapper"
+                position={"absolute"}
+                zIndex={"2"}
+                w={"full"}
+                h={"full"}
+                justifyContent={"center"}
+                bg="customBackdrop.70" 
+                backdropFilter="auto" 
+                backdropBlur="1px"
+                transition={"all ease-in-out .4s"}
+              >
+                <Heading as={"h6"}>
+                  Netflix UI CLone
+                </Heading>
+                <Box>
+                  <HStack color={useColorModeValue("grayChateau.100", "grayChateau.100")} fontSize={"md"} gap={4}>
+                    <Text>React</Text> 
+                    <GoDotFill color="#E50914"/> 
+                    <Text>MaterialUI</Text> 
+                    <GoDotFill color="#E50914"/> 
+                    <Text>JavaScript</Text> 
+                    <GoDotFill color="#E50914"/> 
+                    <Text>TMDB API</Text> 
+                    <GoDotFill color="#E50914"/> 
+                    <Text>NodeJS</Text> 
+                  </HStack>
+                </Box>
+              </VStack>
+            </HStack>
+          </Link>
+        </Flex>
+        <Flex>
+          <Link isExternal href="https://github.com/hash-luk/madeireira-mogno">
+            <HStack w={"500px"} height={"325px"} position={"relative"} overflow={"hidden"} _hover={hoverEffect} transition={"all ease-in .2s"} borderLeft={"2px"} borderColor={useColorModeValue("customBlue.500", "customBlue.500")}>
+              <Image src={madeireiraMognoProjectImage} alt="Imagem de projeto Netflix UI Clone" loading="lazy" style={{transition: "all ease-in .2s"}}/>
+              <VStack
+                className="text-wrapper"
+                position={"absolute"}
+                zIndex={"2"}
+                w={"full"}
+                h={"full"}
+                justifyContent={"center"}
+                bg="customBackdrop.70" 
+                backdropFilter="auto" 
+                backdropBlur="1px"
+                transition={"all ease-in-out .4s"}
+              >
+                <Heading as={"h6"}>
+                  Madeireira Mogno
+                </Heading>
+                <Box>
+                  <HStack color={useColorModeValue("grayChateau.100", "grayChateau.100")} fontSize={"md"} gap={4}>
+                    <Text>React</Text> 
+                    <GoDotFill color="#77c91e"/> 
+                    <Text>TypeScript</Text> 
+                    <GoDotFill color="#77c91e"/> 
+                    <Text>NodeJS</Text> 
+                    <GoDotFill color="#77c91e"/> 
+                    <Text>Framer Motion</Text> 
+                    <GoDotFill color="#77c91e"/> 
+                    <Text>Twilio</Text> 
+                  </HStack>
+                </Box>
+              </VStack>
+            </HStack>
+          </Link>
+        </Flex>
+      </Flex>
+    </Stack>
   );
 };
 

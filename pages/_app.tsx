@@ -1,18 +1,13 @@
-import type { AppProps } from "next/app";
-import { Inter } from 'next/font/google';
-import Head from "../app/head";
-
-const inter = Inter({
-  weight: ["100", "200", "400", "600", "700"],
-  subsets: ['latin']
-})
+import type { AppProps } from "next/app"
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react"
+import Theme from "../styles/theme"
 
 function MyApp({ Component }: AppProps) {
   return (
-    <main className={inter.className}>
-      <Head />
-      <Component />
-    </main>
+    <ChakraProvider theme={Theme}>
+        <ColorModeScript initialColorMode={Theme.config.initialColorMode} />
+        <Component />
+    </ChakraProvider>
   );
 }
 
