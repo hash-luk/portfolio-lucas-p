@@ -29,6 +29,9 @@ const BannerContent = () => {
           color={useColorModeValue('customGray.300', 'customGray.300')}
         >
           <Typewriter
+              options={{
+                delay: 90
+              }}
               onInit={(typewriter) =>
                 typewriter
                   .typeString(
