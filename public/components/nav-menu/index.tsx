@@ -56,8 +56,8 @@ export default function NavBar() {
 
   return(
     <>
-      <Box bg={useColorModeValue('customGray.500', 'customGray.500')} px={4}>
-        <Flex h={32} alignItems={'center'} justifyContent={'space-between'}>
+      <Box bg={useColorModeValue('customGray.500', 'customGray.500')} px={4} width={'100vw'}>
+        <Flex h={32} alignItems={'center'} justifyContent={'space-between'} maxW={'1220px'} margin={'0 auto'}>
           <HStack spacing={8} alignItems={'center'} justifyContent={'space-between'} w={'100%'}>
             <Box as='a' href={'#'}>
               <Image src={Logo} alt='Logo com formato de tag HTMl em azul formando um L no meio'/>

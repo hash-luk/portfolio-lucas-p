@@ -1,4 +1,4 @@
-import { VStack, Heading,Text,useColorModeValue, Flex } from '@chakra-ui/react'
+import { VStack,HStack, Heading,Text,useColorModeValue, Flex } from '@chakra-ui/react'
 import { AiFillHtml5 } from "react-icons/ai";
 import { BiLogoCss3, BiLogoJavascript, BiLogoTypescript, BiLogoNodejs, BiLogoPhp, BiLogoDocker,BiLogoGit } from "react-icons/bi";
 import { GrReactjs, GrMysql } from "react-icons/gr";
@@ -64,7 +64,8 @@ const TechStack = () => {
       height: "200px",
       width: "200px",
       borderColor: useColorModeValue("customBlue.500","customBlue.500"),
-      backgGroundColor: useColorModeValue("customBgColors.gray100","customBgColors.gray100"),
+      backgGroundColor: useColorModeValue("customBgColors.gray200","customBgColors.gray200"),
+      border: "1px solid",
       color: useColorModeValue("grayChateau.200","grayChateau.200"),
       defaultPixels: "8px",
       fontSize: {
@@ -84,7 +85,8 @@ const TechStack = () => {
   }
 
   return (
-    <VStack alignItems={"flex-start"} gap={8} id='techstack'>
+    <HStack w={"100vw"} backgroundColor={useColorModeValue("customBgColors.gray100", "customBgColors.gray100")} padding={8}>
+      <VStack alignItems={"flex-start"} gap={8} id='techstack' maxW={'1220px'} margin={'0 auto'}>
       <Heading as={"h3"}>Conhecimentos</Heading>
       <Flex height={styleOptions.height} wrap={"wrap"} gap={8} justify={"center"} w={"100%"} py={styleOptions.py}>
         {
@@ -100,6 +102,8 @@ const TechStack = () => {
               _hover={styleOptions.box.hover}
               transition={styleOptions.box.transition}
               boxShadow={styleOptions.box.boxShadow}
+              border={styleOptions.box.border}
+              borderColor={styleOptions.box.borderColor}
             >
               <Text as={"span"} fontSize={styleOptions.box.fontSize.name} >{tech.name}</Text>
               {tech.name === "HTML5" && <AiFillHtml5 size={64} className='icon'/>}
@@ -119,7 +123,8 @@ const TechStack = () => {
           ))
         }
       </Flex>
-    </VStack>
+      </VStack>
+    </HStack>
   );
 };
 

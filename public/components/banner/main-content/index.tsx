@@ -6,7 +6,8 @@ import bannerImage from "../../../assets/images/banner-image.svg";
 
 const BannerContent = () => {
   return (
-    <HStack h={"100vh"}>
+    <HStack h={"100vh"} w={"100vw"} backgroundColor={useColorModeValue("customBgColors.gray100", "customBgColors.gray100")}>
+      <HStack h={"full"} maxW={"1220px"} margin={"0 auto"}>
       <VStack w={"50%"} alignItems={"flex-start"} gap={8}>
         <Heading 
           as={motion.h1} 
@@ -59,6 +60,7 @@ const BannerContent = () => {
       <Flex w={"50%"} justifyContent={"flex-end"}>
         <Image src={bannerImage} alt="Banner image"/>
       </Flex>
+      </HStack>
     </HStack>
   );
 };
