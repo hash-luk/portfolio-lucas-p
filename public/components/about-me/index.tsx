@@ -13,7 +13,7 @@ import {
 const AboutMe = () => {
   return (
     <HStack h={"100vh"} w={"100vw"} id="aboutme">
-      <HStack h={"full"} gap={4} maxW={"1220px"} margin={"0 auto"}>
+      <HStack h={"full"} gap={4} maxW={"1220px"} margin={"0 auto"} w={'full'}>
         <HStack
           backgroundColor={useColorModeValue(
             "customBgColors.gray100",

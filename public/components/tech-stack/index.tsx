@@ -86,7 +86,7 @@ const TechStack = () => {
 
   return (
     <HStack w={"100vw"} backgroundColor={useColorModeValue("customBgColors.gray100", "customBgColors.gray100")} padding={8}>
-      <VStack alignItems={"flex-start"} gap={8} id='techstack' maxW={'1220px'} margin={'0 auto'}>
+      <VStack alignItems={"flex-start"} gap={8} id='techstack' maxW={'1220px'} margin={'0 auto'} w={'full'}>
       <Heading as={"h3"}>Conhecimentos</Heading>
       <Flex height={styleOptions.height} wrap={"wrap"} gap={8} justify={"center"} w={"100%"} py={styleOptions.py}>
         {

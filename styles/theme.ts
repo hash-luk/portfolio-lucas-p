@@ -99,8 +99,6 @@ const Theme =extendTheme({
                 "background" : "customGray.500",
             },
             main: {
-                "maxWidth": "1220px",
-                "margin" : "0 auto",
                 "background" : "transparent",
             },
             h1: {
