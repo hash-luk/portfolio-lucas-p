@@ -61,7 +61,7 @@ const Projects = () => {
                   src={spiderProjectImage}
                   alt="Imagem de projeto Spiderman lading page"
                   loading="lazy"
-                  style={{ transition: "all ease-in .2s" }}
+                  style={{ transition: "all ease-in .2s", height: "100%", width: "auto" }}
                 />
                 <VStack
                   className="text-wrapper"
@@ -121,7 +121,7 @@ const Projects = () => {
                   src={moveit}
                   alt="Imagem de projeto MoveIT"
                   loading="lazy"
-                  style={{ transition: "all ease-in .2s" }}
+                  style={{ transition: "all ease-in .2s",height: "100%", width: "auto" }}
                 />
                 <VStack
                   className="text-wrapper"
@@ -177,7 +177,7 @@ const Projects = () => {
                   src={devfinance}
                   alt="Imagem de projeto MoveIT"
                   loading="lazy"
-                  style={{ transition: "all ease-in .2s" }}
+                  style={{ transition: "all ease-in .2s", height: "100%", width: "auto" }}
                 />
                 <VStack
                   className="text-wrapper"
@@ -233,7 +233,7 @@ const Projects = () => {
                   src={bmw}
                   alt="Imagem de projeto Bmw home page"
                   loading="lazy"
-                  style={{ transition: "all ease-in .2s" }}
+                  style={{ transition: "all ease-in .2s", height: "100%", width: "auto" }}
                 />
                 <VStack
                   className="text-wrapper"
@@ -294,7 +294,7 @@ const Projects = () => {
                   src={netflix}
                   alt="Imagem de projeto Netflix UI Clone"
                   loading="lazy"
-                  style={{ transition: "all ease-in .2s" }}
+                  style={{ transition: "all ease-in .2s", height: "100%", width: "auto" }}
                 />
                 <VStack
                   className="text-wrapper"
@@ -355,7 +355,7 @@ const Projects = () => {
                   src={madeireiraMognoProjectImage}
                   alt="Imagem de projeto Netflix UI Clone"
                   loading="lazy"
-                  style={{ transition: "all ease-in .2s" }}
+                  style={{ transition: "all ease-in .2s", height: "100%", width: "auto" }}
                 />
                 <VStack
                   className="text-wrapper"
