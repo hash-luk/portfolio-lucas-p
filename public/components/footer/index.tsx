@@ -8,6 +8,7 @@ const Footer = () => {
       w={"100vw"}
       height={"80px"}
       backgroundColor={useColorModeValue("customGray.600", "customGray.600")}
+      paddingX={{lg:"6", md:"6", sm:"6"}}
     >
       <HStack
         maxW={"1220px"}
@@ -43,11 +44,6 @@ const Footer = () => {
               <AiFillLinkedin size={36} />
             </Text>
           </Link>
-          {/* <Link href={"#/"}>
-                        <Text color={useColorModeValue("customGray.100", "customGray.100")}>
-                            <MdEmail size={36}/>
-                        </Text>
-                    </Link> */}
         </HStack>
       </HStack>
     </Flex>

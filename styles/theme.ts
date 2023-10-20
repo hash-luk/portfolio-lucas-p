@@ -123,6 +123,11 @@ const Theme =extendTheme({
                 "fontFamily": "inter",
                 "fontSize": "md",
                 "fontWeight": "medium"
+            },
+            box: {
+                lg: {
+                    padding: "24px"
+                }
             }
         }
     },
