@@ -58,7 +58,12 @@ const TechStack = () => {
   ]
 
   const styleOptions = {
-    height: "80vh",
+    height: {
+      xl: "80vh",
+      lg: "100%",
+      md: "100%",
+      sm: "100%"
+    },
     py: "32px",
     box: {
       height: "200px",
@@ -85,10 +90,10 @@ const TechStack = () => {
   }
 
   return (
-    <HStack w={"100vw"} backgroundColor={useColorModeValue("customBgColors.gray100", "customBgColors.gray100")} padding={8}>
+    <HStack w={"100vw"} h={"fit-content"} backgroundColor={useColorModeValue("customBgColors.gray100", "customBgColors.gray100")} padding={8}>
       <VStack alignItems={"flex-start"} gap={8} id='techstack' maxW={'1220px'} margin={'0 auto'} w={'full'}>
       <Heading as={"h3"}>Conhecimentos</Heading>
-      <Flex height={styleOptions.height} wrap={"wrap"} gap={8} justify={"center"} w={"100%"} py={styleOptions.py}>
+      <Flex height={styleOptions.height.xl} wrap={"wrap"} gap={8} justify={"center"} w={"100%"} py={styleOptions.py}>
         {
           techs.map((tech, index) => (
             <VStack key={index} 

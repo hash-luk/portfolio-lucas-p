@@ -8,12 +8,13 @@ import {
   Text,
   useColorModeValue,
   Link,
+  Box
 } from "@chakra-ui/react";
 
 const AboutMe = () => {
   return (
-    <HStack h={"100vh"} w={"100vw"} id="aboutme">
-      <HStack h={"full"} gap={4} maxW={"1220px"} margin={"0 auto"} w={'full'}>
+    <HStack h={"100vh"} w={"100vw"} id="aboutme" paddingX={{lg: "6",md: "6", sm:"6"}}>
+      <Box h={"full"} gap={4} maxW={"1220px"} margin={"0 auto"} w={"full"} flexDirection={{xl:"row", lg: "column", md:"column", sm:"column"}} display={"flex"} alignItems={"center"} justifyContent={"center"}>
         <HStack
           backgroundColor={useColorModeValue(
             "customBgColors.gray100",
@@ -83,9 +84,10 @@ const AboutMe = () => {
             </Text>
           </VStack>
         </HStack>
-        <VStack
-          w={"fit-content"}
-          h={"472px"}
+        <Box
+          w={{xl: "fit-content", lg: "100%", md: "100%", sm: "100%"}}
+          h={{xl: "472px", lg: "fit-content"}}
+          display={"flex"}
           gap={12}
           backgroundColor={useColorModeValue(
             "customBgColors.gray100",
@@ -97,6 +99,7 @@ const AboutMe = () => {
           border={"1px"}
           borderColor={useColorModeValue("customGray.300", "customGray.300")}
           justifyContent={"center"}
+          flexDirection={{xl: "column", lg: "row"}}
         >
           <Link
             href="https://www.github.com/hash-luk"
@@ -131,8 +134,8 @@ const AboutMe = () => {
           >
             <Instagram size={32} strokeWidth={1} />
           </Link>
-        </VStack>
-      </HStack>
+        </Box>
+      </Box>
     </HStack>
   );
 };

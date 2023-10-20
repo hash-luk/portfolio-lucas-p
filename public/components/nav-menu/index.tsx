@@ -56,7 +56,7 @@ export default function NavBar() {
 
   return(
     <>
-      <Box bg={useColorModeValue('customGray.500', 'customGray.500')} px={4} width={'100vw'}>
+      <Box bg={useColorModeValue('customGray.500', 'customGray.500')} px={4} width={'100vw'} paddingX={{lg: "6", md: "6", sm: "6"}}>
         <Flex h={32} alignItems={'center'} justifyContent={'space-between'} maxW={'1220px'} margin={'0 auto'} w={'full'}>
           <HStack spacing={8} alignItems={'center'} justifyContent={'space-between'} w={'100%'}>
             <Box as='a' href={'#'}>
