@@ -84,8 +84,7 @@ const AboutMe = () => {
               trabalhando como desenvolvedor front-end e freelancer. Apaixonado
               por tecnologia, inovação, programação e jogos. Meu intuito é
               desenvolver interfaces modernas, visualmente agradáveis e
-              acessíveis a todos os usuários. Que tal construírmos algo incrível
-              juntos?
+              acessíveis a todos os usuários.
               <br />
               <br />
               Que tal construirmos algo incrível juntos?
