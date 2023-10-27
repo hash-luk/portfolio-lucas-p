@@ -8,13 +8,28 @@ import {
   Text,
   useColorModeValue,
   Link,
-  Box
+  Box,
 } from "@chakra-ui/react";
 
 const AboutMe = () => {
   return (
-    <HStack h={"100vh"} w={"100vw"} id="aboutme" paddingX={{lg: "6",md: "6", sm:"6"}}>
-      <Box h={"full"} gap={4} maxW={"1220px"} margin={"0 auto"} w={"full"} flexDirection={{xl:"row", lg: "column", md:"column", sm:"column"}} display={"flex"} alignItems={"center"} justifyContent={"center"}>
+    <HStack
+      h={"100vh"}
+      w={"100vw"}
+      id="aboutme"
+      paddingX={{ lg: "6", md: "6", sm: "6" }}
+    >
+      <Box
+        h={"full"}
+        gap={4}
+        maxW={"1220px"}
+        margin={"0 auto"}
+        w={"full"}
+        flexDirection={{ xl: "row", lg: "column", md: "column", sm: "column" }}
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
         <HStack
           backgroundColor={useColorModeValue(
             "customBgColors.gray100",
@@ -58,26 +73,18 @@ const AboutMe = () => {
               color={useColorModeValue("customGray.100", "customGray.100")}
               noOfLines={1}
             >
-              Desenvolvedor full-stack e amante da resolução de problemas
+              Desenvolvedor front-end e amante da resolução de problemas
             </Text>
             <Text
               as={"span"}
               fontSize={"lg"}
               color={useColorModeValue("customGray.200", "customGray.200")}
             >
-              Olá me chamo Lucas Patrick, sou desenvolvedor web a 5 anos.
-              Atuando por muito tempo com desenvolvimento front-end, hoje atuo
-              como full-stack. Sou apaixonado por desenvolvimento e design,
-              passando pelas 2 áreas atuando com edição de vídeo e imagens e
-              posteriormente com programação, decidi manter minha carreira onde
-              eu posso atuar nos dois. Meu interesse por programação vem desde
-              pequeno, quando era extremamente curioso para entender como sites
-              e aplicações funcionavam, então no meio do ensino médio decidi
-              iniciar meus estudos em HTML, CSS e JavaScript e tive um breve
-              aprendizado Java e C# na faculdade. Passei por diversos projetos
-              com variadas tecnologias, hoje meu foco é construir aplicações
-              escaláveis, visualmente bonitas, intuitivas e ainda se preocupando
-              com SEO, responsividade, acessibilidade e segurança.
+              Olá eu sou Lucas, desenvolvedor web desde 2016. Atualmente
+              trabalhando como desenvolvedor front-end e freelancer. Apaixonado
+              por tecnologia, inovação, programação e jogos. Meu intuito é
+              desenvolver interfaces modernas, visualmente agradáveis e
+              acessíveis a todos os usuários.
               <br />
               <br />
               Que tal construirmos algo incrível juntos?
@@ -85,8 +92,8 @@ const AboutMe = () => {
           </VStack>
         </HStack>
         <Box
-          w={{xl: "fit-content", lg: "100%", md: "100%", sm: "100%"}}
-          h={{xl: "472px", lg: "fit-content"}}
+          w={{ xl: "fit-content", lg: "100%", md: "100%", sm: "100%" }}
+          h={{ xl: "472px", lg: "fit-content" }}
           display={"flex"}
           gap={12}
           backgroundColor={useColorModeValue(
@@ -99,7 +106,7 @@ const AboutMe = () => {
           border={"1px"}
           borderColor={useColorModeValue("customGray.300", "customGray.300")}
           justifyContent={"center"}
-          flexDirection={{xl: "column", lg: "row"}}
+          flexDirection={{ xl: "column", lg: "row" }}
         >
           <Link
             href="https://www.github.com/hash-luk"
