@@ -29,13 +29,13 @@ const hoverEffect = {
 
 const Projects = () => {
   return (
-    <Stack minH={"100vh"} w={"100vw"}>
+    <Stack minH={"100vh"} w={"100vw"} height={"auto"}>
       <Stack h={"auto"} maxW={'1220px'} id="projects" gap={8} padding={8} margin={'0 auto'} w={'full'}>
-        <Heading as={"h3"}>Projetos pessoais</Heading>
+        <Heading as={"h3"} fontSize={{sm: "2xl", base: "2xl"}}>Projetos pessoais</Heading>
         <Flex
           flexWrap={"wrap"}
           w={"full"}
-          height={"auto"}
+          height={"100%"}
           gap={8}
           justify={"center"}
         >
@@ -45,8 +45,8 @@ const Projects = () => {
               href="https://github.com/hash-luk/SpiderMan-Home-Page"
             >
               <HStack
-                w={"500px"}
-                height={"325px"}
+                w={{xl: "500px", lg: "500px", md: "500px", sm:"100%",  base: "100%"}}
+                height={{sm: "360px", base: "360px"}}
                 position={"relative"}
                 overflow={"hidden"}
                 _hover={hoverEffect}
@@ -74,8 +74,10 @@ const Projects = () => {
                   backdropFilter="auto"
                   backdropBlur="1px"
                   transition={"all ease-in-out .4s"}
+                  padding={{sm: "6", base: "6"}}
+                  gap={{sm: "6", base: "6"}}
                 >
-                  <Heading as={"h6"}>
+                  <Heading as={"h6"} fontSize={{sm: "2xl", base:"2xl"}}>
                     Spider-Man Miles Morales - Landing Page
                   </Heading>
                   <Box>
@@ -86,6 +88,7 @@ const Projects = () => {
                       )}
                       fontSize={"md"}
                       gap={4}
+                      flexDirection={{sm: "column", base: "column"}}
                     >
                       <Text>JavaScript</Text>
                       <GoDotFill color="#e77f1f" />
@@ -105,8 +108,8 @@ const Projects = () => {
           <Flex>
             <Link isExternal href="https://github.com/hash-luk/Move.it">
               <HStack
-                w={"500px"}
-                height={"325px"}
+                w={{xl: "500px", lg: "500px", md: "500px", sm:"100%",  base: "100%"}}
+                height={{sm: "360px", base: "360px"}}
                 position={"relative"}
                 overflow={"hidden"}
                 _hover={hoverEffect}
@@ -134,8 +137,10 @@ const Projects = () => {
                   backdropFilter="auto"
                   backdropBlur="1px"
                   transition={"all ease-in-out .4s"}
+                  padding={{sm: "6", base: "6"}}
+                  gap={{sm: "6", base: "6"}}
                 >
-                  <Heading as={"h6"}>MoveIT</Heading>
+                  <Heading as={"h6"} fontSize={{sm: "2xl", base:"2xl"}}>MoveIT</Heading>
                   <Box>
                     <HStack
                       color={useColorModeValue(
@@ -144,6 +149,7 @@ const Projects = () => {
                       )}
                       fontSize={"md"}
                       gap={4}
+                      flexDirection={{sm: "column", base: "column"}}
                     >
                       <Text>NextJS</Text>
                       <GoDotFill color="#5965e0" />
@@ -161,8 +167,8 @@ const Projects = () => {
           <Flex>
             <Link isExternal href="https://github.com/hash-luk/Dev-Finance">
               <HStack
-                w={"500px"}
-                height={"325px"}
+                w={{xl: "500px", lg: "500px", md: "500px", sm:"100%",  base: "100%"}}
+                height={{sm: "360px", base: "360px"}}
                 position={"relative"}
                 overflow={"hidden"}
                 _hover={hoverEffect}
@@ -190,8 +196,10 @@ const Projects = () => {
                   backdropFilter="auto"
                   backdropBlur="1px"
                   transition={"all ease-in-out .4s"}
+                  padding={{sm: "6", base: "6"}}
+                  gap={{sm: "6", base: "6"}}
                 >
-                  <Heading as={"h6"}>DevFinance</Heading>
+                  <Heading as={"h6"} fontSize={{sm: "2xl", base:"2xl"}}>DevFinance</Heading>
                   <Box>
                     <HStack
                       color={useColorModeValue(
@@ -200,6 +208,7 @@ const Projects = () => {
                       )}
                       fontSize={"md"}
                       gap={4}
+                      flexDirection={{sm: "column", base: "column"}}
                     >
                       <Text>JavaScript</Text>
                       <GoDotFill color="#49aa26" />
@@ -217,8 +226,8 @@ const Projects = () => {
           <Flex>
             <Link isExternal href="https://github.com/hash-luk/BMW-Project">
               <HStack
-                w={"500px"}
-                height={"325px"}
+                w={{xl: "500px", lg: "500px", md: "500px", sm:"100%",  base: "100%"}}
+                height={{sm: "360px", base: "360px"}}
                 position={"relative"}
                 overflow={"hidden"}
                 _hover={hoverEffect}
@@ -246,8 +255,10 @@ const Projects = () => {
                   backdropFilter="auto"
                   backdropBlur="1px"
                   transition={"all ease-in-out .4s"}
+                  padding={{sm: "6", base: "6"}}
+                  gap={{sm: "6", base: "6"}}
                 >
-                  <Heading as={"h6"}>BMW - Home Page</Heading>
+                  <Heading as={"h6"} fontSize={{sm: "2xl", base:"2xl"}}>BMW - Home Page</Heading>
                   <Box>
                     <HStack
                       color={useColorModeValue(
@@ -256,6 +267,7 @@ const Projects = () => {
                       )}
                       fontSize={"md"}
                       gap={4}
+                      flexDirection={{sm: "column", base: "column"}}
                     >
                       <Text>HTML</Text>
                       <GoDotFill color="#1c69d4" />
@@ -278,8 +290,8 @@ const Projects = () => {
               href="https://github.com/hash-luk/Netflix-UI-Clone"
             >
               <HStack
-                w={"500px"}
-                height={"325px"}
+                w={{xl: "500px", lg: "500px", md: "500px", sm:"100%",  base: "100%"}}
+                height={{sm: "360px", base: "360px"}}
                 position={"relative"}
                 overflow={"hidden"}
                 _hover={hoverEffect}
@@ -307,8 +319,10 @@ const Projects = () => {
                   backdropFilter="auto"
                   backdropBlur="1px"
                   transition={"all ease-in-out .4s"}
+                  padding={{sm: "6", base: "6"}}
+                  gap={{sm: "6", base: "6"}}
                 >
-                  <Heading as={"h6"}>Netflix UI CLone</Heading>
+                  <Heading as={"h6"} fontSize={{sm: "2xl", base:"2xl"}}>Netflix UI CLone</Heading>
                   <Box>
                     <HStack
                       color={useColorModeValue(
@@ -317,6 +331,8 @@ const Projects = () => {
                       )}
                       fontSize={"md"}
                       gap={4}
+                      paddingX={{sm: "6"}}
+                      flexDirection={{sm: "column", base: "column"}}
                     >
                       <Text>React</Text>
                       <GoDotFill color="#E50914" />
@@ -339,8 +355,8 @@ const Projects = () => {
               href="https://github.com/hash-luk/madeireira-mogno"
             >
               <HStack
-                w={"500px"}
-                height={"325px"}
+                w={{xl: "500px", lg: "500px", md: "500px", sm:"100%",  base: "100%"}}
+                height={{sm: "360px", base: "360px"}}
                 position={"relative"}
                 overflow={"hidden"}
                 _hover={hoverEffect}
@@ -368,8 +384,10 @@ const Projects = () => {
                   backdropFilter="auto"
                   backdropBlur="1px"
                   transition={"all ease-in-out .4s"}
+                  padding={{sm: "6", base: "6"}}
+                  gap={{sm: "6", base: "6"}}
                 >
-                  <Heading as={"h6"}>Madeireira Mogno</Heading>
+                  <Heading as={"h6"} fontSize={{sm: "2xl", base:"2xl"}}>Madeireira Mogno</Heading>
                   <Box>
                     <HStack
                       color={useColorModeValue(
@@ -378,6 +396,7 @@ const Projects = () => {
                       )}
                       fontSize={"md"}
                       gap={4}
+                      flexDirection={{sm: "column", base: "column"}}
                     >
                       <Text>React</Text>
                       <GoDotFill color="#77c91e" />
