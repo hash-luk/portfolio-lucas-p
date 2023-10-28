@@ -84,7 +84,7 @@ const Theme =extendTheme({
         lg: "62rem",      // 992px
         xl: "80rem",      // 1280px
         "2xl": "96rem",   //1536px
-        "3xl": "102rem",    
+        "3xl": "102rem",  //1632px  
     },
     styles: {
         global: {

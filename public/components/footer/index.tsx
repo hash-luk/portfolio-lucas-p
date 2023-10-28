@@ -6,15 +6,17 @@ const Footer = () => {
   return (
     <Flex
       w={"100vw"}
-      height={"80px"}
+      height={{lg: "80px", md: "80px", sm: "fit-content", base: "fit-content"}}
       backgroundColor={useColorModeValue("customGray.600", "customGray.600")}
-      paddingX={{lg:"6", md:"6", sm:"6"}}
+      paddingX={{lg:"6", md:"6", sm:"6", base: "6"}}
+      paddingY={{sm: "6", base: "6"}} 
     >
       <HStack
         maxW={"1220px"}
         margin={"0 auto"}
         justifyContent={"space-between"}
         flex={1}
+        flexDirection={{lg: "row", md: "row", sm: "column-reverse", base: "column-reverse"}}
       >
         <Text
           as={"p"}
