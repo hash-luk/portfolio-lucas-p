@@ -11,6 +11,7 @@ import {
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
+import { handleRedirect } from "../../../../utils/functions";
 import bannerImage from "../../../assets/images/banner-image.svg";
 
 const BannerContent = () => {
@@ -76,7 +77,7 @@ const BannerContent = () => {
           </Box>
           <Button
             as={"a"}
-            href="#aboutme"
+            onClick={() => handleRedirect("aboutme", "self")}
             py={8}
             px={4}
             w={{ lg: "170px", md: "100%", sm: "100%", base: "100%" }}
