@@ -12,6 +12,7 @@ import {
 
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Image from 'next/image'
+import { handleRedirect } from "../../../utils/functions";
 import Logo from "../../assets/icons/logo.svg"
 
 interface Props {
@@ -25,9 +26,9 @@ type MenuItem = {
 }
 
 const links: MenuItem[] = [
-  { nome: 'Sobre', href: '#aboutme' },
-  { nome: 'Conhecimentos', href: '#techstack' },
-  { nome: 'Projetos', href: '#projects' },
+  { nome: 'Sobre', href: 'aboutme' },
+  { nome: 'Conhecimentos', href: 'techstack' },
+  { nome: 'Projetos', href: 'projects' },
 ];
 
 const NavLink = (props : Props) => {
@@ -43,8 +44,9 @@ const NavLink = (props : Props) => {
         textDecoration: 'none',
         color: useColorModeValue('customBlue.600', 'customBlue.500')
       }}
-      href={href}
       color={useColorModeValue('customGray.100', 'customGray.100')}
+      cursor={"pointer"}
+      onClick={() => handleRedirect(href, "self")}
     >
       {children}
     </Box>
@@ -59,8 +61,8 @@ export default function NavBar() {
       <Box bg={useColorModeValue('customGray.500', 'customGray.500')} px={4} width={'100vw'} paddingX={{lg: "6", md: "6", sm: "6", base: "6"}}>
         <Flex h={32} alignItems={'center'} justifyContent={'space-between'} maxW={'1220px'} margin={'0 auto'} w={'full'}>
           <HStack spacing={8} alignItems={'center'} justifyContent={'space-between'} w={'100%'}>
-            <Box as='a' href={'#'}>
-              <Image src={Logo} alt='Logo com formato de tag HTMl em azul formando um L no meio'/>
+            <Box as='a' onClick={() => {window.location.reload()}} cursor={"pointer"}>
+              <Image src={Logo} alt='Logo com formato de tag HTMl em azul formando um L no meio' style={{borderRadius: "8px"}}/>
             </Box>
             <HStack as={'nav'} spacing={12} display={{base: 'none', md:'flex'}}>
               {links.map((item,index) => (
