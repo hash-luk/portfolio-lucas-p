@@ -83,10 +83,10 @@ const AboutMe = () => {
               fontSize={"lg"}
               color={useColorModeValue("customGray.200", "customGray.200")}
             >
-              Olá eu sou Lucas, desenvolvedor web desde 2016. Atualmente
-              trabalhando como desenvolvedor front-end e freelancer. Apaixonado
+              Olá eu sou Lucas, desenvolvedor web desde 2015. Atualmente
+              trabalhando como desenvolvedor full-stack. Apaixonado
               por tecnologia, inovação, programação e jogos. Meu intuito é
-              desenvolver interfaces modernas, visualmente agradáveis e
+              desenvolver aplicações escaláveis, visualmente agradáveis e
               acessíveis a todos os usuários.
               <br />
               <br />
