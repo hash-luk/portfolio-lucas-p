@@ -12,7 +12,7 @@ import {
 
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import Image from 'next/image'
-import { handleRedirect } from "../../../utils/functions";
+import { handleRedirect,handleDownload } from "../../../utils/functions";
 import Logo from "../../assets/icons/logo.svg"
 
 interface Props {
@@ -29,6 +29,7 @@ const links: MenuItem[] = [
   { nome: 'Sobre', href: 'aboutme' },
   { nome: 'Conhecimentos', href: 'techstack' },
   { nome: 'Projetos', href: 'projects' },
+  { nome: 'Currículo', href: "./assets/docs/curriculum.pdf"}
 ];
 
 const NavLink = (props : Props) => {
@@ -46,7 +47,7 @@ const NavLink = (props : Props) => {
       }}
       color={useColorModeValue('customGray.100', 'customGray.100')}
       cursor={"pointer"}
-      onClick={() => handleRedirect(href, "self")}
+      onClick={() => children !== "Currículo" ? handleRedirect(href, "self") : handleDownload(href)}
     >
       {children}
     </Box>
