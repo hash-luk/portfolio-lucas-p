@@ -9,51 +9,63 @@ const TechStack = () => {
   const techs = [
     {
       name: "HTML5",
-      nível: "Avançado"
+      nível: "Avançado",
+      hv_cor: "#e86229"
     },
     {
       name: "CSS3",
-      nível: "Avançado"
+      nível: "Avançado",
+      hv_cor: "#358dc9"
     },
     {
       name: "JavaScript",
-      nível: "Avançado"
+      nível: "Avançado",
+      hv_cor: "#f3d024"
     },
     {
       name: "TypeScript",
-      nível: "Intermediário"
+      nível: "Intermediário",
+      hv_cor: "#0076c6"
     },
     {
       name: "NodeJS",
-      nível: "Intermediário"
+      nível: "Intermediário",
+      hv_cor: "#6eb351"
     },
     {
       name: "ReactJS",
-      nível: "Avançado"
+      nível: "Avançado",
+      hv_cor: "#5ed3f3"
     },
     {
       name: "NextJS",
-      nível: "Intermediário"
+      nível: "Intermediário",
+      hv_cor: "#FFFFFF"
     },
     {
       name: "PHP",
-      nível: "Intermediário"
+      nível: "Intermediário",
+      hv_cor: "#7377ad"
     },
     {
       name: "MySQL",
-      nível: "Intermediário"
+      nível: "Intermediário",
+      hv_cor: "#f09111"
     },
     {
       name: "Laravel",
-      nível: "Iniciante"
+      nível: "Iniciante",
+      hv_cor: "#f34d39"
     },
     {
       name: "Docker",
-      nível: "Intermediário"
+      nível: "Intermediário",
+      hv_cor: "#1c60e6"
     },
     {
       name: "Git",
-      nível: "Avançado"
+      nível: "Avançado",
+      hv_cor: "#f04a2e"
     },
   ]
 
@@ -79,7 +91,7 @@ const TechStack = () => {
       },
       boxShadow: "13px 4px 21px 2px rgba(0,0,0,0.16)",
       hover: {
-        '&>.icon': {
+        '.icon': {
           color: useColorModeValue("customBlue.400","customBlue.400"),
         },
         transform: "scale(1.1)"
@@ -90,8 +102,8 @@ const TechStack = () => {
   }
 
   return (
-    <HStack w={"100vw"} h={"auto"} minHeight={"100vh"} backgroundColor={useColorModeValue("customBgColors.gray100", "customBgColors.gray100")} padding={8}>
-      <VStack alignItems={"flex-start"} gap={8} id='techstack' maxW={'1220px'} margin={'0 auto'} w={'full'}>
+    <HStack w={"100vw"} h={"auto"} minHeight={"100vh"} backgroundColor={useColorModeValue("customBgColors.gray100", "customBgColors.gray100")} padding={8} id='techstack'>
+      <VStack alignItems={"flex-start"} gap={8} maxW={'1220px'} margin={'0 auto'} w={'full'}>
       <Heading as={"h3"} fontSize={{sm: "2xl", base: "2xl"}}>Conhecimentos</Heading>
       <Flex height={"100%"} wrap={"wrap"} gap={8} justify={"center"} w={"100%"} py={styleOptions.py}>
         {
@@ -104,25 +116,30 @@ const TechStack = () => {
               justifyContent={"center"}
               gap={styleOptions.box.defaultPixels}
               color={styleOptions.box.color}
-              _hover={styleOptions.box.hover}
+              _hover={{
+                '.icon': {
+                  color: tech.hv_cor
+                },
+                transform: "scale(1.1)"
+              }}
               transition={styleOptions.box.transition}
               boxShadow={styleOptions.box.boxShadow}
               border={styleOptions.box.border}
               borderColor={styleOptions.box.borderColor}
             >
               <Text as={"span"} fontSize={styleOptions.box.fontSize.name} >{tech.name}</Text>
-              {tech.name === "HTML5" && <AiFillHtml5 size={64} className='icon'/>}
-              {tech.name === "CSS3" && <BiLogoCss3 size={64}  className='icon'/>}
-              {tech.name === "JavaScript" && <BiLogoJavascript size={64}  className='icon'/>}
-              {tech.name === "TypeScript" && <BiLogoTypescript size={64}  className='icon'/>}
-              {tech.name === "NodeJS" && <BiLogoNodejs size={64}  className='icon'/>}
-              {tech.name === "ReactJS" && <GrReactjs size={64}  className='icon'/>}
-              {tech.name === "NextJS" && <TbBrandNextjs size={64}  className='icon'/>}
-              {tech.name === "PHP" && <BiLogoPhp size={64}  className='icon'/>}
-              {tech.name === "MySQL" && <GrMysql size={64}  className='icon'/>}
-              {tech.name === "Laravel" && <SiLaravel size={64}  className='icon'/>}
-              {tech.name === "Docker" && <BiLogoDocker size={64}  className='icon'/>}
-              {tech.name === "Git" && <BiLogoGit size={64}  className='icon'/>}
+              {tech.name === "HTML5" && <AiFillHtml5 size={64} className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "CSS3" && <BiLogoCss3 size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "JavaScript" && <BiLogoJavascript size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "TypeScript" && <BiLogoTypescript size={64}  className='icon'style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "NodeJS" && <BiLogoNodejs size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "ReactJS" && <GrReactjs size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "NextJS" && <TbBrandNextjs size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "PHP" && <BiLogoPhp size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "MySQL" && <GrMysql size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "Laravel" && <SiLaravel size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "Docker" && <BiLogoDocker size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
+              {tech.name === "Git" && <BiLogoGit size={64}  className='icon' style={{transition: styleOptions.box.transition}}/>}
               <Text as={"span"} fontSize={styleOptions.box.fontSize.level}>{tech.nível}</Text>
             </VStack>
           ))
