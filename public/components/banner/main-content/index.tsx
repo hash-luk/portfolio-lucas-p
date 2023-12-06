@@ -51,7 +51,7 @@ const BannerContent = () => {
             color={useColorModeValue("customGray.100", "customGray.100")}
             fontSize={"2xl"}
           >
-            Desenvolvedor front-end
+            Desenvolvedor full-stack
           </Text>
           <Box
             as={motion.div}
@@ -89,6 +89,7 @@ const BannerContent = () => {
               width: { lg: "170px", md: "100%", sm: "100%", base: "100%" },
             }}
             transition={"all ease .2s"}
+            cursor={"pointer"}
           >
             Saiba mais
           </Button>
