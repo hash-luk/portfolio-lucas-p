@@ -29,8 +29,8 @@ const hoverEffect = {
 
 const Projects = () => {
   return (
-    <Stack minH={"100vh"} w={"100vw"} height={"auto"}>
-      <Stack h={"auto"} maxW={'1220px'} id="projects" gap={8} padding={8} margin={'0 auto'} w={'full'}>
+    <Stack minH={"100vh"} w={"100vw"} height={"auto"} id="projects">
+      <Stack h={"auto"} maxW={'1220px'}  gap={8} padding={8} margin={'0 auto'} w={'full'}>
         <Heading as={"h3"} fontSize={{sm: "2xl", base: "2xl"}}>Projetos pessoais</Heading>
         <Flex
           flexWrap={"wrap"}

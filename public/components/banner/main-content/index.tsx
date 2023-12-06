@@ -86,7 +86,7 @@ const BannerContent = () => {
                 "customBlue.500",
                 "customBlue.500"
               ),
-              width: { lg: "170px", md: "100%", sm: "100%", base: "100%" },
+              width: {lg: "200px", md: "100%", sm: "100%", base: "100%" },
             }}
             transition={"all ease .2s"}
             cursor={"pointer"}
