@@ -29,7 +29,7 @@ const links: MenuItem[] = [
   { nome: "Sobre", href: "aboutme" },
   { nome: "Conhecimentos", href: "techstack" },
   { nome: "Projetos", href: "projects" },
-  { nome: "Currículo", href: "./assets/docs/curriculum.pdf" },
+  { nome: "Currículo", href: "./assets/docs/Curriculo_Lucas_Patrick.pdf" },
 ];
 
 const NavLink = (props: Props) => {
