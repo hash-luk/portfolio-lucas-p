@@ -76,7 +76,7 @@ const AboutMe = () => {
               color={useColorModeValue("customGray.100", "customGray.100")}
               noOfLines={{xl: 1, lg: 1, md: 1, sm: 2, base: 3}}
             >
-              Desenvolvedor front-end e amante da resolução de problemas
+              Desenvolvedor full-stack e amante da resolução de problemas
             </Text>
             <Text
               as={"span"}
