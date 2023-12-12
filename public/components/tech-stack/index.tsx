@@ -114,8 +114,8 @@ const TechStack = () => {
   return (
     <HStack
       w={"100vw"}
-      h={"auto"}
-      minHeight={"100vh"}
+      h={{"sm": "auto", "md": "auto", "lg": "100vh"}}
+      // minHeight={"100vh"}
       backgroundColor={useColorModeValue(
         "customBgColors.gray100",
         "customBgColors.gray100"
