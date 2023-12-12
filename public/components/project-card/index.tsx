@@ -35,6 +35,7 @@ export default function ProjectCard(props: ProjectProps) {
           alt={`Imagem do projeto ${props.projectName}`}
           fill
           style={{ objectFit: "cover",minWidth: "100%" }}
+          loading="lazy"
         />
       </HStack>
       <HStack
