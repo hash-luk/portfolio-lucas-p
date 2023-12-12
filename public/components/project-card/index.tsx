@@ -20,9 +20,10 @@ export default function ProjectCard(props: ProjectProps) {
   const imgSrc = `/assets/images/projects/${props.projectImage}`;
 
   return (
-    <VStack width={"500px"} h={"360"} gap={0}>
-      <Box
-        w={"500px"}
+    <VStack width={{"sm": "390px", "md": "500px","lg": "500px"}} h={"360"} gap={0}>
+      <HStack
+        width={{"sm": "390px", "md": "500px","lg": "500px"}}
+        minW={"390px"}
         h={"190"}
         position={"relative"}
         borderTopLeftRadius={8}
@@ -33,9 +34,9 @@ export default function ProjectCard(props: ProjectProps) {
           src={imgSrc}
           alt={`Imagem do projeto ${props.projectName}`}
           fill
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover",minWidth: "100%" }}
         />
-      </Box>
+      </HStack>
       <HStack
         w={"full"}
         borderBottomLeftRadius={8}
