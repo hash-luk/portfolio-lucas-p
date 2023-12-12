@@ -67,10 +67,10 @@ export default function ProjectCard(props: ProjectProps) {
             ))}
           </HStack>
           <HStack gap={8}>
-            <Button as={"a"} href={props.deployLink} padding={6}>
+            <Button as={"a"} href={props.deployLink} target="blank" padding={6}>
               Visualizar na WEB
             </Button>
-            <Button as={"a"} href={props.repoLink} padding={6}>
+            <Button as={"a"} href={props.repoLink} target="blank" padding={6}>
               Visualizar repositório
             </Button>
           </HStack>
