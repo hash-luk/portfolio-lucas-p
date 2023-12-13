@@ -23,7 +23,7 @@ export default function ProjectCard(props: ProjectProps) {
     <VStack width={{"sm": "390px", "md": "500px","lg": "500px"}} h={"360"} gap={0}>
       <HStack
         width={{"sm": "390px", "md": "500px","lg": "500px"}}
-        minW={"390px"}
+        minW={"100%"}
         h={"190"}
         position={"relative"}
         borderTopLeftRadius={8}
