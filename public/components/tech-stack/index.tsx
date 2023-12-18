@@ -41,7 +41,6 @@ const TechStack = () => {
     },
     {
       name: "NodeJS",
-
       hv_cor: "#6eb351",
     },
     {
@@ -50,26 +49,15 @@ const TechStack = () => {
     },
     {
       name: "NextJS",
-
       hv_cor: "#FFFFFF",
     },
     {
       name: "PHP",
-
       hv_cor: "#7377ad",
     },
     {
       name: "MySQL",
-
       hv_cor: "#f09111",
-    },
-    {
-      name: "Laravel",
-      hv_cor: "#f34d39",
-    },
-    {
-      name: "Docker",
-      hv_cor: "#1c60e6",
     },
     {
       name: "Git",
@@ -114,7 +102,7 @@ const TechStack = () => {
   return (
     <HStack
       w={"100vw"}
-      h={{"sm": "auto", "md": "auto", "lg": "100vh"}}
+      h={{ sm: "auto", md: "auto", lg: "100vh" }}
       // minHeight={"100vh"}
       backgroundColor={useColorModeValue(
         "customBgColors.gray100",
@@ -223,20 +211,6 @@ const TechStack = () => {
               )}
               {tech.name === "MySQL" && (
                 <GrMysql
-                  size={64}
-                  className="icon"
-                  style={{ transition: styleOptions.box.transition }}
-                />
-              )}
-              {tech.name === "Laravel" && (
-                <SiLaravel
-                  size={64}
-                  className="icon"
-                  style={{ transition: styleOptions.box.transition }}
-                />
-              )}
-              {tech.name === "Docker" && (
-                <BiLogoDocker
                   size={64}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
