@@ -34,7 +34,7 @@ const Footer = () => {
         <Text
           as={"p"}
           color={useColorModeValue("grayChateau.200", "grayChateau.200")}
-          fontSize={"lg"}
+          fontSize={{lg: "lg", md: "lg", sm: "md", base: "md"}}
         >
           2023&copy; lucascode.dev - Todos os direitos reservados.
         </Text>
