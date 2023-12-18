@@ -19,7 +19,7 @@ const AboutMe = () => {
       w={"100vw"}
       id="aboutme"
       paddingX={{ lg: "6", md: "6", sm: "6", base: "6" }}
-      paddingY={{sm: "6", base: "6"}}
+      paddingY={{ sm: "6", base: "6" }}
     >
       <Box
         h={"full"}
@@ -27,7 +27,13 @@ const AboutMe = () => {
         maxW={"1220px"}
         margin={"0 auto"}
         w={"full"}
-        flexDirection={{ xl: "row", lg: "column", md: "column", sm: "column", base: "column" }}
+        flexDirection={{
+          xl: "row",
+          lg: "column",
+          md: "column",
+          sm: "column",
+          base: "column",
+        }}
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
@@ -37,13 +43,19 @@ const AboutMe = () => {
             "customBgColors.gray100",
             "customBgColors.gray100"
           )}
-          px={{xl: "4", lg: "4", md: "4", sm: "6", base: "6"}}
+          px={{ xl: "4", lg: "4", md: "4", sm: "6", base: "6" }}
           py={4}
           borderRadius={8}
           gap={8}
           border={"1px"}
           borderColor={useColorModeValue("customGray.300", "customGray.300")}
-          flexDirection={{xl:"row",lg:"row",md:"row",sm: "column", base: "column"}}
+          flexDirection={{
+            xl: "row",
+            lg: "row",
+            md: "row",
+            sm: "column",
+            base: "column",
+          }}
         >
           <Image
             src={profilePhoto}
@@ -74,7 +86,7 @@ const AboutMe = () => {
               as={"p"}
               fontSize={"xl"}
               color={useColorModeValue("customGray.100", "customGray.100")}
-              noOfLines={{xl: 1, lg: 1, md: 1, sm: 2, base: 3}}
+              noOfLines={{ xl: 1, lg: 1, md: 1, sm: 2, base: 3 }}
             >
               Desenvolvedor full-stack e amante da resolução de problemas
             </Text>
@@ -83,11 +95,11 @@ const AboutMe = () => {
               fontSize={"lg"}
               color={useColorModeValue("customGray.200", "customGray.200")}
             >
-              Olá eu sou Lucas, desenvolvedor web desde 2015. Atualmente
-              trabalhando como desenvolvedor full-stack. Apaixonado
-              por tecnologia, inovação, programação e jogos. Meu intuito é
-              desenvolver aplicações escaláveis, visualmente agradáveis e
-              acessíveis a todos os usuários.
+              Olá eu sou Lucas, desenvolvedor web desde 2015, apaixonado por
+              tecnologia, inovação, programação e jogos.
+              <br />
+              Meu intuito é desenvolver aplicações escaláveis, visualmente
+              agradáveis e acessíveis a todos os usuários.
               <br />
               <br />
               Que tal construirmos algo incrível juntos?
@@ -95,7 +107,13 @@ const AboutMe = () => {
           </VStack>
         </HStack>
         <Box
-          w={{ xl: "fit-content", lg: "100%", md: "100%", sm: "100%", base: "100%" }}
+          w={{
+            xl: "fit-content",
+            lg: "100%",
+            md: "100%",
+            sm: "100%",
+            base: "100%",
+          }}
           h={{ xl: "472px", lg: "fit-content" }}
           display={"flex"}
           gap={12}
