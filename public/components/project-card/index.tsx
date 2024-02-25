@@ -20,9 +20,9 @@ export default function ProjectCard(props: ProjectProps) {
   const imgSrc = `/assets/images/projects/${props.projectImage}`;
 
   return (
-    <VStack width={{"sm": "390px", "md": "500px","lg": "500px"}} h={"360"} gap={0}>
+    <VStack width={{ sm: "390px", md: "500px", lg: "500px" }} h={"360"} gap={0}>
       <HStack
-        width={{"sm": "390px", "md": "500px","lg": "500px"}}
+        width={{ sm: "390px", md: "500px", lg: "500px" }}
         minW={"100%"}
         h={"190"}
         position={"relative"}
@@ -34,7 +34,7 @@ export default function ProjectCard(props: ProjectProps) {
           src={imgSrc}
           alt={`Imagem do projeto ${props.projectName}`}
           fill
-          style={{ objectFit: "cover",minWidth: "100%" }}
+          style={{ objectFit: "cover", minWidth: "100%" }}
           loading="lazy"
         />
       </HStack>
@@ -54,25 +54,26 @@ export default function ProjectCard(props: ProjectProps) {
             as={"h5"}
             fontSize={"lg"}
             fontWeight={"bold"}
-            color={useColorModeValue(
-              "grayChateau.200",
-              "grayChateau.200"
-            )}
+            color={useColorModeValue("grayChateau.200", "grayChateau.200")}
           >
             {props.projectName}
           </Text>
           <HStack>
             {props.techs.map((item, index) => (
-              <Text as={"span"} fontSize={"sm"} key={index}>{item} {index != props.techs.length - 1 ? "•" : ""}</Text>
+              <Text as={"span"} fontSize={"sm"} key={index}>
+                {item} {index != props.techs.length - 1 ? "•" : ""}
+              </Text>
             ))}
           </HStack>
           <HStack gap={8}>
             <Button as={"a"} href={props.deployLink} target="blank" padding={6}>
               Visualizar na WEB
             </Button>
-            <Button as={"a"} href={props.repoLink} target="blank" padding={6}>
-              Visualizar repositório
-            </Button>
+            {props.repoLink !== "" && (
+              <Button as={"a"} href={props.repoLink} target="blank" padding={6}>
+                Visualizar repositório
+              </Button>
+            )}
           </HStack>
         </VStack>
       </HStack>
