@@ -27,12 +27,12 @@ export const projects = [
     },
   },
   {
-    title: "Madeireira Mogno",
-    image: "madeireira.png",
-    techs: ["React", "TypeScript", "NodeJS", "Framer Motion", "Twillio"],
+    title: "SagaSys",
+    image: "sagasys.png",
+    techs: ["React", "TypeScript", "NodeJS", "Tailwind", "Resend"],
     links: {
-      deploy: "https://madeireira-mogno.vercel.app/",
-      repository: "https://github.com/hash-luk/madeireira-mogno",
+      deploy: "https://sagasys.com.br/",
+      repository: "",
     },
   },
   {
@@ -45,12 +45,12 @@ export const projects = [
     },
   },
   {
-    title: "Netflix UI Clone",
-    image: "netflix.png",
-    techs: ["React", "Material UI", "JavaScript", "NodeJS", "TMDB API"],
+    title: "SafeResiduos",
+    image: "saferesiduos.png",
+    techs: ["PHP", "Elementor", "WordPress"],
     links: {
-      deploy: "https://netflix-ui-clone-lilac.vercel.app/",
-      repository: "https://github.com/hash-luk/Netflix-UI-Clone",
+      deploy: "https://saferesiduos.com.br/",
+      repository: "",
     },
   },
 ];
