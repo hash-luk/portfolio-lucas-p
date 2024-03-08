@@ -5,7 +5,6 @@ export const projects = [
     techs: ["JavaScript", "HTML5", "SASS", "JQuery", "TiltJS"],
     links: {
       deploy: "https://spider-man-home-page.vercel.app/",
-      repository: "https://github.com/hash-luk/SpiderMan-Home-Page",
     },
   },
   {
@@ -14,7 +13,6 @@ export const projects = [
     techs: ["HTML", "CSS", "JavaScript", "SASS", "NodeJS"],
     links: {
       deploy: "https://bmw-project.vercel.app/",
-      repository: "https://github.com/hash-luk/BMW-Project",
     },
   },
   {
@@ -23,7 +21,6 @@ export const projects = [
     techs: ["JavaScript", "HTML", "SASS", "JQuery"],
     links: {
       deploy: "https://dev-finance-jrsq2ybxk-hash-luk.vercel.app/",
-      repository: "https://github.com/hash-luk/Dev-Finance",
     },
   },
   {
@@ -32,7 +29,6 @@ export const projects = [
     techs: ["React", "TypeScript", "NodeJS", "Tailwind", "Resend"],
     links: {
       deploy: "https://sagasys.com.br/",
-      repository: "",
     },
   },
   {
@@ -41,7 +37,6 @@ export const projects = [
     techs: ["NextJS", "TypeScript", "Firebase", "Modular CSS"],
     links: {
       deploy: "https://keep-in-action.vercel.app/",
-      repository: "https://github.com/hash-luk/Move.it",
     },
   },
   {
@@ -50,7 +45,6 @@ export const projects = [
     techs: ["PHP", "Elementor", "WordPress"],
     links: {
       deploy: "https://saferesiduos.com.br/",
-      repository: "",
     },
   },
 ];

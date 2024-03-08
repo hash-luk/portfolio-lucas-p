@@ -83,8 +83,8 @@ const BannerContent = () => {
             w={{ lg: "170px", md: "100%", sm: "100%", base: "100%" }}
             _hover={{
               backgroundColor: useColorModeValue(
-                "customBlue.500",
-                "customBlue.500"
+                "customBlue.700",
+                "customBlue.700"
               ),
               width: { lg: "200px", md: "100%", sm: "100%", base: "100%" },
             }}

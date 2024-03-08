@@ -1,8 +1,4 @@
-import {
-  Heading,
-  Flex,
-  Stack,
-} from "@chakra-ui/react";
+import { Heading, Flex, Stack, Text } from "@chakra-ui/react";
 import { projects } from "utils/data/projects";
 import ProjectCard from "../project-card";
 
@@ -34,7 +30,6 @@ const Projects = () => {
               projectImage={item.image}
               techs={item.techs}
               deployLink={item.links.deploy}
-              repoLink={item.links.repository}
             />
           ))}
         </Flex>
