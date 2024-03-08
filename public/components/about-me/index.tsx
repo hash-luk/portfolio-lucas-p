@@ -77,7 +77,7 @@ const AboutMe = () => {
               color={useColorModeValue("customBlue.400", "customBlue.400")}
               noOfLines={1}
             >
-              Sobre mim
+              Sobre
             </Heading>
             <Heading as={"h3"} fontSize={"2xl"} noOfLines={1}>
               Lucas Patrick
@@ -88,21 +88,23 @@ const AboutMe = () => {
               color={useColorModeValue("customGray.100", "customGray.100")}
               noOfLines={{ xl: 1, lg: 1, md: 1, sm: 2, base: 3 }}
             >
-              Desenvolvedor full-stack e amante da resolução de problemas
+              Desenvolvedor front-end e amante da resolução de problemas
             </Text>
             <Text
               as={"span"}
               fontSize={"lg"}
               color={useColorModeValue("customGray.200", "customGray.200")}
             >
-              Olá eu sou Lucas, desenvolvedor web desde 2015, apaixonado por
-              tecnologia, inovação, programação e jogos.
+              Desenvolvedor a mais de 6 anos, focado a 5 anos em{" "}
+              <b>desenvolvimento front-end</b>. Apaixonado por tecnologia,{" "}
+              <b>design</b> e inovação, tenho amplo conhecimento nas tecnologias
+              mais recentes utilizadas no mercado, como React, Next e Angular.
+              Amo <b>resolver problemas</b> e transformar ideias em{" "}
+              <b>produtos digitais</b> escaláveis, visualmente bonitos e
+              totalmente responsivos!
               <br />
-              Meu intuito é desenvolver aplicações escaláveis, visualmente
-              agradáveis e acessíveis a todos os usuários.
               <br />
-              <br />
-              Que tal construirmos algo incrível juntos?
+              Que tal construírmos algo incrível juntos?
             </Text>
           </VStack>
         </HStack>
