@@ -1,6 +1,7 @@
 import { Heading, Flex, Stack, Text } from "@chakra-ui/react";
 import { projects } from "utils/data/projects";
 import ProjectCard from "../project-card";
+import Title from "../title";
 
 const Projects = () => {
   return (
@@ -13,15 +14,15 @@ const Projects = () => {
         margin={"0 auto"}
         w={"full"}
       >
-        <Heading as={"h3"} fontSize={{ sm: "2xl", base: "2xl" }}>
-          Projetos
-        </Heading>
+        <Title title="Projetos" />
         <Flex
           flexWrap={"wrap"}
           w={"full"}
           height={"100%"}
           gap={8}
           justify={"center"}
+          paddingTop={"32px"}
+          paddingBottom={"32px"}
         >
           {projects.map((item, index) => (
             <ProjectCard

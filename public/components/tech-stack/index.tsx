@@ -19,6 +19,7 @@ import {
 import { GrReactjs, GrMysql } from "react-icons/gr";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiLaravel } from "react-icons/si";
+import Title from "../title";
 
 const TechStack = () => {
   const techs = [
@@ -118,9 +119,7 @@ const TechStack = () => {
         margin={"0 auto"}
         w={"full"}
       >
-        <Heading as={"h3"} fontSize={{ sm: "2xl", base: "2xl" }}>
-          Conhecimentos
-        </Heading>
+        <Title title="Conhecimentos" />
         <Flex
           height={"100%"}
           wrap={"wrap"}
