@@ -1,4 +1,4 @@
-import { Heading, Flex, Stack, Text } from "@chakra-ui/react";
+import { Flex, Stack } from "@chakra-ui/react";
 import { projects } from "utils/data/projects";
 import ProjectCard from "../project-card";
 import Title from "../title";
