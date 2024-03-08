@@ -1,7 +1,6 @@
 import {
   VStack,
   HStack,
-  Heading,
   Text,
   useColorModeValue,
   Flex,
@@ -13,7 +12,6 @@ import {
   BiLogoTypescript,
   BiLogoNodejs,
   BiLogoPhp,
-  BiLogoDocker,
   BiLogoGit,
 } from "react-icons/bi";
 import { GrReactjs, GrMysql } from "react-icons/gr";
@@ -103,7 +101,7 @@ const TechStack = () => {
   return (
     <HStack
       w={"100vw"}
-      h={{ sm: "auto", md: "auto", lg: "100vh" }}
+      h={{ sm: "auto", md: "auto", lg: "80vh" }}
       // minHeight={"100vh"}
       backgroundColor={useColorModeValue(
         "customBgColors.gray100",
