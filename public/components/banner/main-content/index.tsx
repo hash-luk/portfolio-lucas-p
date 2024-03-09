@@ -77,6 +77,7 @@ const BannerContent = () => {
           </Box>
           <Button
             as={"a"}
+            href="#"
             onClick={(e: React.MouseEvent<HTMLElement>) =>
               handleRedirect({
                 url: "aboutme",
