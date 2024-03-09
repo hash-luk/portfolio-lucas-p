@@ -9,11 +9,10 @@ import {
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
-
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Image from "next/image";
 import { handleRedirect, handleDownload } from "../../../utils/functions";
 import Logo from "../../assets/icons/logo.svg";
+import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 interface Props {
   children: React.ReactNode;
@@ -32,24 +31,27 @@ const links: MenuItem[] = [
   { nome: "Currículo", href: "./assets/docs/Curriculo_Lucas_Patrick.pdf" },
 ];
 
-const NavLink = (props: Props) => {
-  const { children, href } = props;
-
+const NavLink = ({ children, href }: Props) => {
   return (
     <Box
       as="a"
       px={2}
       py={1}
       rounded={"md"}
+      href="#"
       _hover={{
         textDecoration: "none",
         color: useColorModeValue("customBlue.600", "customBlue.500"),
       }}
       color={useColorModeValue("customGray.100", "customGray.100")}
       cursor={"pointer"}
-      onClick={() =>
+      onClick={(e: React.MouseEvent<HTMLElement>) =>
         children !== "Currículo"
-          ? handleRedirect(href, "self")
+          ? handleRedirect({
+              url: href,
+              target: "self",
+              eventHandler: e,
+            })
           : handleDownload(href)
       }
     >

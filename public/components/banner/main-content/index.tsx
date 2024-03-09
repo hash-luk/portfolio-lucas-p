@@ -77,7 +77,13 @@ const BannerContent = () => {
           </Box>
           <Button
             as={"a"}
-            onClick={() => handleRedirect("aboutme", "self")}
+            onClick={(e: React.MouseEvent<HTMLElement>) =>
+              handleRedirect({
+                url: "aboutme",
+                target: "self",
+                eventHandler: e,
+              })
+            }
             py={8}
             px={4}
             w={{ lg: "170px", md: "100%", sm: "100%", base: "100%" }}

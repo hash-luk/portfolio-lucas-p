@@ -1,7 +1,16 @@
-export function handleRedirect(url: string, target: string): void {
-  if (target === "self") {
-    if (url !== "") {
-      const urlToRedirect = "#" + url;
+import React from "react";
+
+interface IHandleRedirect {
+  url: string;
+  target: string;
+  eventHandler: React.MouseEvent<HTMLElement>;
+}
+
+export function handleRedirect(handleRedirectProps: IHandleRedirect): void {
+  handleRedirectProps.eventHandler.preventDefault();
+  if (handleRedirectProps.target === "self") {
+    if (handleRedirectProps.url !== "") {
+      const urlToRedirect = "#" + handleRedirectProps.url;
       const elementScrollTo = document.querySelector(
         urlToRedirect
       ) as HTMLDivElement;

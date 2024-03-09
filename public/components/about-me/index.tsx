@@ -139,6 +139,7 @@ const AboutMe = () => {
               color: useColorModeValue("grayChateau.500", "grayChateau.500"),
             }}
             transition={"all ease .2s"}
+            aria-label="Github"
           >
             <Github size={32} strokeWidth={1} />
           </Link>
@@ -150,6 +151,7 @@ const AboutMe = () => {
               color: useColorModeValue("customBlue.500", "customBlue.500"),
             }}
             transition={"all ease .2s"}
+            aria-label="LinkedIN"
           >
             <Linkedin size={32} strokeWidth={1} />
           </Link>
@@ -161,6 +163,7 @@ const AboutMe = () => {
               color: useColorModeValue("customPink.500", "customPink.500"),
             }}
             transition={"all ease .2s"}
+            aria-label="Instagram"
           >
             <Instagram size={32} strokeWidth={1} />
           </Link>
