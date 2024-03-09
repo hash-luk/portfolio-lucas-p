@@ -87,7 +87,9 @@ export default function NavBar() {
           >
             <Box
               as="a"
-              onClick={() => {
+              href="#"
+              onClick={(e: React.MouseEvent<HTMLElement>) => {
+                e.preventDefault();
                 window.location.reload();
               }}
               cursor={"pointer"}
