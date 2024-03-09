@@ -10,13 +10,11 @@ import {
   BiLogoCss3,
   BiLogoJavascript,
   BiLogoTypescript,
-  BiLogoNodejs,
-  BiLogoPhp,
   BiLogoGit,
 } from "react-icons/bi";
-import { GrReactjs, GrMysql } from "react-icons/gr";
+import { GrReactjs } from "react-icons/gr";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiLaravel } from "react-icons/si";
+import { SiStorybook, SiStyledcomponents, SiCypress } from "react-icons/si";
 import Title from "../title";
 
 const TechStack = () => {
@@ -35,12 +33,11 @@ const TechStack = () => {
     },
     {
       name: "TypeScript",
-
       hv_cor: "#0076c6",
     },
     {
-      name: "NodeJS",
-      hv_cor: "#6eb351",
+      name: "Cypress",
+      hv_cor: "#00814D",
     },
     {
       name: "ReactJS",
@@ -51,12 +48,12 @@ const TechStack = () => {
       hv_cor: "#FFFFFF",
     },
     {
-      name: "PHP",
-      hv_cor: "#7377ad",
+      name: "Styled-Components",
+      hv_cor: "#bf4f74",
     },
     {
-      name: "MySQL",
-      hv_cor: "#f09111",
+      name: "StoryBook",
+      hv_cor: "#ff4785",
     },
     {
       name: "Git",
@@ -73,9 +70,19 @@ const TechStack = () => {
     },
     py: "32px",
     box: {
-      height: "200px",
-      width: "200px",
-      borderColor: useColorModeValue("customBlue.500", "customBlue.500"),
+      height: {
+        lg: "200px",
+        md: "20ppx",
+        sm: "116px",
+        base: "116px",
+      },
+      width: {
+        lg: "200px",
+        md: "200px",
+        sm: "95vw",
+        base: "95vw",
+      },
+      borderColor: useColorModeValue("grayChateau.50", "grayChateau.50"),
       backgGroundColor: useColorModeValue(
         "customBgColors.gray200",
         "customBgColors.gray200"
@@ -102,7 +109,6 @@ const TechStack = () => {
     <HStack
       w={"100vw"}
       h={{ sm: "auto", md: "auto", lg: "80vh" }}
-      // minHeight={"100vh"}
       backgroundColor={useColorModeValue(
         "customBgColors.gray100",
         "customBgColors.gray100"
@@ -138,9 +144,19 @@ const TechStack = () => {
               color={styleOptions.box.color}
               _hover={{
                 ".icon": {
-                  color: tech.hv_cor,
+                  color: {
+                    lg: tech.hv_cor,
+                    base: tech.hv_cor,
+                  },
                 },
-                transform: "scale(1.1)",
+                transform: {
+                  lg: "scale(1.1)",
+                  base: "scale(1.1)",
+                },
+                borderColor: {
+                  lg: tech.hv_cor,
+                  base: tech.hv_cor,
+                },
               }}
               transition={styleOptions.box.transition}
               boxShadow={styleOptions.box.boxShadow}
@@ -152,70 +168,70 @@ const TechStack = () => {
               </Text>
               {tech.name === "HTML5" && (
                 <AiFillHtml5
-                  size={64}
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
               {tech.name === "CSS3" && (
                 <BiLogoCss3
-                  size={64}
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
               {tech.name === "JavaScript" && (
                 <BiLogoJavascript
-                  size={64}
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
               {tech.name === "TypeScript" && (
                 <BiLogoTypescript
-                  size={64}
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
-              {tech.name === "NodeJS" && (
-                <BiLogoNodejs
-                  size={64}
+              {tech.name === "Cypress" && (
+                <SiCypress
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
               {tech.name === "ReactJS" && (
                 <GrReactjs
-                  size={64}
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
               {tech.name === "NextJS" && (
                 <TbBrandNextjs
-                  size={64}
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
-              {tech.name === "PHP" && (
-                <BiLogoPhp
-                  size={64}
+              {tech.name === "StoryBook" && (
+                <SiStorybook
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
-              {tech.name === "MySQL" && (
-                <GrMysql
-                  size={64}
+              {tech.name === "Styled-Components" && (
+                <SiStyledcomponents
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
               )}
               {tech.name === "Git" && (
                 <BiLogoGit
-                  size={64}
+                  size={48}
                   className="icon"
                   style={{ transition: styleOptions.box.transition }}
                 />
