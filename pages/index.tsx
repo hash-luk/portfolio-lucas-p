@@ -14,9 +14,12 @@ const Home: NextPage = () => {
       <main>
         <Head>
           <title>Lucas &bull; Dev</title>
-          <meta name="description" content="Portfolio desenvolvedor front-end Lucas Patrick."/>
-          <meta name="author" content="Lucas Patrick"/>
-          <link rel="canonical" href="https://lucascode.dev"/>
+          <meta
+            name="description"
+            content="Portfolio desenvolvedor front-end Lucas Patrick."
+          />
+          <meta name="author" content="Lucas Patrick" />
+          <link rel="canonical" href="https://lucascode.dev" />
         </Head>
         <NavBar />
         <BannerContent />

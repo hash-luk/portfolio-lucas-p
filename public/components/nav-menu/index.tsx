@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { handleRedirect, handleDownload } from "../../../utils/functions";
-import Logo from "../../assets/icons/logo.svg";
+import Logo from "../../assets/images/logo.svg";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
 interface Props {
