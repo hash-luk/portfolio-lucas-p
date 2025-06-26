@@ -155,18 +155,6 @@ const AboutMe = () => {
           >
             <Linkedin size={32} strokeWidth={1} />
           </Link>
-          <Link
-            href="https://www.instagram.com/lkc_lucasp/"
-            isExternal
-            color={useColorModeValue("customGray.100", "customGray.100")}
-            _hover={{
-              color: useColorModeValue("customPink.500", "customPink.500"),
-            }}
-            transition={"all ease .2s"}
-            aria-label="Instagram"
-          >
-            <Instagram size={32} strokeWidth={1} />
-          </Link>
         </Box>
       </Box>
     </HStack>
