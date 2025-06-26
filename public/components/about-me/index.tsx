@@ -63,7 +63,7 @@ const AboutMe = () => {
             width={300}
             height={400}
             loading="lazy"
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: "contain", height: "auto" }}
           />
           <VStack
             alignItems={"flex-start"}
