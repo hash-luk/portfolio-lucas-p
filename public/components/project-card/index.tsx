@@ -20,7 +20,7 @@ interface ProjectProps {
   projectName: string;
   projectImage: string;
   techs: Array<string>;
-  deployLink: string;
+  deployLink?: string;
 }
 
 export default function ProjectCard(props: ProjectProps) {
@@ -89,6 +89,7 @@ export default function ProjectCard(props: ProjectProps) {
             "customBgColors.gray100",
             "customBgColors.gray100"
           )}
+          height={!props.deployLink ? 156 : ""}
         >
           <VStack gap={8}>
             <Text
@@ -107,23 +108,25 @@ export default function ProjectCard(props: ProjectProps) {
               ))}
             </HStack>
             <HStack gap={8}>
-              <Button
-                as={"a"}
-                href={props.deployLink}
-                target="blank"
-                padding={6}
-                gap={4}
-                alignItems={"center"}
-                justifyContent={"center"}
-                _hover={{
-                  backgroundColor: useColorModeValue(
-                    "customBlue.700",
-                    "customBlue.700"
-                  ),
-                }}
-              >
-                Visualizar <ExternalLinkIcon boxSize={8} />
-              </Button>
+              {props.deployLink && (
+                <Button
+                  as={"a"}
+                  href={props.deployLink}
+                  target="blank"
+                  padding={6}
+                  gap={4}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                  _hover={{
+                    backgroundColor: useColorModeValue(
+                      "customBlue.700",
+                      "customBlue.700"
+                    ),
+                  }}
+                >
+                  Visualizar <ExternalLinkIcon boxSize={8} />
+                </Button>
+              )}
             </HStack>
           </VStack>
         </HStack>
