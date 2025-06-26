@@ -27,9 +27,7 @@ export const projects = [
     title: "SagaSys",
     image: "sagasys.png",
     techs: ["React", "TypeScript", "NodeJS", "Tailwind", "Resend"],
-    links: {
-      deploy: "https://sagasys.com.br/",
-    },
+    links: {},
   },
   {
     title: "Move.IT",
@@ -43,8 +41,6 @@ export const projects = [
     title: "SafeResiduos",
     image: "saferesiduos.png",
     techs: ["PHP", "Elementor", "WordPress"],
-    links: {
-      deploy: "https://saferesiduos.com.br/",
-    },
+    links: {},
   },
 ];
