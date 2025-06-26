@@ -51,7 +51,7 @@ const BannerContent = () => {
             color={useColorModeValue("customGray.100", "customGray.100")}
             fontSize={"2xl"}
           >
-            Desenvolvedor front-end
+            Desenvolvedor full-stack
           </Text>
           <Box
             as={motion.div}
